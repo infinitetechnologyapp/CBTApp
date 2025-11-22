@@ -261,9 +261,9 @@
   });
   
   // clear score
-  clearBtn.addEventListener("click", ()=> { localStorage.clear();
+  /*clearBtn.addEventListener("click", ()=> { localStorage.clear();
   alert("Stoage cleared successfully!")
-  });
+  });*/
   
   // Reset to home
   resetBtn.addEventListener("click", ()=>{
