@@ -259,12 +259,12 @@
       .from(el)
       .save();
   });
-
-  // clear score
+  
+   // clear score
   clearBtn.addEventListener("click", ()=> { localStorage.clear();
   alert("Stoage cleared successfully!")
   });
-  
+
   // Reset to home
   resetBtn.addEventListener("click", ()=>{
     document.getElementById("setupPanel").classList.remove("hidden");

@@ -30,6 +30,7 @@
   const boardTitle = document.getElementById("boardTitle");
   const downloadPdfBtn = document.getElementById("downloadPdfBtn");
   const resetBtn = document.getElementById("resetBtn");
+  const clearBtn  = document.getElementById("clearBtn");
 
   // Variables
   let currentStudent = null;
@@ -258,7 +259,12 @@
       .from(el)
       .save();
   });
-
+  
+  // clear score
+  clearBtn.addEventListener("click", ()=> { localStorage.clear();
+  alert("Stoage cleared successfully!")
+  });
+  
   // Reset to home
   resetBtn.addEventListener("click", ()=>{
     document.getElementById("setupPanel").classList.remove("hidden");
