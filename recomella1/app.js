@@ -37,7 +37,7 @@
   let currentSubjectKey = null;
   let selectedQuestions = [];
   let timerInterval = null;
-  let timeRemaining = 600; // 5 minutes in seconds
+  let timeRemaining = 300; // 5 minutes in seconds
 
   // Util: find student by exam number
   function findStudent(examNo){
@@ -106,7 +106,7 @@
     }
 
     // Randomize & pick up to 20
-    selectedQuestions = shuffle(filtered).slice(0, Math.min(20, filtered.length));
+    selectedQuestions = shuffle(filtered).slice(0, Math.min(30, filtered.length));
   
 
     // Build UI
@@ -138,7 +138,7 @@
     examStudentMeta.textContent = `${currentStudent.class} • ${currentStudent.gender} • ${currentSubjectKey}`;
 
     // Reset timer
-    timeRemaining = 600;
+    timeRemaining = 300;
     updateTimerDisplay();
     if(timerInterval) clearInterval(timerInterval);
     timerInterval = setInterval(()=>{
@@ -149,7 +149,8 @@
         alert("Time is up! Exam will be submitted automatically.");
         submitExam();
       }
-    }, 1000);
+    }, 
+    1000);
   });
 
   // Timer UI
