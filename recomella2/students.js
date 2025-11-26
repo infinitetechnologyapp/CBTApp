@@ -43,7 +43,7 @@ const Students = [
   { examNum: "SS2B087", name: "Grace Samuel", class: "SS2", gender: "Female" },
   { examNum: "SS2B088", name: "Aisha Bello", class: "SS2", gender: "Female" },
   { examNum: "SS2B089", name: "David Okoro", class: "SS2", gender: "Male" },
-  { examNum: "SS2B090", name: "Favour Ude", class: "SS2", gender: "Female" }
+  { examNum: "Admin", name: "**Results Checker**", class: "SS2", gender: "Male" }
   
   
 
