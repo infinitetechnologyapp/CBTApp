@@ -9,7 +9,8 @@
 
 /* Chemistry */
 const Chemistry = [
-  { id: 1, question: "What is the smallest particle of an element?", options: { A: "Atom", B: "Molecule", C: "Ion", D: "Proton" }, answer: "A", classes: ["SS1"] },
+  { id: 1, question: "What is the smallest particle of an element?",
+  Image: "image/recomella", options: { A: "Atom", B: "Molecule", C: "Ion", D: "Proton" }, answer: "A", classes: ["SS1"] },
   { id: 2, question: "Which of these is NOT a state of matter?", options: { A: "Solid", B: "Liquid", C: "Gas", D: "Foam" }, answer: "D", classes: ["SS1"] },
   { id: 3, question: "Which particle has a positive charge?", options: { A: "Electron", B: "Neutron", C: "Proton", D: "Ion" }, answer: "C", classes: ["SS1"] },
   { id: 4, question: "Instrument used to measure temperature?", options: { A: "Thermometer", B: "Barometer", C: "Ammeter", D: "Hygrometer" }, answer: "A", classes: ["SS1"] },

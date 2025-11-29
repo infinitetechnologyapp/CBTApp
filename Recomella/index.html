@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School CBT Examination</title>
+  <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <img id="school-logo" alt="School Logo" src="images/recomella.png" />
+      <div>
+        <h1 id="school-name">Recomella Academy</h1>
+        <p class="tag">Computer Based Examination</p>
+      </div>
+    </header>
+    <section id="start-screen" class="card">
+      <h2>Start Examination</h2>
+      <label>
+        <span>Examination Number</span>
+        <input id="exam-num" type="text" placeholder="Enter exam number e.g. SS1A001" />
+      </label>
+
+      <label>
+        <span>Select Class</span>
+        <select id="class-select">
+          <option value="ss1">SS 1</option>
+          <option value="ss2">SS 2</option>
+          <option value="ss3">SS 3</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Select Subject</span>
+        <select id="subject-select">
+          <!-- Filled dynamically by scripts -->
+        </select>
+      </label>
+
+      <div class="row">
+        <button id="start-btn" class="btn primary">Start Exam</button>
+       <!-- <button id="clear-scores-btn" class="btn danger">Clear All Scores</button> -->
+      </div>
+
+      <div id="student-details" class="student-card hidden"></div>
+      <div id="messages" class="messages"></div>
+    </section>
+
+    <section id="exam-screen" class="card hidden">
+      <div class="exam-header">
+        <div>
+          <h3 id="exam-subject"></h3>
+          <p id="exam-student"></p>
+        </div>
+        <div class="timer" id="timer">00:00</div>
+      </div>
+
+      <div id="question-area"></div>
+
+      <div class="nav-row">
+        <button id="prev-btn" class="btn">Previous</button>
+        <button id="next-btn" class="btn">Next</button>
+        <button id="submit-btn" class="btn primary">Submit</button>
+      </div>
+      <div class="progress" id="progress"></div>
+    </section>
+
+    <section id="result-screen" class="card hidden">
+      <h2>Exam Result</h2>
+      <div id="result-summary"></div>
+
+      <h3>Class Ranking</h3>
+      <div id="ranking"></div>
+
+      <div class="row">
+        <button id="download-btn" class="btn">Download PDF</button>
+        <button id="another-btn" class="btn">Take Another Exam</button>
+      </div>
+    </section>
+    <div>
+      <p class="tag" style="text-align: center; font-size: 12px;">Determination Is The Key To Success</p>
+      <p class="tag" style="font-size: 12px;">Developed by: Sir Bright</p>
+      <h3 class="tag" style="font-size: 12px;">Infinite Technology: 08107069369</h3>
+    </div>
+  </main>
+
+  <!-- Data files -->
+  <script src="Students-ss1.js"></script>
+  <script src="Students-ss2.js"></script>
+  <script src="Students-ss3.js"></script>
+
+  <script src="Questions-ss1.js"></script>
+  <script src="Questions-ss2.js"></script>
+  <script src="Questions-ss3.js"></script>
+
+  <!-- App scripts -->
+  <script src="Index.js"></script>
+  <script src="App.js"></script>
+</body>
+</html>
