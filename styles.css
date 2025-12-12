@@ -1,103 +1,137 @@
+/* Styles.css - responsive clean styling for school CBT app */
 :root{
-  --bg: #f6f9fc;
-  --card: #ffffff;
-  --accent: #2563eb;
-  --accent-2: #06b6d4;
-  --muted: #6b7280;
-  --success: #10b981;
-  --danger: #ef4444;
-  --glass: rgba(255,255,255,0.6);
-  --radius: 12px;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --accent:#007ACC;
+  --accent-dark:#005fa3;
+  --text:#223;
+  --muted:#6b7280;
+  --danger:#d9534f;
+  --success:#2b9348;
+  --radius:12px;
+  --gap:14px;
+  --pad:18px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
   margin:0;
-  background: linear-gradient(180deg,#e6f0ff 0%, #f6f9fc 50%);
-  color:#0f172a;
+  background:linear-gradient(180deg,#eef6ff 0%,var(--bg) 100%);
+  color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
 
 .container{
-  max-width:980px;
-  margin:36px auto;
-  padding:24px;
+  max-width:1000px;
+  margin:28px auto;
+  padding:20px;
 }
-
 
 .header{
-  text-align:center;
+  display:flex;
+  gap:16px;
+  align-items:center;
   margin-bottom:18px;
-  animation:fadeInDown .6s ease both;
 }
-.header h1{margin:0; font-size:28px}
-.header .sub{margin:4px 0 0; color:var(--muted)}
+.header img{
+  width:84px;
+  height:84px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(11, 49, 90, 0.08);
+}
+.header h1{margin:0;font-size:20px}
+.header .tag{margin:0;color:var(--muted);font-size:13px}
 
-.panel{
+.card{
   background:var(--card);
   border-radius:var(--radius);
-  padding:18px;
-  box-shadow:0 6px 20px rgba(16,24,40,0.06);
+  padding:var(--pad);
+  box-shadow:0 6px 24px rgba(16,40,80,0.06);
   margin-bottom:18px;
-  transition:transform .25s ease, box-shadow .25s ease;
 }
-.panel:hover{transform:translateY(-6px); box-shadow:0 12px 30px rgba(16,24,40,0.08)}
 
-.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
-.form-row label{font-weight:600;color:#0f172a}
-.form-row input, .form-row select{
-  padding:10px 12px;border-radius:10px;border:1px solid #e6e9ef;background:linear-gradient(180deg,#fff,#fbfdff);
-  outline:none;font-size:15px;
+/* form elements */
+label{display:block;margin-bottom:12px}
+label span{display:block;font-weight:600;margin-bottom:6px}
+input[type="text"], select, textarea{
+  width:100%;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #e6eef6;
+  background:#fbfdff;
+  font-size:15px;
+  outline:none;
 }
-.form-row input:focus, .form-row select:focus{box-shadow:0 6px 18px rgba(37,99,235,0.08);border-color:var(--accent)}
+input[type="text"]:focus, select:focus, textarea:focus{
+  box-shadow:0 0 0 4px rgba(0,122,204,0.08);
+  border-color:var(--accent);
+}
 
-.form-actions{display:flex;gap:12px;align-items:center;margin-top:8px}
+/* buttons */
+.row{display:flex;gap:12px;align-items:center}
 .btn{
-  padding:10px 14px;border-radius:10px;border:none;background:transparent;font-weight:600;cursor:pointer;
-  box-shadow:none;transition:transform .08s ease, box-shadow .12s ease;
+  padding:10px 14px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,0.06);
+  background:#fff;
+  cursor:pointer;
+  font-weight:600;
 }
-.btn:active{transform:translateY(1px)}
-.btn.primary{background:linear-gradient(90deg,var(--accent),#1d4ed8);color:#fff}
-.btn.success{background:linear-gradient(90deg,var(--success),#059669);color:#fff}
-.btn.danger{background:linear-gradient(90deg,var(--danger),#dc2626);color:#fff}
-.btn:hover{box-shadow:0 10px 24px rgba(16,24,40,0.06)}
+.btn.primary{background:linear-gradient(180deg,var(--accent),var(--accent-dark)); color:#fff; border:none}
+.btn.danger{background:linear-gradient(180deg,var(--danger),#b43b35); color:#fff; border:none}
+.btn:hover{transform:translateY(-1px); transition:all 0.12s ease}
 
-.hidden{display:none}
-
-.card{padding:12px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#fbfdff);box-shadow:0 6px 14px rgba(2,6,23,0.04)}
-.muted{color:var(--muted);font-size:13px}
-
-.exam-header{
-  display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;
-  border-bottom:1px dashed #eef2ff;padding-bottom:12px;
+/* student details */
+.student-card{
+  margin-top:10px;
+  padding:12px;
+  border-radius:10px;
+  background:linear-gradient(180deg,#fbfdff,#f7fbff);
+  border:1px solid #eef6ff;
 }
+.messages{margin-top:8px;color:var(--muted)}
 
+/* exam screen */
+.exam-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .timer{
-  font-weight:700;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,#fff9f7,#fff);
-  border:1px solid rgba(2,6,23,0.04);
-  box-shadow:0 6px 18px rgba(37,99,235,0.04);
+  font-weight:800;
+  font-size:18px;
+  background:linear-gradient(180deg,#fff7e6,#fff3de);
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #ffe9bf;
 }
 
-.questions-container{display:flex;flex-direction:column;gap:14px;margin-top:12px}
-.question-card{
-  padding:12px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid #f1f5f9;
-  animation:fadeInUp .4s ease both;
+/* question area */
+#question-area{min-height:220px;padding:12px;border-radius:10px;background:#fbfcff;border:1px solid #eef6ff}
+.question{
+  margin-bottom:12px;
 }
-.q-title{font-weight:600;margin-bottom:8px}
-.options{display:flex;flex-direction:column;gap:8px}
-.option label{
-  padding:10px;border-radius:8px;border:1px solid #eef2ff;display:flex;gap:10px;align-items:center;cursor:pointer;
+.question h4{margin:0 0 10px 0}
+.options{display:flex;flex-direction:column;gap:10px}
+.option{
+  padding:10px;border-radius:8px;border:1px solid #e6eef6;background:#fff;cursor:pointer;
 }
-.option input{accent-color:var(--accent)}
+.option.selected{border-color:var(--accent);box-shadow:0 6px 18px rgba(0,122,204,0.06)}
+.question img{max-width:100%;border-radius:8px;margin-top:8px}
 
-.score-table{width:100%;border-collapse:collapse}
-.score-table th, .score-table td{padding:8px;border-bottom:1px solid #f1f5f9;text-align:left}
-.score-table th{background:linear-gradient(90deg,#fbfdff,#f8fafc);font-weight:700}
+/* nav */
+.nav-row{display:flex;gap:10px;margin-top:12px;align-items:center}
+.progress{margin-top:8px;color:var(--muted)}
 
-.footer{text-align:center;margin-top:18px;color:var(--muted)}
+/* result */
+#ranking table{width:100%;border-collapse:collapse}
+#ranking th,#ranking td{padding:8px 6px;border-bottom:1px solid #f1f5f9;text-align:left}
+#ranking th{font-weight:700}
 
-@keyframes fadeInDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* small screens */
+@media (max-width:720px){
+  .header{align-items:flex-start}
+  .exam-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .row{flex-direction:column}
+}
+.hidden{display:none}

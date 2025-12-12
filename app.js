@@ -1,285 +1,380 @@
-/* Main app logic:
-  - fetch student by exam number
-  - select subject and load questions (subject array must exist)
-  - filter questions by student's class using optional 'classes' metadata
-  - randomize questions and present to student
-  - 5 minute timer
-  - submit, compute score, save to localStorage, show scoreboard, export PDF
+/* App.js - main application logic (vanilla JS)
+   Features:
+   - Load students/questions from global window.* objects
+   - Populate subject list
+   - Lookup student by exam number and class
+   - Randomly pick required number of questions per subject/class
+   - Timer per subject type
+   - Previous / Next navigation
+   - Store + sort scores in localStorage
+   - Download results as printable page (student can Save as PDF)
 */
 
-(function(){
-  // UI elements
-  const subjectSelect = document.getElementById("subjectSelect");
-  const examNoInput = document.getElementById("examNo");
-  const fetchStudentBtn = document.getElementById("fetchStudentBtn");
-  const studentInfo = document.getElementById("studentInfo");
-  const stuDisplay = document.getElementById("stuDisplay");
-  const startExamBtn = document.getElementById("startExamBtn");
+/* CONFIG */
+const SUBJECT_TIMERS = {
+  Mathematics: 15 * 60,
+  Chemistry: 10 * 60,
+  Biology: 10 * 60,
+  Physics: 10 * 60,
+  "English": 10 * 60,
+  "English Language": 10 * 60 // support alternative label
+};
+const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","English","English Language"];
+const DEFAULT_TIMEMIN = 5 * 60;
+const SUBJECT_DISPLAY_COUNT = (subject) => {
+  if (MAIN_SUBJECT_NAMES.includes(subject)) return 30;
+  return 20;
+};
 
-  const examPanel = document.getElementById("examPanel");
-  const examForm = document.getElementById("examForm");
-  const timerDisplay = document.getElementById("timerDisplay");
-  const examStudentName = document.getElementById("examStudentName");
-  const examStudentMeta = document.getElementById("examStudentMeta");
-
-  const submitExamBtn = document.getElementById("submitExamBtn");
-
-  const resultPanel = document.getElementById("resultPanel");
-  const resultSummary = document.getElementById("resultSummary");
-  const scoreboard = document.getElementById("scoreboard");
-  const boardTitle = document.getElementById("boardTitle");
-  const downloadPdfBtn = document.getElementById("downloadPdfBtn");
-  const resetBtn = document.getElementById("resetBtn");
-  const clearBtn  = document.getElementById("clearBtn");
-
-  // Variables
-  let currentStudent = null;
-  let currentSubjectKey = null;
-  let selectedQuestions = [];
-  let timerInterval = null;
-  let timeRemaining = 120; // 5 minutes in seconds
-
-  // Util: find student by exam number
-  function findStudent(examNo){
-    return Students.find(s => s.examNum.toLowerCase() === examNo.trim().toLowerCase());
+/* Helpers */
+function getQuestionsFor(classKey, subject) {
+  const map = {
+    ss1: window.questionsSS1 || {},
+    ss2: window.questionsSS2 || {},
+    CBT: window.questionsSS3 || {}
+  };
+  const list = map[classKey] || {};
+  // try both exact and trimmed names
+  return list[subject] || list[subject.replace(" English Language","English")] || [];
+}
+function getStudentsFor(classKey) {
+  return {
+    ss1: window.studentsSS1 || [],
+    ss2: window.studentsSS2 || [],
+    CBT: window.studentsSS3 || []
+  }[classKey] || [];
+}
+function findStudent(classKey, examNum) {
+  const arr = getStudentsFor(classKey);
+  return arr.find(s => (s.examNum||"").toLowerCase() === (examNum||"").toLowerCase()) || null;
+}
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
   }
+  return a;
+}
 
-  // Util: shuffle
-  function shuffle(arr){ 
-    const a = arr.slice();
-    for(let i=a.length-1;i>0;i--){
-      const j = Math.floor(Math.random()*(i+1));
-      [a[i],a[j]] = [a[j],a[i]];
-    }
-    return a;
-  }
+/* STORAGE */
+const STORAGE_KEY = "cbt_scores_v1";
+function loadScores(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }catch(e){return []}}
+function saveScores(list){ localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); }
 
-  // When Enter clicked: fetch student and show info
-  fetchStudentBtn.addEventListener("click", ()=>{
-    const examNo = examNoInput.value.trim();
-    const subjectValue = subjectSelect.value;
-    if(!subjectValue){
-      alert("Please select a subject first.");
-      return;
-    }
-    // Check subject exists
-    if(!subjectsDatabase[subjectValue]){
-      alert("Subject questions not available in database.");
-      return;
-    }
-    const student = findStudent(examNo);
-    if(!student){
-      studentInfo.classList.remove("hidden");
-      stuDisplay.textContent = `Student with exam number "${examNo}" not found.`;
-      startExamBtn.disabled = true;
-      currentStudent = null;
-    } else {
-      currentStudent = student;
-      studentInfo.classList.remove("hidden");
-      stuDisplay.innerHTML = `
-        <strong>${student.name}</strong> — ${student.class} • ${student.gender} <br/>
-        Selected Subject: <strong>${subjectValue}</strong>
-      `;
-      startExamBtn.disabled = false;
-      currentSubjectKey = subjectValue;
-    }
+/* UI elements */
+const S = window.CBT_UI.selectors;
+
+/* populate subject select based on union of questions files */
+function populateSubjects() {
+  const subjectsSet = new Set();
+  [window.questionsSS1, window.questionsSS2, window.questionsSS3].forEach(obj=>{
+    if (!obj) return;
+    Object.keys(obj).forEach(k=>subjectsSet.add(k));
   });
-
-  // Start exam
-  startExamBtn.addEventListener("click", ()=>{
-    if(!currentStudent) return;
-    if(!currentSubjectKey || !subjectsDatabase[currentSubjectKey]){
-      alert("Subject questions not available in database.");
-      return;
-    }
-
-    // Filter questions by student class if classes metadata exists
-    const allQ = subjectsDatabase[currentSubjectKey];
-    const filtered = allQ.filter(q => {
-      if(!q.classes) return true; // if no classes info, include
-      return q.classes.includes(currentStudent.class);
-    });
-
-    if(filtered.length === 0){
-      alert("No questions for this subject & class. Subject questions not available in database.");
-      return;
-    }
-
-    // Randomize & pick up to 20
-    selectedQuestions = shuffle(filtered).slice(0, Math.min(10, filtered.length));
-  
-
-    // Build UI
-    examForm.innerHTML = ""; // clear
-    selectedQuestions.forEach((q, idx) => {
-      const div = document.createElement("div");
-      div.className = "question-card";
-      div.innerHTML = `
-        <div class="q-title">Q${idx+1}. ${q.question}</div>
-        <div class="options">
-          ${Object.entries(q.options).map(([key,val])=>`
-            <label class="option">
-              <input type="radio" name="q${idx}" value="${key}" />
-              <strong style="width:26px;display:inline-block">${key}.</strong> ${val}
-            </label>
-          `).join("")}
-        </div>
-      `;
-      examForm.appendChild(div);
-    });
-
-    // Show exam panel
-    document.getElementById("setupPanel").classList.add("hidden");
-    examPanel.classList.remove("hidden");
-    resultPanel.classList.add("hidden");
-
-    // Show student info in exam header
-    examStudentName.textContent = `${currentStudent.name} (${currentStudent.examNum})`;
-    examStudentMeta.textContent = `${currentStudent.class} • ${currentStudent.gender} • ${currentSubjectKey}`;
-
-    // Reset timer
-    timeRemaining = 120;
-    updateTimerDisplay();
-    if(timerInterval) clearInterval(timerInterval);
-    timerInterval = setInterval(()=>{
-      timeRemaining--;
-      updateTimerDisplay();
-      if(timeRemaining <= 0){
-        clearInterval(timerInterval);
-        alert("Time is up! Exam will be submitted automatically.");
-        submitExam();
-      }
-    }, 1000);
+  // ensure consistent ordering with common subjects first
+  const common = ["Mathematics","English","English Language","Chemistry","Biology","Physics"];
+  const subjects = Array.from(subjectsSet);
+  subjects.sort((a,b)=>{
+    const ai = common.indexOf(a), bi = common.indexOf(b);
+    if (ai>=0 && bi>=0) return ai-bi;
+    if (ai>=0) return -1;
+    if (bi>=0) return 1;
+    return a.localeCompare(b);
   });
+  S.subjectSelect.innerHTML = subjects.map(s=>`<option value="${s}">${s}</option>`).join("");
+}
+populateSubjects();
 
-  // Timer UI
-  function updateTimerDisplay(){
-    const mm = String(Math.floor(timeRemaining/60)).padStart(2,"0");
-    const ss = String(timeRemaining%60).padStart(2,"0");
-    timerDisplay.textContent = `${mm}:${ss}`;
+/* Start exam flow */
+let state = {
+  student: null,
+  classKey: "CBT",
+  subject: null,
+  questions: [],
+  answers: {},
+  currentIndex: 0,
+  timer: null,
+  timeLeft: 0
+};
 
-    if(timeRemaining <= 30) {
-      timerDisplay.style.background = "linear-gradient(90deg,#fff0f0,#fff)";
-      timerDisplay.style.color = "#b91c1c";
-    } else {
-      timerDisplay.style.background = "";
-      timerDisplay.style.color = "";
-    }
+function showMessage(msg, isError=false){
+  S.messages.textContent = msg;
+  S.messages.style.color = isError ? "var(--danger)" : "var(--muted)";
+}
+
+/* display student details */
+function displayStudentDetails(student){
+  if(!student) {
+    S.studentDetails.classList.add("hidden");
+    return;
   }
+  S.studentDetails.classList.remove("hidden");
+  S.studentDetails.innerHTML = `
+    <strong>${student.name}</strong> <span class="muted">(${student.class})</span><br/>
+    Exam No: ${student.examNum} <br/>
+    Gender: ${student.gender}
+  `;
+}
 
-  // Submit exam (button)
-  submitExamBtn.addEventListener("click", (e)=>{
-    e.preventDefault();
-    if(!confirm("Submit exam now?")) return;
-    submitExam();
-  });
+/* prepare questions */
+function prepareQuestions(classKey, subject){
+  const pool = getQuestionsFor(classKey, subject) || [];
+  if(!Array.isArray(pool) || pool.length===0) return [];
+  // decide how many to pick
+  const count = Math.min(SUBJECT_DISPLAY_COUNT(subject), pool.length);
+  const shuffled = shuffle(pool);
+  return shuffled.slice(0, count);
+}
 
-  // Submit logic
-  function submitExam(){
-    if(timerInterval) { clearInterval(timerInterval); timerInterval = null; }
-
-    // Compute score
-    const formData = new FormData(examForm);
-    let score = 0;
-    selectedQuestions.forEach((q, idx) => {
-      const answer = formData.get(`q${idx}`);
-      if(answer && answer === q.answer) score++;
+/* render one question */
+function renderQuestion(index){
+  const q = state.questions[index];
+  if(!q) {
+    S.questionArea.innerHTML = "<p>No question</p>";
+    return;
+  }
+  const selected = state.answers[q.id];
+  const opts = q.options.map((opt, i)=>`
+    <div class="option ${selected===i?'selected':''}" data-index="${i}" data-qid="${q.id}">
+      ${String.fromCharCode(65+i)}. ${opt}
+    </div>
+  `).join("");
+  S.questionArea.innerHTML = `
+    <div class="question">
+      <h4>Q${index+1}. ${q.text}</h4>
+      ${q.img ? `<img src="${q.img}" alt="question image">` : ""}
+      <div class="options">${opts}</div>
+    </div>
+  `;
+  // attach option click listeners
+  S.questionArea.querySelectorAll(".option").forEach(el=>{
+    el.addEventListener("click", (ev)=>{
+      const qid = el.getAttribute("data-qid");
+      const idx = Number(el.getAttribute("data-index"));
+      state.answers[qid] = idx;
+      renderQuestion(state.currentIndex);
+      updateProgress();
     });
+  });
+}
 
-    // Save score record to localStorage
-    const stored = JSON.parse(localStorage.getItem("examScores") || "[]");
-    const record = {
-      examNum: currentStudent.examNum,
-      name: currentStudent.name,
-      class: currentStudent.class,
-      gender: currentStudent.gender,
-      subject: currentSubjectKey,
-      score,
-      total: selectedQuestions.length,
-      timestamp: new Date().toISOString()
-    };
-    stored.push(record);
-    localStorage.setItem("examScores", JSON.stringify(stored));
+/* update progress bar text */
+function updateProgress(){
+  S.progress.textContent = `Question ${state.currentIndex+1} of ${state.questions.length} — Answered ${Object.keys(state.answers).length}`;
+}
 
-    // Show result panel + scoreboard
-    showResults(record);
-  }
-
-  // Build scoreboard for class & subject
-  function showResults(record){
-    document.getElementById("setupPanel").classList.add("hidden");
-    examPanel.classList.add("hidden");
-    resultPanel.classList.remove("hidden");
-
-    resultSummary.textContent = `${record.name} (${record.examNum}) scored ${record.score} / ${record.total} in ${record.subject}.`;
-
-    buildScoreboard(record.class, record.subject);
-  }
-
-  // Build and render scoreboard table (sorted highest to lowest)
-  function buildScoreboard(className, subjectKey){
-    boardTitle.textContent = `${className} — ${subjectKey}`;
-    const stored = JSON.parse(localStorage.getItem("examScores") || "[]");
-    const filtered = stored.filter(s => s.class === className && s.subject === subjectKey);
-    filtered.sort((a,b) => b.score - a.score || new Date(a.timestamp) - new Date(b.timestamp));
-
-    if(filtered.length === 0){
-      scoreboard.innerHTML = `<p class="muted">No scores saved yet for this class & subject.</p>`;
-      return;
+/* timer */
+function startTimer(seconds){
+  clearInterval(state.timer);
+  state.timeLeft = seconds;
+  S.timerEl.textContent = formatTime(state.timeLeft);
+  state.timer = setInterval(()=>{
+    state.timeLeft--;
+    S.timerEl.textContent = formatTime(state.timeLeft);
+    if(state.timeLeft<=0){
+      clearInterval(state.timer);
+      handleSubmit(true); // time up
     }
+  }, 1000);
+}
+function formatTime(sec){
+  const mm = Math.floor(sec/60).toString().padStart(2,"0");
+  const ss = (sec%60).toString().padStart(2,"0");
+  return `${mm}:${ss}`;
+}
 
-    const rows = filtered.map((r, idx) => `
-      <tr>
-        <td>${idx+1}</td>
-        <td>${r.name}</td>
-        <td>${r.examNum}</td>
-        <td>${r.score} / ${r.total}</td>
-        <td>${new Date(r.timestamp).toLocaleString()}</td>
-      </tr>
-    `).join("");
+/* navigation handlers */
+S.prevBtn.addEventListener("click", ()=>{
+  if(state.currentIndex>0){
+    state.currentIndex--;
+    renderQuestion(state.currentIndex);
+    updateProgress();
+  }
+});
+S.nextBtn.addEventListener("click", ()=>{
+  if(state.currentIndex < state.questions.length-1){
+    state.currentIndex++;
+    renderQuestion(state.currentIndex);
+    updateProgress();
+  }
+});
 
-    scoreboard.innerHTML = `
-      <table class="score-table">
-        <thead>
-          <tr><th>#</th><th>Name</th><th>Exam No</th><th>Score</th><th>Date</th></tr>
-        </thead>
-        <tbody>
-          ${rows}
-        </tbody>
+S.submitBtn.addEventListener("click", ()=>handleSubmit(false));
+
+/* compute score and store results */
+function handleSubmit(isTimeUp){
+  clearInterval(state.timer);
+  // compute score
+  let correct=0;
+  state.questions.forEach(q=>{
+    const sel = state.answers[q.id];
+    if(typeof sel === "number" && sel === q.answer) correct++;
+  });
+  const total = state.questions.length;
+  const percentage = Math.round((correct/total)*100);
+
+  // save to storage
+  const scores = loadScores();
+  const entry = {
+    timestamp: Date.now(),
+    examNum: state.student ? state.student.examNum : "Unknown",
+    name: state.student ? state.student.name : "Unknown",
+    classKey: state.classKey,
+    subject: state.subject,
+    score: correct,
+    total: total,
+    percent: percentage
+  };
+  scores.push(entry);
+  saveScores(scores);
+
+  // show result screen
+  S.startScreen.classList.add("hidden");
+  S.examScreen.classList.add("hidden");
+  S.resultScreen.classList.remove("hidden");
+
+  S.resultSummary.innerHTML = `
+    <p><strong>${entry.name}</strong> (${entry.examNum})</p>
+    <p>Subject: <strong>${entry.subject}</strong></p>
+    <p>Score: <strong>${entry.score} / ${entry.total}</strong> (${entry.percent}%)</p>
+    <p>${isTimeUp ? "<em>Time is up. Exam auto-submitted.</em>" : ""}</p>
+  `;
+
+  renderRanking(entry.classKey, entry.subject);
+}
+
+/* ranking display for same class & subject */
+function renderRanking(classKey, subject){
+  const scores = loadScores().filter(s => s.classKey === classKey && s.subject === subject);
+  scores.sort((a,b)=> b.percent - a.percent || b.score - a.score || a.timestamp - b.timestamp);
+  const rows = scores.map((s,idx)=>`
+    <tr ${s.examNum=== (state.student?.examNum) ? "style='background:#f7ffef'":""}>
+      <td>${idx+1}</td>
+      <td>${s.name} <small>(${s.examNum})</small></td>
+      <td>${s.score} / ${s.total}</td>
+      <td>${s.percent}%</td>
+    </tr>
+  `).join("");
+  S.ranking.innerHTML = scores.length ? `<table><thead><tr><th>#</th><th>Student</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : "<p class='muted'>No scores yet for this class & subject.</p>";
+}
+
+/* download as printable (user can Save as PDF) */
+S.downloadBtn.addEventListener("click", ()=>{
+  const title = document.getElementById("school-name").textContent || "School";
+  const subject = state.subject;
+  const classDisplay = state.classKey.toUpperCase();
+  // create printable HTML
+  const scores = loadScores().filter(s => s.classKey === state.classKey && s.subject === subject);
+  scores.sort((a,b)=> b.percent - a.percent || b.score - a.score);
+  let rows = scores.map((s,idx)=>`<tr><td>${idx+1}</td><td>${s.name}</td><td>${s.examNum}</td><td>${s.score}/${s.total}</td><td>${s.percent}%</td></tr>`).join("");
+  if(!rows) rows = `<tr><td colspan="5">No scores recorded</td></tr>`;
+
+  const html = `
+    <html>
+    <head>
+      <title>${title} - ${classDisplay} ${subject} Scores</title>
+      <style>
+        body{font-family:Arial,Helvetica,sans-serif;padding:24px}
+        h1{text-align:center}
+        h2{text-align:center;color:#444;margin-top:6px}
+        table{width:100%;border-collapse:collapse;margin-top:18px}
+        th,td{padding:8px;border:1px solid #ddd;text-align:left}
+        th{background:#f3f6fb}
+      </style>
+    </head>
+    <body>
+      <h1>${title}</h1>
+      <h2>${classDisplay} — ${subject}</h2>
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Exam No</th><th>Score</th><th>%</th></tr></thead>
+        <tbody>${rows}</tbody>
       </table>
-    `;
+      <p style="margin-top:14px">Generated: ${new Date().toLocaleString()}</p>
+    </body>
+    </html>
+  `;
+  const w = window.open("", "_blank");
+  w.document.open();
+  w.document.write(html);
+  w.document.close();
+  // prompt print dialog (user can choose Save as PDF)
+  setTimeout(()=> w.print(), 350);
+});
+
+/* another exam handler */
+S.anotherBtn.addEventListener("click", ()=>{
+  // reset to start screen
+  S.resultScreen.classList.add("hidden");
+  S.startScreen.classList.remove("hidden");
+  S.messages.textContent = "";
+  S.studentDetails.classList.add("hidden");
+  state = { student: null, classKey: "ss3", subject: null, questions: [], answers: {}, currentIndex: 0, timer: null, timeLeft: 0 };
+});
+
+/* clear all scores button */
+S.clearScoresBtn.addEventListener("click", ()=>{
+  if(!confirm("Clear all saved scores from localStorage? This cannot be undone.")) return;
+  localStorage.removeItem(STORAGE_KEY);
+  showMessage("All scores cleared.", false);
+});
+
+/* Start button logic */
+S.startBtn.addEventListener("click", ()=>{
+  const examNum = S.examNum.value.trim();
+  const classKey = S.classSelect.value;
+  const subject = S.subjectSelect.value;
+  if(!examNum){
+    showMessage("Please enter your User ID.", true);
+    return;
+  }
+  if(!subject){
+    showMessage("Please select a subject.", true);
+    return;
+  }
+  // find student
+  const student = findStudent(classKey, examNum);
+  if(!student){
+    showMessage("User ID not found. Please Get a User ID from Sir Bright.", true);
+    displayStudentDetails(null);
+    return;
+  }
+  showMessage("");
+  displayStudentDetails(student);
+
+  // prepare questions
+  const pool = getQuestionsFor(classKey, subject);
+  if(!pool || pool.length===0){
+    showMessage("No questions in the database for this subject.", true);
+    return;
   }
 
-  // Download scoreboard as PDF
-  downloadPdfBtn.addEventListener("click", ()=>{
-    const el = document.getElementById("scoreboardWrap");
-    // small options
-    html2pdf()
-      .set({ margin: 10, filename: `scoreboard_${boardTitle.textContent.replace(/\s+/g,"_")}.pdf`, image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 } })
-      .from(el)
-      .save();
-  });
-  
-  // clear score
-  /*clearBtn.addEventListener("click", ()=> { localStorage.clear();
-  alert("Stoage cleared successfully!")
-  });*/
-  
-  // Reset to home
-  resetBtn.addEventListener("click", ()=>{
-    document.getElementById("setupPanel").classList.remove("hidden");
-    examPanel.classList.add("hidden");
-    resultPanel.classList.add("hidden");
-    studentInfo.classList.add("hidden");
-    startExamBtn.disabled = true;
-    examNoInput.value = "";
-    subjectSelect.value = "";
-    currentStudent = null;
-    currentSubjectKey = null;
-    selectedQuestions = [];
-    if(timerInterval){ clearInterval(timerInterval); timerInterval=null;}
-  });
+  state.student = student;
+  state.classKey = classKey;
+  state.subject = subject;
+  state.questions = prepareQuestions(classKey, subject);
+  state.answers = {};
+  state.currentIndex = 0;
 
-  // Expose for debugging if needed
-  window.__CBT = { Students, subjectsDatabase, buildScoreboard };
-})();
+  // show exam screen
+  S.startScreen.classList.add("hidden");
+  S.resultScreen.classList.add("hidden");
+  S.examScreen.classList.remove("hidden");
+
+  S.examSubject.textContent = subject;
+  S.examStudent.innerHTML = `${student.name} — ${student.examNum} (${student.class})`;
+
+  renderQuestion(0);
+  updateProgress();
+
+  // timer selection
+  const seconds = SUBJECT_TIMERS[subject] || DEFAULT_TIMEMIN;
+  startTimer(seconds);
+});
+
+/* initial UI state */
+S.startScreen.classList.remove("hidden");
+S.examScreen.classList.add("hidden");
+S.resultScreen.classList.add("hidden");
+
+updateProgress();

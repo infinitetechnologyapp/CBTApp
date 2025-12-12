@@ -3,107 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>School_CBT_Practice</title>
-  <!--<img src="image/recomella.png" alt="" /> -->
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
+  <title>CBT PRACTICE</title>
+  <link rel="icon" href="images/itech.jpg" type="image/cbt-icon" />
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- html2pdf (for PDF export) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-  <!-- Optional: icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <main class="container">
     <header class="header">
-       <!-- <img class="image" src="image/recomella.png" alt="" /> -->
-      <h1>Recomella CBT Portal</h1>
-      <p class="sub">Select subject → enter exam no </p>
+      <img id="school-logo" alt="School Logo" src="images/itech.png" />
+      <div>
+        <h1 id="school-name">Infinite Technology</h1>
+        <p class="tag">CBT Practice</p>
+      </div>
     </header>
+    <section id="start-screen" class="card">
+      <h2>Start Practice</h2>
+      <label>
+        <span>Enter User ID</span>
+        <input id="exam-num" type="text" placeholder="User ID" />
+      </label>
 
-    <section class="panel" id="setupPanel">
-      <div class="form-row">
-        <label for="subjectSelect">Select Subject</label>
-        <select id="subjectSelect">
-          <option value="">-- Select Subject --</option>
-          <option value="Chemistry">Chemistry</option>
-          <option value="Computer">Computer</option>
-          <option value="DataProcessing">Data Processing</option>
-          <option value="Mathematics">Mathematics</option>
-          <option value="EnglishLanguage">English Language</option>
-          <option value="Biology">Biology</option>
-          <option value="Physics">Physics</option>
-          <option value="Geography">Geography</option>
-          <option value="Economics">Economics</option>
+      <label>
+        <span>CBTAPP</span>
+        <select id="class-select">
+          <option value="CBT">CBT PRACTICE</option>
         </select>
-        
+      </label>
+
+      <label>
+        <span>Select Subject</span>
+        <select id="subject-select">
+          <!-- Filled dynamically by scripts -->
+        </select>
+      </label>
+
+      <div class="row">
+        <button id="start-btn" class="btn primary">Start CBT</button>
       </div>
 
-      <div class="form-row">
-        <label for="examNo">Enter Examination Number</label>
-        <input id="examNo" placeholder="e.g. SS1A001" />
-      </div>
-
-      <div class="form-actions">
-        <button id="fetchStudentBtn" class="btn primary">Enter</button>
-      </div>
-
-      <div id="studentInfo" class="card hidden">
-        <h3>Student</h3>
-        <p id="stuDisplay">No student loaded</p>
-        <button id="startExamBtn" class="btn success" disabled>Start Exam</button>
-      </div>
+      <div id="student-details" class="student-card hidden"></div>
+      <div id="messages" class="messages"></div>
     </section>
 
-    <section id="examPanel" class="panel hidden">
+    <section id="exam-screen" class="card hidden">
       <div class="exam-header">
         <div>
-          <strong id="examStudentName"></strong>
-          <div id="examStudentMeta" class="muted"></div>
+          <h3 id="exam-subject"></h3>
+          <p id="exam-student"></p>
         </div>
-        <div class="timer" id="timerDisplay">05:00</div>
+        <div class="timer" id="timer">00:00</div>
       </div>
 
-      <form id="examForm" class="questions-container"></form>
+      <div id="question-area"></div>
 
-      <div class="form-actions">
-        <button id="submitExamBtn" class="btn danger">Submit Exam</button>
+      <div class="nav-row">
+        <button id="prev-btn" class="btn">Previous</button>
+        <button id="next-btn" class="btn">Next</button>
+        <button id="submit-btn" class="btn primary">Submit</button>
       </div>
+      <div class="progress" id="progress"></div>
     </section>
 
-    <section id="resultPanel" class="panel hidden">
+    <section id="result-screen" class="card hidden">
       <h2>Exam Result</h2>
-      <p id="resultSummary"></p>
+      <div id="result-summary"></div>
 
-      <h3>Class Scoreboard — <span id="boardTitle"></span></h3>
-      <div id="scoreboardWrap" class="card">
-        <div id="scoreboard"></div>
-      </div>
+      <h3>Class Ranking</h3>
+      <div id="ranking"></div>
 
-      <div class="form-actions">
-        <button id="downloadPdfBtn" class="btn">Download Scoreboard (PDF)</button>
-        <button id="resetBtn" class="btn success">Start New Exam</button>
-      </div>
-      <div>
-        <!--<button id="clearBtn" class="btn" style="margin-top: 20px;">Clear scores</button> -->
+      <div class="row">
+        <br />
+        <button id="download-btn" class="btn">Download PDF</button>
+ 
+        <button id="clear-scores-btn" class="btn danger">Clear All Scores</button>
+        <button id="another-btn" class="btn primary">Take Another Exam</button>
       </div>
     </section>
-
-    <footer class="footer">
-      <small>Determination is the key to success</small>
-    </footer>
+    <div>
+      <p class="tag" style="text-align: center; font-size: 12px;">Brightest Digital Services</p>
+      <p class="tag" style="font-size: 12px;">Developed by: Sir Bright</p>
+      <h3 class="tag" style="font-size: 12px;">Infinite Technology: 08107069369</h3>
+    </div>
   </main>
 
   <!-- Data files -->
-  <script src="questions.js"></script>
   <script src="students.js"></script>
 
-  <!-- App script -->
+  <script src="questions.js"></script>
+
+  <!-- App scripts -->
+  <script src="index.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

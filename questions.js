@@ -1,145 +1,184 @@
-/* 
-  Each subject follows the exact format you requested:
-  Const <SubjectName> = [
-    { id, question, options: {A,B,C,D}, answer }
+window.questionsSS3 = {
+    //Mathematics
+  Mathematics: [
+    { id: "m1", text: "Differentiate f(x)=x^2", img: null, options: ["2x","x","x^2","1"], answer: 0 },
+    { id: "m2", text: "Integrate ∫2 dx", img: null, options: ["2x + C", "x^2 + C", "ln x + C", "1/x + C"], answer: 0 },
+{ id: "m3", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m4", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m5", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m6", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m7", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m8", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m9", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m10", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m11", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m12", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m13", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m14", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m15", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m16", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m17", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m18", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m19", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m20", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m21", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m22", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m23", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m24", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+  { id: "m25", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
+    { id: "m26", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
+    { id: "m27", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m28", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
+    { id: "m29", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
+    // sample with image (math diagram)
+    { id: "m30", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 }
+  ],
+
+
+  //English Language
+  English: [
+    { id: "e1", text: "Choose correct preposition: 'She is good ___ math.'", img: null, options: ["on","at","in","about"], answer: 1 },
+  { id: "e2", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e3", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e4", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e5", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e6", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+{ id: "e7", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e8", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e9", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e10", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e11", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e12", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+{ id: "e13", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e14", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e15", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e16", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e17", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e18", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+{ id: "e19", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e20", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e21", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e22", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e23", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e24", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+{ id: "e25", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e26", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e27", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e28", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
+    { id: "e29", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
+    { id: "e30", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 }
+  ],
+
+
+  //Physics
+  Physics: [
+    { id: "p1", text: "The unit of energy is?", img: null, options: ["Newton","Watt","Joule","Meter"], answer: 2 },
+ { id: "p2", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p3", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p4", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p5", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p6", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+{ id: "p7", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p8", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p9", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p10", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p11", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p12", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+{ id: "p13", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p14", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p15", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p16", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p17", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p18", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+{ id: "p19", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p20", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p21", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p22", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p23", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p24", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+{ id: "p25", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p26", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p27", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p28", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p29", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
+ { id: "p30", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 }
+  ],
+
+
+  //Chemistry
+  Chemistry: [
+    { id: "c1", text: "An atom contains?", img: null, options: ["Only protons", "Protons & electrons", "Neutrons only", "None"], answer: 1 },
+ { id: "c2", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c3", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c4", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c5", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c6", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c7", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c8", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c9", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c10", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c11", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c12", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c13", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c14", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c15", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c16", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c17", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c18", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c19", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c20", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c21", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c22", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c23", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c24", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c25", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c26", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c27", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c28", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
+{ id: "c29", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
+    { id: "c30", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 }
+  ],
+
+
+  //Biology
+  Biology: [
+    { id: "b1", text: "DNA stands for?", img: null, options: ["Deoxyribo Nucleic Acid","Deoxy Nerve Acid","None","Dioxo Acid"], answer: 0 },
+{ id: "b2", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b3", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b4", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b5", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b6", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b7", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b8", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b9", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b10", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b11", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b12", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b13", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b14", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b15", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b16", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b17", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b18", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b19", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b20", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b21", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b22", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b23", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b24", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b25", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b26", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b27", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b28", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b29", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
+{ id: "b30", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 }
   ]
-  I also include an optional 'classes' metadata array (e.g. ["SS1"]) so the runtime can pick questions for the student's class.
-*/
-
-/* Chemistry */
-const Chemistry = [
-  { id: 1, question: "What is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
- 
-];
-
-/* Computer */
-const Computer = [
-  { id: 1, question: "Which device is the brain of the computer?", options: { A:"Keyboard", B:"CPU", C:"Monitor", D:"Mouse" }, answer: "B", classes: ["SS3"] },
-  { id: 2, question: "Which of the following is an input device?", options: { A:"Printer", B:"Monitor", C:"Scanner", D:"Speaker" }, answer: "C", classes: ["SS3"] },
-  { id: 3, question: "Which is a storage device?", options: { A:"Flash Drive", B:"Keyboard", C:"Webcam", D:"Mouse" }, answer: "A", classes: ["SS3"] },
-  { id: 4, question: "CPU stands for?", options: { A:"Central Processing Unit", B:"Central Program Unit", C:"Control Power Unit", D:"Central Print Unit" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Which is NOT a type of software?", options: { A:"System Software", B:"Application Software", C:"Utility Software", D:"Hardware Software" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "Key used to delete characters?", options: { A:"Shift", B:"Enter", C:"Backspace", D:"Tab" }, answer: "C", classes: ["SS3"] },
-  { id: 7, question: "Device that displays computer output?", options: { A:"Monitor", B:"Mouse", C:"Keyboard", D:"Scanner" }, answer: "A", classes: ["SS3"] },
-  { id: 8, question: "Physical parts of the computer are called?", options: { A:"Hardware", B:"Software", C:"Firmware", D:"Data" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "Which of these is an operating system?", options: { A:"Excel", B:"PowerPoint", C:"Windows", D:"Chrome" }, answer: "C", classes: ["SS3"] },
-  { id: 10, question: "Software for typing documents is called?", options: { A:"Word Processor", B:"Paint", C:"Calculator", D:"Excel" }, answer: "A", classes: ["SS3"] },
   
-];
-
-/* Data Processing */
-const DataProcessing = [
-  { id: 1, question: "Processed data is known as?", options: { A:"Facts", B:"Information", C:"Input", D:"Files" }, answer: "B", classes: ["SS3"] },
-  { id: 2, question: "Which of these is a type of data?", options: { A:"Numeric", B:"Cartridge", C:"Soft copy", D:"Hard copy" }, answer: "A", classes: ["SS3"] },
-  { id: 3, question: "Arranging data in order is called?", options: { A:"Sorting", B:"Typing", C:"Filtering", D:"Copying" }, answer: "A", classes: ["SS3"] },
-  { id: 4, question: "Device used to enter data?", options: { A:"Keyboard", B:"Printer", C:"Speaker", D:"Monitor" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Which is a storage device?", options: { A:"CD-ROM", B:"Mouse", C:"Joystick", D:"Scanner" }, answer: "A", classes: ["SS3"] },
-  { id: 6, question: "Meaning of ICT?", options: { A:"Information and Communication Technology", B:"Interconnected Computer Tools", C:"Internet Communication Transfer", D:"Interpersonal Communication Techniques" }, answer: "A", classes: ["SS3"] },
-  { id: 7, question: "Raw facts are called?", options: { A:"Data", B:"Information", C:"Knowledge", D:"Files" }, answer: "A", classes: ["SS3"] },
-  { id: 8, question: "Which is NOT an output device?", options: { A:"Printer", B:"Monitor", C:"Scanner", D:"Speaker" }, answer: "C", classes: ["SS3"] },
-  { id: 9, question: "Which memory stores data permanently?", options: { A:"RAM", B:"ROM", C:"Cache", D:"Buffer" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "The full meaning of UPS is?", options: { A:"Universal Power System", B:"Uninterruptible Power Supply", C:"Unit Power Source", D:"Unlimited Power System" }, answer: "B", classes: ["SS3"] },
-  
-];
-
-/* Mathematics */
-const Mathematics = [
-  { id: 1, question: "Mathematics is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
-  
-];
-
-/* English Language */
-const EnglishLanguage = [
-  { id: 1, question: "EnglishLanguages the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
-  
-];
-
-/* Biology */
-const Biology = [
-  { id: 1, question: "Biology is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
-  
-];
-
-/* Physics */
-const Physics = [
-  { id: 1, question: "Physics is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
-  
-];
-
-/* Geography */
-const Geography = [
-  { id: 1, question: "Geography is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
-  
-];
-
-/* Economics */
-const Economics = [
-  { id: 1, question: "Economics is the smallest particle of an element?", options: { A:"Atom", B:"Molecule", C:"Ion", D:"Proton" }, answer: "A", classes: ["SS3"] },
-  { id: 2, question: "Which of these is NOT a state of matter?", options: { A:"Solid", B:"Liquid", C:"Gas", D:"Foam" }, answer: "D", classes: ["SS3"] },
-  { id: 3, question: "Which particle has a positive charge?", options: { A:"Electron", B:"Neutron", C:"Proton", D:"Ion" }, answer: "C", classes: ["SS3"] },
-  { id: 4, question: "Instrument used to measure temperature?", options: { A:"Thermometer", B:"Barometer", C:"Ammeter", D:"Hygrometer" }, answer: "A", classes: ["SS3"] },
-  { id: 5, question: "Method used to separate salt from water?", options: { A:"Filtration", B:"Crystallization", C:"Sublimation", D:"Evaporation" }, answer: "D", classes: ["SS3"] },
-  { id: 6, question: "The chemical symbol 'O' represents?", options: { A:"Gold", B:"Oxygen", C:"Osmium", D:"Oxide" }, answer: "B", classes: ["SS3"] },
-  { id: 7, question: "Gas used by plants during photosynthesis?", options: { A:"Oxygen", B:"Nitrogen", C:"Carbon dioxide", D:"Hydrogen" }, answer: "C", classes: ["SS3"] },
-  { id: 8, question: "Which is a noble gas?", options: { A:"Helium", B:"Carbon", C:"Chlorine", D:"Nitrogen" }, answer: "A", classes: ["SS3"] },
-  { id: 9, question: "The number of protons in an atom is the _____.", options: { A:"Mass number", B:"Atomic number", C:"Valency", D:"Charge" }, answer: "B", classes: ["SS3"] },
-  { id: 10, question: "Change from solid to gas is called?", options: { A:"Condensation", B:"Evaporation", C:"Melting", D:"Sublimation" }, answer: "D", classes: ["SS3"] },
- 
-];
-
-/* All subjects database (lookup) */
-const subjectsDatabase = { Chemistry, Computer, DataProcessing, Mathematics, EnglishLanguage, Biology, Physics, Geography, Economics };
+};
