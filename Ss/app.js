@@ -12,18 +12,18 @@
 
 /* CONFIG */
 const SUBJECT_TIMERS = {
-  Mathematics: 15 * 60,
-  Chemistry: 12 * 60,
-  Biology: 10 * 60,
-  Physics: 12 * 60,
-  "English": 10 * 60,
-  "English Language": 10 * 60 // support alternative label
+  Mathematics: 30 * 60,
+  Physics: 20 * 60,
+  Chemistry: 20 * 60,
+  Biology: 15 * 60,
+  "English": 15 * 60,
+  "English Language": 15 * 60 // support alternative label
 };
-const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","English","English Language"];
-const DEFAULT_TIMEMIN = 7 * 60;
+const MAIN_SUBJECT_NAMES = ["Mathematics","Physics","Chemistry","Biology","English","English Language"];
+const DEFAULT_TIMEMIN = 10 * 60;
 const SUBJECT_DISPLAY_COUNT = (subject) => {
   if (MAIN_SUBJECT_NAMES.includes(subject)) return 30;
-  return 20;
+  return 25;
 };
 
 /* Helpers */
@@ -31,7 +31,7 @@ function getQuestionsFor(classKey, subject) {
   const map = {
     ss1: window.questionsSS1 || {},
     ss2: window.questionsSS2 || {},
-    ss3: window.questionsSS3 || {}
+    SS: window.questionsSS3 || {}
   };
   const list = map[classKey] || {};
   // try both exact and trimmed names
@@ -41,7 +41,7 @@ function getStudentsFor(classKey) {
   return {
     ss1: window.studentsSS1 || [],
     ss2: window.studentsSS2 || [],
-    ss3: window.studentsSS3 || []
+    SS: window.studentsSS3 || []
   }[classKey] || [];
 }
 function findStudent(classKey, examNum) {
@@ -89,7 +89,7 @@ populateSubjects();
 /* Start exam flow */
 let state = {
   student: null,
-  classKey: "ss1",
+  classKey: "CBT",
   subject: null,
   questions: [],
   answers: {},
@@ -256,7 +256,7 @@ function renderRanking(classKey, subject){
       <td>${s.percent}%</td>
     </tr>
   `).join("");
-  S.ranking.innerHTML = scores.length ? `<table><thead><tr><th>#</th><th>Students</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : "<p class='muted'>No scores yet for this class & subject.</p>";
+  S.ranking.innerHTML = scores.length ? `<table><thead><tr><th>#</th><th>Name</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : "<p class='muted'>No scores yet for this class & subject.</p>";
 }
 
 /* download as printable (user can Save as PDF) */
@@ -309,15 +309,15 @@ S.anotherBtn.addEventListener("click", ()=>{
   S.startScreen.classList.remove("hidden");
   S.messages.textContent = "";
   S.studentDetails.classList.add("hidden");
-  state = { student: null, classKey: "ss1", subject: null, questions: [], answers: {}, currentIndex: 0, timer: null, timeLeft: 0 };
+  state = { student: null, classKey: "ss3", subject: null, questions: [], answers: {}, currentIndex: 0, timer: null, timeLeft: 0 };
 });
 
 /* clear all scores button */
-/*S.clearScoresBtn.addEventListener("click", ()=>{
+S.clearScoresBtn.addEventListener("click", ()=>{
   if(!confirm("Clear all saved scores from localStorage? This cannot be undone.")) return;
   localStorage.removeItem(STORAGE_KEY);
   showMessage("All scores cleared.", false);
-});*/
+});
 
 /* Start button logic */
 S.startBtn.addEventListener("click", ()=>{
@@ -325,7 +325,7 @@ S.startBtn.addEventListener("click", ()=>{
   const classKey = S.classSelect.value;
   const subject = S.subjectSelect.value;
   if(!examNum){
-    showMessage("Please enter examination number.", true);
+    showMessage("Please enter your User ID.", true);
     return;
   }
   if(!subject){
@@ -335,7 +335,7 @@ S.startBtn.addEventListener("click", ()=>{
   // find student
   const student = findStudent(classKey, examNum);
   if(!student){
-    showMessage("Student not found. Check exam number and class.", true);
+    showMessage("User ID not found. Please Get a User ID from Sir Bright.", true);
     displayStudentDetails(null);
     return;
   }

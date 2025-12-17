@@ -105,7 +105,7 @@ window.questionsSS3 = {
 
 
 
-  //English language
+  //English
   "English Language": [
   { id:"e1", text:"Choose the option that best completes the sentence: She _____ to school every day.", img:null, options:["go","goes","going","gone"], answer:1 },
 

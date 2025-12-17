@@ -12,15 +12,15 @@
 
 /* CONFIG */
 const SUBJECT_TIMERS = {
-  Mathematics: 15 * 60,
-  Chemistry: 10 * 60,
-  Biology: 10 * 60,
-  Physics: 10 * 60,
-  "English": 10 * 60,
-  "English Language": 10 * 60 // support alternative label
+  Mathematics: 30 * 60,
+  Physics: 20 * 60,
+  Chemistry: 20 * 60,
+  Biology: 15 * 60,
+  "English": 15 * 60,
+  "English Language": 15 * 60 // support alternative label
 };
-const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","English","English Language"];
-const DEFAULT_TIMEMIN = 5 * 60;
+const MAIN_SUBJECT_NAMES = ["Mathematics","Physics","Chemistry","Biology","English","English Language"];
+const DEFAULT_TIMEMIN = 10 * 60;
 const SUBJECT_DISPLAY_COUNT = (subject) => {
   if (MAIN_SUBJECT_NAMES.includes(subject)) return 30;
   return 20;
@@ -256,7 +256,7 @@ function renderRanking(classKey, subject){
       <td>${s.percent}%</td>
     </tr>
   `).join("");
-  S.ranking.innerHTML = scores.length ? `<table><thead><tr><th>#</th><th>Student</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : "<p class='muted'>No scores yet for this class & subject.</p>";
+  S.ranking.innerHTML = scores.length ? `<table><thead><tr><th>#</th><th>Name</th><th>Score</th><th>%</th></tr></thead><tbody>${rows}</tbody></table>` : "<p class='muted'>No scores yet for this class & subject.</p>";
 }
 
 /* download as printable (user can Save as PDF) */

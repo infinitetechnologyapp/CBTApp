@@ -211,7 +211,7 @@ window.questionsSS3 = {
 
 
   //Physics
-  Physics: [
+  "Civic Education": [
   { id:"p1", text:"What is the SI unit of force?", img:null, options:["Joule","Newton","Watt","Pascal"], answer:1 },
 
   { id:"p2", text:"Calculate the speed of a car that travels 200 m in 10 s.", img:null, options:["10 m/s","15 m/s","20 m/s","25 m/s"], answer:2 },
@@ -313,7 +313,7 @@ window.questionsSS3 = {
 
 
   //Chemistry
-  Chemistry: [
+  "Basic Science": [
   { id:"c1", text:"How many moles are present in 22 g of CO₂? (C=12, O=16)", img:null, options:["0.25 mol","0.5 mol","1.0 mol","2.0 mol"], answer:1 },
 
   { id:"c2", text:"Which of the following is a physical change?", img:null, options:["Burning of wood","Rusting of iron","Melting of ice","Cooking of food"], answer:2 },
@@ -417,7 +417,7 @@ window.questionsSS3 = {
 
 
   //Biology
-  Biology: [
+  "Computer Studies": [
   { id:"b1", text:"Which of the following is the basic unit of life?", img:null, options:["Tissue","Cell","Organ","System"], answer:1 },
 
   { id:"b2", text:"Which cell organelle controls the activities of the cell?", img:null, options:["Mitochondrion","Ribosome","Nucleus","Golgi body"], answer:2 },

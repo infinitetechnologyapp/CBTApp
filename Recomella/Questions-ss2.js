@@ -43,7 +43,7 @@ window.questionsSS2 = {
 
 
   //English Language
-  English: [
+  "English Language": [
     { id: "e1", text: "Choose the antonym of 'ancient'.", img: null, options: ["Old","Modern","Historic","Antique"], answer: 1 },
   { id: "e2", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
     { id: "e3", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
@@ -183,7 +183,7 @@ window.questionsSS2 = {
 
 
   //Civic Education
-  CivicEducation: [
+  "Civic Education": [
     { id: "cv1", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
 { id: "cv2", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
 { id: "cv3", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
@@ -233,7 +233,7 @@ window.questionsSS2 = {
 
 
   //Computer Science
-  ComputerScience: [
+  "Computer Science": [
 { id: "co1", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
 { id: "co2", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
 { id: "co3", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
@@ -258,7 +258,7 @@ window.questionsSS2 = {
 
 
   //Data Processing
-  DataProcessing: [
+  "Data Processing": [
 { id: "dp1", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
 { id: "dp2", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
 { id: "dp3", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
