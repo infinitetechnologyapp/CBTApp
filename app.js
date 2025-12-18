@@ -23,7 +23,7 @@ const MAIN_SUBJECT_NAMES = ["Mathematics","Physics","Chemistry","Biology","Engli
 const DEFAULT_TIMEMIN = 10 * 60;
 const SUBJECT_DISPLAY_COUNT = (subject) => {
   if (MAIN_SUBJECT_NAMES.includes(subject)) return 30;
-  return 20;
+  return 25;
 };
 
 /* Helpers */

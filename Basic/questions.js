@@ -1,522 +1,413 @@
 window.questionsSS3 = {
 
-    //Mathematics
-  Mathematics: [
-  { id:"m1", text:"Solve for x: 2x² − 7x − 4 = 0", img:null, options:["x = 4 or −1/2","x = −4 or 1/2","x = 2 or −1","x = −2 or 1"], answer:0 },
-
-  { id:"m2", text:"If f(x) = 3x − 5, find f(4)", img:null, options:["7","12","−7","17"], answer:0 },
-
-  { id:"m3", text:"Evaluate: (81)^(3/4)", img:null, options:["9","12","27","81"], answer:1 },
-
-  { id:"m4", text:"Find the value of x if log₁₀(x) = 2.5", img:null, options:["250","316","3162","1000"], answer:1 },
-
-  { id:"m5", text:"Simplify: (2x³y²)(3x²y)", img:null, options:["6x⁵y³","5x⁵y²","6x⁶y³","6x⁵y²"], answer:0 },
-
-  { id:"m6", text:"If sin θ = 3/5, find cos θ", img:null, options:["4/5","5/3","3/4","5/4"], answer:0 },
-
-  { id:"m7", text:"Solve the inequality: 5x − 3 ≤ 12", img:null, options:["x ≤ 3","x ≥ 3","x ≤ 15","x ≥ 15"], answer:0 },
-
-  { id:"m8", text:"Find the nth term of the sequence: 2, 5, 8, 11, ...", img:null, options:["3n − 1","3n + 1","n + 3","2n + 1"], answer:0 },
-
-  { id:"m9", text:"Find the sum of the first 20 terms of the arithmetic progression 3, 7, 11, ...", img:null, options:["860","820","840","880"], answer:2 },
-
-  { id:"m10", text:"Solve: √(x + 4) = 6", img:null, options:["32","36","40","20"], answer:0 },
-
-  { id:"m11", text:"Find the distance between A(−2,3) and B(4,3)", img:null, options:["6","8","10","12"], answer:0 },
-
-  { id:"m12", text:"If y varies inversely as x and y = 6 when x = 4, find y when x = 12", img:null, options:["2","3","4","6"], answer:0 },
-
-  { id:"m13", text:"Simplify: (4x⁻²y³) / (2x⁻¹y)", img:null, options:["2x⁻¹y²","2xy²","x⁻¹y²","2x⁻³y²"], answer:0 },
-
-  { id:"m14", text:"Find the angle between the hands of a clock at 3:00", img:null, options:["90°","60°","45°","30°"], answer:0 },
-
-  { id:"m15", text:"If tan θ = 5/12, find sin θ", img:null, options:["5/13","12/13","13/5","12/5"], answer:0 },
-
-  { id:"m16", text:"Factorize: x² − 5x − 14", img:null, options:["(x − 7)(x + 2)","(x − 2)(x + 7)","(x + 7)(x + 2)","(x − 7)(x − 2)"], answer:0 },
-
-  { id:"m17", text:"Find the variance of: 2, 4, 6", img:null, options:["8/3","4","2","16/3"], answer:2 },
-
-  { id:"m18", text:"If the radius of a sphere is doubled, its volume increases by a factor of", img:null, options:["2","4","6","8"], answer:3 },
-
-  { id:"m19", text:"Solve: log₂(x) + log₂(4) = 5", img:null, options:["8","16","32","64"], answer:1 },
-
-  { id:"m20", text:"Find the area of a sector of a circle with radius 14cm and angle 90° (π = 22/7)", img:null, options:["154cm²","77cm²","308cm²","616cm²"], answer:1 },
-
-  { id:"m21", text:"Evaluate: 3² + 4² − 5²", img:null, options:["0","5","10","14"], answer:0 },
-
-  { id:"m22", text:"If a matrix A = [2  3; 1  4], find det(A)", img:null, options:["5","7","8","10"], answer:0 },
-
-  { id:"m23", text:"Solve: 2^(x+1) = 16", img:null, options:["2","3","4","5"], answer:1 },
-
-  { id:"m24", text:"Find the midpoint of the line joining (2,4) and (6,8)", img:null, options:["(4,6)","(3,5)","(5,7)","(6,4)"], answer:0 },
-
-  { id:"m25", text:"Simplify: (a³b⁻²)²", img:null, options:["a⁶b⁻⁴","a⁵b⁻²","a⁶b⁴","a³b⁻⁴"], answer:0 },
-
-  { id:"m26", text:"If the probability of rain is 0.35, what is the probability that it will not rain?", img:null, options:["0.35","0.55","0.65","0.75"], answer:2 },
-
-  { id:"m27", text:"Find the equation of a line with gradient 2 passing through (1,3)", img:null, options:["y − 3 = 2(x − 1)","y + 3 = 2(x + 1)","y = 2x − 1","y = 2x + 1"], answer:0 },
-
-  { id:"m28", text:"Evaluate: cos 60° + sin 30°", img:null, options:["1","1/2","√3","0"], answer:0 },
-
-  { id:"m29", text:"Find the sum of interior angles of a pentagon", img:null, options:["360°","540°","720°","900°"], answer:1 },
-
-  { id:"m30", text:"Solve: 4x² = 100", img:null, options:["x = ±5","x = 25","x = ±10","x = 20"], answer:0 },
-
-  { id:"m31", text:"Convert 0.00045 to standard form", img:null, options:["4.5 × 10⁻⁴","4.5 × 10⁻⁵","45 × 10⁻⁴","0.45 × 10⁻³"], answer:1 },
-
-  { id:"m32", text:"If the mean of 5 numbers is 8, find their total", img:null, options:["35","40","45","50"], answer:1 },
-
-  { id:"m33", text:"Find the value of x: |2x − 3| = 7", img:null, options:["x = 5 or −2","x = 2 or −5","x = 3 or −2","x = 4 or −1"], answer:0 },
-
-  { id:"m34", text:"Evaluate: tan 45° × sin 30°", img:null, options:["1/2","1","√3","0"], answer:0 },
-
-  { id:"m35", text:"Find the HCF of 72 and 120", img:null, options:["12","18","24","36"], answer:2 },
-
-  { id:"m36", text:"Simplify: (5x − 3)²", img:null, options:["25x² − 30x + 9","25x² + 30x − 9","10x² − 9","5x² − 3"], answer:0 },
-
-  { id:"m37", text:"If a triangle has sides 5cm, 12cm, and 13cm, it is", img:null, options:["Equilateral","Isosceles","Right-angled","Obtuse"], answer:2 },
-
-  { id:"m38", text:"Find the value of x if 3^(x−1) = 27", img:null, options:["2","3","4","5"], answer:1 },
-
-  { id:"m39", text:"The gradient of a horizontal line is", img:null, options:["0","1","Undefined","Infinity"], answer:0 },
-
-  { id:"m40", text:"Find the simple interest on ₦5000 at 8% per annum for 3 years", img:null, options:["₦1200","₦1000","₦800","₦1500"], answer:0 },
-
-  { id:"m41", text:"Solve: (x − 2)(x + 5) = 0", img:null, options:["x = 2 or −5","x = −2 or 5","x = 3 or −5","x = −3 or 5"], answer:0 },
-
-  { id:"m42", text:"If the diameter of a circle is 28cm, find its circumference (π = 22/7)", img:null, options:["88cm","176cm","44cm","154cm"], answer:0 },
-
-  { id:"m43", text:"Find the probability of picking a vowel from the word MATHEMATICS", img:null, options:["4/11","5/11","6/11","7/11"], answer:1 },
-
-  { id:"m44", text:"Simplify: (x² − y²)/(x − y)", img:null, options:["x + y","x − y","x² + y²","xy"], answer:0 },
-
-  { id:"m45", text:"Find the value of x if 5^(x) = 125", img:null, options:["2","3","4","5"], answer:1 },
-
-  { id:"m46", text:"The sum of the first n odd numbers is", img:null, options:["n²","2n","n(n+1)","n³"], answer:0 },
-
-  { id:"m47", text:"Solve: 7 − 2x > 1", img:null, options:["x < 3","x > 3","x < −3","x > −3"], answer:0 },
-
-  { id:"m48", text:"Find the value of sin²30° + cos²30°", img:null, options:["0","1/2","1","2"], answer:2 },
-
-  { id:"m49", text:"Find the equation of the circle with centre (0,0) and radius 5", img:null, options:["x² + y² = 25","x² + y² = 5","x + y = 25","x² − y² = 25"], answer:0 },
-
-  { id:"m50", text:"If P(A) = 0.4 and P(B) = 0.3 and A and B are mutually exclusive, find P(A ∪ B)", img:null, options:["0.7","0.12","0.5","1.0"], answer:0 }
-],
-
-
-
-  //English language
-  "English Language": [
-  { id:"e1", text:"Choose the option that best completes the sentence: She _____ to school every day.", img:null, options:["go","goes","going","gone"], answer:1 },
-
-  { id:"e2", text:"Select the correct plural form of 'child'.", img:null, options:["childs","children","childrens","childes"], answer:1 },
-
-  { id:"e3", text:"Choose the word that is opposite in meaning to 'scarce'.", img:null, options:["rare","few","plenty","small"], answer:2 },
-
-  { id:"e4", text:"He did not attend the meeting _____ he was ill.", img:null, options:["although","because","unless","but"], answer:1 },
-
-  { id:"e5", text:"Choose the correct spelling.", img:null, options:["accomodation","acommodation","accommodation","acomodation"], answer:2 },
-
-  { id:"e6", text:"Identify the part of speech of the underlined word: She speaks *fluently*.", img:null, options:["Adjective","Noun","Adverb","Verb"], answer:2 },
-
-  { id:"e7", text:"Choose the option that best replaces the underlined words: He was *very angry*.", img:null, options:["furious","happy","calm","pleased"], answer:0 },
-
-  { id:"e8", text:"The teacher, as well as the students, _____ present.", img:null, options:["are","were","is","have"], answer:2 },
-
-  { id:"e9", text:"Choose the correct tense: By this time tomorrow, I _____ the work.", img:null, options:["finish","will finish","will have finished","finished"], answer:2 },
-
-  { id:"e10", text:"Select the word that does NOT belong to the group.", img:null, options:["run","walk","jump","beauty"], answer:3 },
-
-  { id:"e11", text:"Choose the correct option: Neither Musa nor his friends _____ here.", img:null, options:["is","was","are","has"], answer:2 },
-
-  { id:"e12", text:"What figure of speech is used in: 'The wind whispered softly'?", img:null, options:["Metaphor","Simile","Personification","Hyperbole"], answer:2 },
-
-  { id:"e13", text:"Choose the correct pronunciation description of the underlined vowel in 'beat'.", img:null, options:["/ɪ/","/iː/","/e/","/aɪ/"], answer:1 },
-
-  { id:"e14", text:"Identify the type of sentence: 'Please close the door.'", img:null, options:["Declarative","Interrogative","Imperative","Exclamatory"], answer:2 },
-
-  { id:"e15", text:"Choose the correct option: He is good _____ mathematics.", img:null, options:["in","at","on","with"], answer:1 },
-
-  { id:"e16", text:"Select the word nearest in meaning to 'rapid'.", img:null, options:["slow","quick","late","weak"], answer:1 },
-
-  { id:"e17", text:"Choose the correct option: The news _____ shocking.", img:null, options:["are","were","have","is"], answer:3 },
-
-  { id:"e18", text:"Which of the following is a collective noun?", img:null, options:["team","student","book","pen"], answer:0 },
-
-  { id:"e19", text:"Choose the correct option: If I _____ rich, I would help the poor.", img:null, options:["am","was","were","will be"], answer:2 },
-
-  { id:"e20", text:"Identify the stressed syllable in the word 'important'.", img:null, options:["im","por","tant","port"], answer:1 },
-
-  { id:"e21", text:"Choose the option that best completes the sentence: He arrived _____ than expected.", img:null, options:["early","earlier","earliest","more early"], answer:1 },
-
-  { id:"e22", text:"Select the correct passive form: They repaired the road.", img:null, options:["The road is repaired","The road was repaired","The road has repaired","The road is being repair"], answer:1 },
-
-  { id:"e23", text:"Choose the correct option: She has lived here _____ 2018.", img:null, options:["since","for","during","from"], answer:0 },
-
-  { id:"e24", text:"Identify the type of clause in: 'because he was late'.", img:null, options:["Noun clause","Adjective clause","Adverbial clause","Main clause"], answer:2 },
-
-  { id:"e25", text:"Choose the word opposite in meaning to 'victory'.", img:null, options:["win","success","defeat","achievement"], answer:2 },
-
-  { id:"e26", text:"Select the correct option: The boy blamed _____ for the mistake.", img:null, options:["himself","him","his","he"], answer:0 },
-
-  { id:"e27", text:"Choose the correct option: Hardly had we arrived _____ it started raining.", img:null, options:["than","when","that","while"], answer:1 },
-
-  { id:"e28", text:"Which sound is represented by /θ/ as in 'think'?", img:null, options:["Voiced dental fricative","Voiceless dental fricative","Voiced bilabial plosive","Voiceless alveolar fricative"], answer:1 },
-
-  { id:"e29", text:"Choose the option that best completes the sentence: He speaks _____ than his brother.", img:null, options:["more fluent","most fluent","fluently","more fluently"], answer:3 },
-
-  { id:"e30", text:"Identify the error in the sentence: 'She did not knew the answer.'", img:null, options:["did","not","knew","answer"], answer:2 },
-
-  { id:"e31", text:"Choose the correct option: The principal and secretary _____ arrived.", img:null, options:["has","is","have","was"], answer:2 },
-
-  { id:"e32", text:"Select the word nearest in meaning to 'assist'.", img:null, options:["help","stop","refuse","delay"], answer:0 },
-
-  { id:"e33", text:"Choose the correct option: This is the man _____ car was stolen.", img:null, options:["who","which","whose","whom"], answer:2 },
-
-  { id:"e34", text:"Which of the following is a diphthong?", img:null, options:["/e/","/iː/","/aɪ/","/uː/"], answer:2 },
-
-  { id:"e35", text:"Choose the correct option: She prefers tea _____ coffee.", img:null, options:["than","to","with","over"], answer:1 },
-
-  { id:"e36", text:"Identify the literary device used in: 'As brave as a lion'.", img:null, options:["Metaphor","Simile","Irony","Alliteration"], answer:1 },
-
-  { id:"e37", text:"Choose the correct option: The jury _____ divided in their opinion.", img:null, options:["is","are","was","has"], answer:0 },
-
-  { id:"e38", text:"Select the correct option: I look forward to _____ from you.", img:null, options:["hear","hearing","heard","have heard"], answer:1 },
-
-  { id:"e39", text:"Choose the option that best completes the sentence: He was accused _____ stealing.", img:null, options:["for","with","of","about"], answer:2 },
-
-  { id:"e40", text:"Which of the following is an abstract noun?", img:null, options:["Chair","Honesty","Book","Apple"], answer:1 },
-
-  { id:"e41", text:"Choose the correct option: No sooner had the bell rung _____ the students rushed out.", img:null, options:["when","than","that","while"], answer:1 },
-
-  { id:"e42", text:"Select the word opposite in meaning to 'expand'.", img:null, options:["increase","extend","contract","grow"], answer:2 },
-
-  { id:"e43", text:"Choose the correct option: He behaves _____ than before.", img:null, options:["good","better","best","well"], answer:1 },
-
-  { id:"e44", text:"Identify the sentence type: 'What a beautiful day!'", img:null, options:["Declarative","Imperative","Interrogative","Exclamatory"], answer:3 },
-
-  { id:"e45", text:"Choose the correct option: She ran _____ fast that she won the race.", img:null, options:["very","too","so","quite"], answer:2 },
-
-  { id:"e46", text:"Select the correct option: The book was written _____ Chinua Achebe.", img:null, options:["from","by","with","of"], answer:1 },
-
-  { id:"e47", text:"Choose the correct option: The teacher advised us _____ late.", img:null, options:["not to be","to not be","not being","to be not"], answer:0 },
-
-  { id:"e48", text:"Which of the following is a countable noun?", img:null, options:["Rice","Water","Information","Book"], answer:3 },
-
-  { id:"e49", text:"Choose the correct option: He succeeded _____ hard work.", img:null, options:["by","through","with","in"], answer:1 },
-
-  { id:"e50", text:"Identify the figure of speech in: 'The classroom was a zoo.'", img:null, options:["Simile","Personification","Metaphor","Hyperbole"], answer:2 }
-],
-
-
-
-  //Civic education
-  "Civic Education": [
-  { id:"p1", text:"What is the SI unit of force?", img:null, options:["Joule","Newton","Watt","Pascal"], answer:1 },
-
-  { id:"p2", text:"Calculate the speed of a car that travels 200 m in 10 s.", img:null, options:["10 m/s","15 m/s","20 m/s","25 m/s"], answer:2 },
-
-  { id:"p3", text:"Which of the following is a scalar quantity?", img:null, options:["Velocity","Force","Displacement","Speed"], answer:3 },
-
-  { id:"p4", text:"Calculate the acceleration of a body whose velocity changes from 5 m/s to 25 m/s in 10 s.", img:null, options:["1 m/s²","2 m/s²","3 m/s²","4 m/s²"], answer:1 },
-
-  { id:"p5", text:"What is the SI unit of work?", img:null, options:["Newton","Watt","Joule","Pascal"], answer:2 },
-
-  { id:"p6", text:"A body of mass 2 kg moves with a velocity of 4 m/s. Calculate its momentum.", img:null, options:["6 kgm/s","8 kgm/s","10 kgm/s","12 kgm/s"], answer:1 },
-
-  { id:"p7", text:"Which law states that action and reaction are equal and opposite?", img:null, options:["Newton’s first law","Newton’s second law","Newton’s third law","Law of gravitation"], answer:2 },
-
-  { id:"p8", text:"Calculate the kinetic energy of a body of mass 4 kg moving at 5 m/s.", img:null, options:["25 J","50 J","100 J","125 J"], answer:1 },
-
-  { id:"p9", text:"What is the acceleration due to gravity on Earth?", img:null, options:["9.8 m/s²","10 m/s²","8.9 m/s²","9.0 m/s²"], answer:0 },
-
-  { id:"p10", text:"Which of the following is NOT a form of energy?", img:null, options:["Heat","Sound","Force","Light"], answer:2 },
-
-  { id:"p11", text:"Calculate the work done when a force of 10 N moves an object through 5 m.", img:null, options:["15 J","25 J","50 J","100 J"], answer:2 },
-
-  { id:"p12", text:"Which of the following devices converts electrical energy to mechanical energy?", img:null, options:["Generator","Electric motor","Transformer","Cell"], answer:1 },
-
-  { id:"p13", text:"A stone is dropped from rest. What is its velocity after 2 s? (g = 10 m/s²)", img:null, options:["10 m/s","15 m/s","20 m/s","25 m/s"], answer:2 },
-
-  { id:"p14", text:"Which quantity is measured in watts?", img:null, options:["Energy","Power","Force","Pressure"], answer:1 },
-
-  { id:"p15", text:"Calculate the pressure exerted by a force of 200 N on an area of 4 m².", img:null, options:["50 Pa","100 Pa","200 Pa","800 Pa"], answer:0 },
-
-  { id:"p16", text:"Which of the following is an example of renewable energy?", img:null, options:["Coal","Petrol","Solar","Diesel"], answer:2 },
-
-  { id:"p17", text:"What is the unit of electric current?", img:null, options:["Volt","Ohm","Ampere","Watt"], answer:2 },
-
-  { id:"p18", text:"Calculate the resistance of a conductor if a voltage of 12 V produces a current of 3 A.", img:null, options:["2 Ω","3 Ω","4 Ω","6 Ω"], answer:2 },
-
-  { id:"p19", text:"Which instrument is used to measure electric current?", img:null, options:["Voltmeter","Ammeter","Galvanometer","Thermometer"], answer:1 },
-
-  { id:"p20", text:"Calculate the electrical power used by a device operating at 240 V and 5 A.", img:null, options:["480 W","960 W","1200 W","2400 W"], answer:2 },
-
-  { id:"p21", text:"Which colour of light has the highest frequency?", img:null, options:["Red","Yellow","Green","Violet"], answer:3 },
-
-  { id:"p22", text:"What happens to the frequency of light when it moves from air to glass?", img:null, options:["Increases","Decreases","Remains constant","Becomes zero"], answer:2 },
-
-  { id:"p23", text:"Calculate the wavelength of a wave with frequency 50 Hz and speed 100 m/s.", img:null, options:["0.5 m","1 m","2 m","5 m"], answer:2 },
-
-  { id:"p24", text:"Which phenomenon explains the bending of light at the boundary of two media?", img:null, options:["Reflection","Diffraction","Refraction","Dispersion"], answer:2 },
-
-  { id:"p25", text:"What is the unit of frequency?", img:null, options:["Second","Metre","Hertz","Joule"], answer:2 },
-
-  { id:"p26", text:"Calculate the density of a substance of mass 600 kg and volume 3 m³.", img:null, options:["100 kg/m³","150 kg/m³","200 kg/m³","300 kg/m³"], answer:3 },
-
-  { id:"p27", text:"Which of the following materials is a good conductor of electricity?", img:null, options:["Plastic","Rubber","Copper","Glass"], answer:2 },
-
-  { id:"p28", text:"What type of lens is used to correct short-sightedness?", img:null, options:["Convex lens","Concave lens","Cylindrical lens","Plano lens"], answer:1 },
-
-  { id:"p29", text:"Calculate the heat energy required to raise the temperature of 2 kg of water by 5°C. (c = 4200 J/kg°C)", img:null, options:["21000 J","42000 J","84000 J","100000 J"], answer:2 },
-
-  { id:"p30", text:"Which of the following is NOT a wave property?", img:null, options:["Reflection","Refraction","Diffusion","Diffraction"], answer:2 },
-
-  { id:"p31", text:"What is the boiling point of water at standard atmospheric pressure?", img:null, options:["0°C","50°C","100°C","150°C"], answer:2 },
-
-  { id:"p32", text:"Calculate the time taken for a body moving at 20 m/s to cover a distance of 400 m.", img:null, options:["10 s","15 s","20 s","25 s"], answer:2 },
-
-  { id:"p33", text:"Which of the following quantities is conserved in an elastic collision?", img:null, options:["Velocity","Acceleration","Momentum","Force"], answer:2 },
-
-  { id:"p34", text:"What is the unit of electric charge?", img:null, options:["Ampere","Volt","Coulomb","Ohm"], answer:2 },
-
-  { id:"p35", text:"Calculate the electric charge flowing in a circuit carrying 2 A for 5 s.", img:null, options:["5 C","7 C","10 C","20 C"], answer:2 },
-
-  { id:"p36", text:"Which device is used to step up or step down voltage?", img:null, options:["Generator","Motor","Transformer","Rectifier"], answer:2 },
-
-  { id:"p37", text:"Which of the following is an application of electromagnetic induction?", img:null, options:["Electric iron","Generator","Heater","Electric bell"], answer:1 },
-
-  { id:"p38", text:"Calculate the mechanical advantage of a machine with load 200 N and effort 50 N.", img:null, options:["2","3","4","5"], answer:2 },
-
-  { id:"p39", text:"Which mirror is used as a shaving mirror?", img:null, options:["Plane mirror","Convex mirror","Concave mirror","Parabolic mirror"], answer:2 },
-
-  { id:"p40", text:"What is the speed of light in vacuum?", img:null, options:["3 × 10⁶ m/s","3 × 10⁷ m/s","3 × 10⁸ m/s","3 × 10⁹ m/s"], answer:2 },
-
-  { id:"p41", text:"Which gas is commonly used in fluorescent lamps?", img:null, options:["Oxygen","Neon","Argon","Nitrogen"], answer:2 },
-
-  { id:"p42", text:"Calculate the focal length of a lens with power 2 dioptres.", img:null, options:["0.2 m","0.5 m","1 m","2 m"], answer:1 },
-
-  { id:"p43", text:"What happens to resistance of a metallic conductor when temperature increases?", img:null, options:["Decreases","Remains constant","Increases","Becomes zero"], answer:2 },
-
-  { id:"p44", text:"Which radiation has the highest penetrating power?", img:null, options:["Alpha","Beta","Gamma","X-ray"], answer:2 },
-
-  { id:"p45", text:"Calculate the weight of a body of mass 5 kg. (g = 10 m/s²)", img:null, options:["25 N","40 N","50 N","60 N"], answer:2 },
-
-  { id:"p46", text:"Which of the following is a transverse wave?", img:null, options:["Sound wave","Water wave","Radio wave","Compression wave"], answer:2 },
-
-  { id:"p47", text:"What is the unit of pressure?", img:null, options:["Newton","Joule","Pascal","Watt"], answer:2 },
-
-  { id:"p48", text:"Calculate the efficiency of a machine if output work is 80 J and input work is 100 J.", img:null, options:["20%","50%","80%","100%"], answer:2 },
+//Mathematics
+Mathematics: [
+  { id:"m1", text:"What is 456 + 789?", img:null, options:["1245","1235","1255","1225"], answer:0 },
+  { id:"m2", text:"Subtract 372 from 805.", img:null, options:["433","423","413","403"], answer:0 },
+  { id:"m3", text:"Multiply 24 by 16.", img:null, options:["384","394","374","364"], answer:0 },
+  { id:"m4", text:"Divide 144 by 12.", img:null, options:["12","11","10","13"], answer:0 },
+  { id:"m5", text:"Find the perimeter of a rectangle with length 12cm and width 7cm.", img:null, options:["38cm","36cm","40cm","34cm"], answer:0 },
+  { id:"m6", text:"A book costs 150 Naira. How much do 7 books cost?", img:null, options:["1050","950","1150","1000"], answer:0 },
+  { id:"m7", text:"Round 467 to the nearest ten.", img:null, options:["470","460","465","475"], answer:0 },
+  { id:"m8", text:"Write 0.75 as a fraction.", img:null, options:["3/4","1/4","2/3","1/2"], answer:0 },
+  { id:"m9", text:"Which is the largest: 3/5, 4/7, 2/3?", img:null, options:["2/3","3/5","4/7","All equal"], answer:0 },
+  { id:"m10", text:"Find the missing number: 15, 30, 45, ___, 75", img:null, options:["60","55","65","50"], answer:0 },
+  { id:"m11", text:"If 5 pens cost 250 Naira, how much does 1 pen cost?", img:null, options:["50","45","55","60"], answer:0 },
+  { id:"m12", text:"Convert 3 hours 45 minutes to minutes.", img:null, options:["225","230","215","240"], answer:0 },
+  { id:"m13", text:"Find the area of a square with side 9cm.", img:null, options:["81cm²","72cm²","90cm²","79cm²"], answer:0 },
+  { id:"m14", text:"What is 25% of 200?", img:null, options:["50","40","60","45"], answer:0 },
+  { id:"m15", text:"Simplify: 18 ÷ 3 + 4 × 2", img:null, options:["14","16","12","18"], answer:0 },
+  { id:"m16", text:"Find the next number in the sequence: 2, 4, 8, 16, ___", img:null, options:["32","24","30","28"], answer:0 },
+  { id:"m17", text:"A triangle has angles 50° and 60°. Find the third angle.", img:null, options:["70°","80°","90°","60°"], answer:0 },
+  { id:"m18", text:"Simplify: 7 + 3 × (10 − 6)", img:null, options:["19","20","18","21"], answer:0 },
+  { id:"m19", text:"If a = 5 and b = 3, find a² + b².", img:null, options:["34","35","32","33"], answer:0 },
+  { id:"m20", text:"Find the value of x: 3x = 27", img:null, options:["9","8","10","7"], answer:0 },
+  { id:"m21", text:"Convert 0.6 to a percentage.", img:null, options:["60%","6%","0.6%","6.0%"], answer:0 },
+  { id:"m22", text:"If a bag contains 4 red balls, 3 blue balls and 3 green balls, what is the probability of picking a red ball?", img:null, options:["2/5","1/2","3/10","1/3"], answer:0 },
+  { id:"m23", text:"Find the simple interest on 5000 Naira at 5% per annum for 2 years.", img:null, options:["500","600","550","650"], answer:0 },
+  { id:"m24", text:"Express 7/8 as a decimal.", img:null, options:["0.875","0.785","0.8750","0.857"], answer:0 },
+  { id:"m25", text:"A shop sold 120 chairs in a week. If each chair costs 2500 Naira, find the total sales.", img:null, options:["300000","250000","280000","310000"], answer:0 },
+  { id:"m26", text:"Find the median of the numbers: 3, 7, 5, 9, 11", img:null, options:["7","5","9","6"], answer:0 },
+  { id:"m27", text:"Find the mode of the numbers: 4, 6, 4, 7, 6, 4", img:null, options:["4","6","7","5"], answer:0 },
+  { id:"m28", text:"If 6 pencils cost 90 Naira, find the cost of 10 pencils.", img:null, options:["150","140","160","155"], answer:0 },
+  { id:"m29", text:"What is the sum of interior angles of a pentagon?", img:null, options:["540°","360°","720°","480°"], answer:0 },
+  { id:"m30", text:"Round 6789 to the nearest hundred.", img:null, options:["6800","6700","6750","6900"], answer:0 }
 ],
 
 
 
 
-  //Basic science
-  "Basic Science": [
-  { id:"c1", text:"How many moles are present in 22 g of CO₂? (C=12, O=16)", img:null, options:["0.25 mol","0.5 mol","1.0 mol","2.0 mol"], answer:1 },
-
-  { id:"c2", text:"Which of the following is a physical change?", img:null, options:["Burning of wood","Rusting of iron","Melting of ice","Cooking of food"], answer:2 },
-
-  { id:"c3", text:"Calculate the relative molecular mass of H₂SO₄.", img:null, options:["96","98","100","102"], answer:1 },
-
-  { id:"c4", text:"What volume will 2 moles of an ideal gas occupy at STP?", img:null, options:["11.2 dm³","22.4 dm³","44.8 dm³","56.0 dm³"], answer:2 },
-
-  { id:"c5", text:"Which particle has the least mass?", img:null, options:["Proton","Neutron","Electron","Ion"], answer:2 },
-
-  { id:"c6", text:"Calculate the number of moles in 9 g of water. (H=1, O=16)", img:null, options:["0.25","0.5","1.0","2.0"], answer:1 },
-
-  { id:"c7", text:"The atomic number of an element is the number of", img:null, options:["Neutrons","Electrons","Protons","Nucleons"], answer:2 },
-
-  { id:"c8", text:"Which gas is produced when calcium carbonate reacts with hydrochloric acid?", img:null, options:["Oxygen","Hydrogen","Carbon dioxide","Nitrogen"], answer:2 },
-
-  { id:"c9", text:"Calculate the mass of sodium hydroxide in 0.5 mol of NaOH. (Na=23, O=16, H=1)", img:null, options:["20 g","30 g","40 g","50 g"], answer:2 },
-
-  { id:"c10", text:"Which of the following is a noble gas?", img:null, options:["Nitrogen","Oxygen","Neon","Hydrogen"], answer:2 },
-
-  { id:"c11", text:"What is the pH of a neutral solution at 25°C?", img:null, options:["0","7","14","1"], answer:1 },
-
-  { id:"c12", text:"How many atoms are present in one molecule of methane (CH₄)?", img:null, options:["4","5","6","8"], answer:1 },
-
-  { id:"c13", text:"Calculate the molar mass of calcium carbonate (CaCO₃).", img:null, options:["90","95","100","104"], answer:2 },
-
-  { id:"c14", text:"Which method is used to separate crude oil into its fractions?", img:null, options:["Simple distillation","Fractional distillation","Crystallization","Filtration"], answer:1 },
-
-  { id:"c15", text:"Calculate the concentration (mol/dm³) of a solution containing 2 moles of NaCl in 1 dm³ of solution.", img:null, options:["0.5","1.0","2.0","4.0"], answer:2 },
-
-  { id:"c16", text:"Which of the following elements is a halogen?", img:null, options:["Sulphur","Chlorine","Nitrogen","Sodium"], answer:1 },
-
-  { id:"c17", text:"Calculate the number of moles in 44 g of CO₂.", img:null, options:["0.5","1.0","1.5","2.0"], answer:1 },
-
-  { id:"c18", text:"Which substance turns blue litmus red?", img:null, options:["Base","Salt","Acid","Alcohol"], answer:2 },
-
-  { id:"c19", text:"What is the empirical formula of a compound containing 40% carbon and 60% oxygen?", img:null, options:["CO","CO₂","C₂O","C₂O₃"], answer:0 },
-
-  { id:"c20", text:"Calculate the volume of oxygen produced when 2 moles of KClO₃ decompose completely at STP.", img:null, options:["22.4 dm³","33.6 dm³","44.8 dm³","67.2 dm³"], answer:2 },
-
-  { id:"c21", text:"Which of the following is an alkane?", img:null, options:["Ethene","Ethyne","Propane","Benzene"], answer:2 },
-
-  { id:"c22", text:"Calculate the mass of 0.25 mol of Na₂CO₃. (Na=23, C=12, O=16)", img:null, options:["26.5 g","53 g","66 g","106 g"], answer:0 },
-
-  { id:"c23", text:"Which gas is responsible for acid rain?", img:null, options:["Carbon monoxide","Sulphur dioxide","Hydrogen","Oxygen"], answer:1 },
-
-  { id:"c24", text:"What is the oxidation number of iron in Fe₂O₃?", img:null, options:["+2","+3","+4","+6"], answer:1 },
-
-  { id:"c25", text:"Calculate the number of moles in 11.2 dm³ of a gas at STP.", img:null, options:["0.25","0.5","1.0","2.0"], answer:1 },
-
-  { id:"c26", text:"Which of the following is an example of a mixture?", img:null, options:["Sodium chloride","Carbon dioxide","Air","Water"], answer:2 },
-
-  { id:"c27", text:"Calculate the relative molecular mass of NH₃.", img:null, options:["14","16","17","18"], answer:2 },
-
-  { id:"c28", text:"Which of the following metals is extracted by electrolysis?", img:null, options:["Iron","Copper","Aluminium","Zinc"], answer:2 },
-
-  { id:"c29", text:"Calculate the mass of chlorine needed to produce 1 mole of NaCl. (Cl=35.5)", img:null, options:["17.75 g","35.5 g","71 g","23 g"], answer:1 },
-
-  { id:"c30", text:"The reaction between an acid and a base is known as", img:null, options:["Oxidation","Reduction","Neutralization","Hydrolysis"], answer:2 },
-
-  { id:"c31", text:"Which indicator is colourless in acidic solution?", img:null, options:["Methyl orange","Phenolphthalein","Blue litmus","Universal indicator"], answer:1 },
-
-  { id:"c32", text:"Calculate the number of moles of HCl in 36.5 g of HCl.", img:null, options:["0.5","1.0","1.5","2.0"], answer:1 },
-
-  { id:"c33", text:"Which of the following is an electrolyte?", img:null, options:["Sugar solution","Ethanol","Sodium chloride solution","Distilled water"], answer:2 },
-
-  { id:"c34", text:"Calculate the mass of copper produced when 1 mole of Cu²⁺ ions is discharged during electrolysis. (Cu=64)", img:null, options:["32 g","48 g","64 g","128 g"], answer:2 },
-
-  { id:"c35", text:"Which of the following causes temporary hardness of water?", img:null, options:["Calcium sulphate","Calcium bicarbonate","Calcium chloride","Sodium chloride"], answer:1 },
-
-  { id:"c36", text:"Calculate the volume of hydrogen produced when 1 mole of zinc reacts completely with excess acid at STP.", img:null, options:["11.2 dm³","22.4 dm³","33.6 dm³","44.8 dm³"], answer:1 },
-
-  { id:"c37", text:"Which test is used to detect unsaturation in hydrocarbons?", img:null, options:["Limewater test","Bromine water test","Litmus test","Iodine test"], answer:1 },
-
-  { id:"c38", text:"Calculate the number of atoms in 1 mole of sodium.", img:null, options:["6.02 × 10²²","6.02 × 10²³","3.01 × 10²³","1.20 × 10²³"], answer:1 },
-
-  { id:"c39", text:"Which of the following is amphoteric?", img:null, options:["NaOH","HCl","Al₂O₃","CaO"], answer:2 },
-
-  { id:"c40", text:"Calculate the mass of 2 moles of oxygen gas (O₂).", img:null, options:["16 g","32 g","48 g","64 g"], answer:3 },
-
-  { id:"c41", text:"Which process is used to coat iron with zinc?", img:null, options:["Electroplating","Alloying","Galvanization","Tinning"], answer:2 },
-
-  { id:"c42", text:"Calculate the percentage by mass of oxygen in H₂O.", img:null, options:["88.9%","11.1%","50%","66.7%"], answer:0 },
-
-  { id:"c43", text:"Which gas is evolved at the cathode during electrolysis of acidified water?", img:null, options:["Oxygen","Chlorine","Hydrogen","Nitrogen"], answer:2 },
-
-  { id:"c44", text:"Calculate the number of moles in 5.6 dm³ of gas at STP.", img:null, options:["0.125","0.25","0.5","1.0"], answer:1 },
-
-  { id:"c45", text:"Which of the following is a transition metal?", img:null, options:["Sodium","Calcium","Iron","Potassium"], answer:2 },
-
-  { id:"c46", text:"Calculate the mass of carbon in 44 g of CO₂.", img:null, options:["6 g","12 g","16 g","22 g"], answer:1 },
-
-  { id:"c47", text:"Which of the following reactions is exothermic?", img:null, options:["Photosynthesis","Electrolysis","Combustion","Thermal decomposition"], answer:2 },
-
-  { id:"c48", text:"Calculate the oxidation number of sulphur in H₂SO₄.", img:null, options:["−2","+4","+6","+8"], answer:2 },
-
-  { id:"c49", text:"Which of the following substances is covalent?", img:null, options:["NaCl","MgO","H₂O","CaCl₂"], answer:2 },
-
-  { id:"c50", text:"Calculate the mass of 1 mole of ammonium sulphate, (NH₄)₂SO₄.", img:null, options:["114 g","128 g","132 g","136 g"], answer:1 }
+//English language
+English: [
+  { id:"e1", text:"Choose the correct plural form of 'child'.", img:null, options:["childs","children","childes","child"], answer:1 },
+  { id:"e2", text:"Fill in the blank: She _____ to school every day.", img:null, options:["go","goes","going","gone"], answer:1 },
+  { id:"e3", text:"Which of the following is a noun?", img:null, options:["run","beautiful","dog","quickly"], answer:2 },
+  { id:"e4", text:"Choose the correct past tense of 'eat'.", img:null, options:["eated","ate","eats","eaten"], answer:1 },
+  { id:"e5", text:"Identify the adjective: The tall boy is my friend.", img:null, options:["tall","boy","friend","is"], answer:0 },
+  { id:"e6", text:"Choose the correct sentence.", img:null, options:["He don't like apples.","He doesn't like apples.","He not like apples.","He no like apples."], answer:1 },
+  { id:"e7", text:"Fill in the blank: I have _____ a new book.", img:null, options:["buy","buys","bought","buying"], answer:2 },
+  { id:"e8", text:"Which word is an antonym of 'happy'?", img:null, options:["sad","joyful","glad","cheerful"], answer:0 },
+  { id:"e9", text:"Select the correct homophone: 'I can't _____ the door.'", img:null, options:["wait","weight","wate","waite"], answer:0 },
+  { id:"e10", text:"Identify the pronoun in the sentence: 'She gave him a gift.'", img:null, options:["She","gave","gift","a"], answer:0 },
+  { id:"e11", text:"Choose the correct conjunction: I like tea _____ I don't like coffee.", img:null, options:["but","and","so","or"], answer:0 },
+  { id:"e12", text:"Fill in the blank with the correct preposition: The cat is _____ the table.", img:null, options:["on","in","at","under"], answer:0 },
+  { id:"e13", text:"Which word is a verb?", img:null, options:["run","beautiful","happiness","quick"], answer:0 },
+  { id:"e14", text:"Choose the correct plural: fox", img:null, options:["foxs","foxes","foxe","focks"], answer:1 },
+  { id:"e15", text:"Pick the correct past tense: 'She ____ a letter yesterday.'", img:null, options:["writes","wrote","written","writing"], answer:1 },
+  { id:"e16", text:"Choose the correct spelling.", img:null, options:["accomodate","accommodate","acomodate","accomadate"], answer:1 },
+  { id:"e17", text:"Select the synonym of 'big'.", img:null, options:["large","small","tiny","short"], answer:0 },
+  { id:"e18", text:"Fill in the blank: I will call you _____ I arrive.", img:null, options:["when","if","but","or"], answer:0 },
+  { id:"e19", text:"Identify the adverb: She runs quickly.", img:null, options:["She","runs","quickly","none"], answer:2 },
+  { id:"e20", text:"Which is correct?", img:null, options:["Their going to the market.","They're going to the market.","There going to the market.","Thare going to the market."], answer:1 },
+  { id:"e21", text:"Choose the correct article: I saw _____ elephant.", img:null, options:["a","an","the","no article"], answer:1 },
+  { id:"e22", text:"Select the correct plural: knife", img:null, options:["knifes","knives","knifes","knievs"], answer:1 },
+  { id:"e23", text:"Fill in the blank: He is taller _____ his brother.", img:null, options:["than","then","that","when"], answer:0 },
+  { id:"e24", text:"Pick the correct possessive pronoun: This is _____ book.", img:null, options:["my","mine","me","I"], answer:1 },
+  { id:"e25", text:"Identify the preposition: The bird flew over the tree.", img:null, options:["flew","over","tree","the"], answer:1 },
+  { id:"e26", text:"Choose the correct tense: She ____ playing when I called.", img:null, options:["is","was","will","are"], answer:1 },
+  { id:"e27", text:"Select the correct word: 'He has no _____ to go.'", img:null, options:["were","where","wear","we're"], answer:1 },
+  { id:"e28", text:"Choose the correct antonym of 'hot'.", img:null, options:["cold","warm","boiling","heat"], answer:0 },
+  { id:"e29", text:"Fill in the blank: There are _____ apples on the table.", img:null, options:["much","many","more","most"], answer:1 },
+  { id:"e30", text:"Pick the correct question: _____ you like some tea?", img:null, options:["Do","Does","Did","Done"], answer:0 }
 ],
 
 
-  //Computer studies
-  "Computer Studies": [
-  { id:"b1", text:"Which of the following is the basic unit of life?", img:null, options:["Tissue","Cell","Organ","System"], answer:1 },
 
-  { id:"b2", text:"Which cell organelle controls the activities of the cell?", img:null, options:["Mitochondrion","Ribosome","Nucleus","Golgi body"], answer:2 },
 
-  { id:"b3", text:"What process is responsible for the movement of water across a semi-permeable membrane?", img:null, options:["Diffusion","Osmosis","Active transport","Translocation"], answer:1 },
-
-  { id:"b4", text:"Which of the following organisms is photosynthetic?", img:null, options:["Mushroom","Fern","Yeast","Tapeworm"], answer:1 },
-
-  { id:"b5", text:"What is the function of chlorophyll in plants?", img:null, options:["Respiration","Transpiration","Photosynthesis","Germination"], answer:2 },
-
-  { id:"b6", text:"Which of the following is NOT a vertebrate?", img:null, options:["Lizard","Frog","Fish","Snail"], answer:3 },
-
-  { id:"b7", text:"The process by which green plants manufacture their food is called?", img:null, options:["Respiration","Transpiration","Photosynthesis","Fermentation"], answer:2 },
-
-  { id:"b8", text:"Which gas is released during photosynthesis?", img:null, options:["Carbon dioxide","Nitrogen","Oxygen","Hydrogen"], answer:2 },
-
-  { id:"b9", text:"What type of nutrition is exhibited by green plants?", img:null, options:["Holozoic","Saprophytic","Autotrophic","Parasitic"], answer:2 },
-
-  { id:"b10", text:"Which blood cells are responsible for immunity?", img:null, options:["Red blood cells","Platelets","White blood cells","Plasma"], answer:2 },
-
-  { id:"b11", text:"How many chambers are present in the human heart?", img:null, options:["2","3","4","5"], answer:2 },
-
-  { id:"b12", text:"Which organ is responsible for pumping blood?", img:null, options:["Liver","Kidney","Heart","Lungs"], answer:2 },
-
-  { id:"b13", text:"Which of the following is a respiratory surface in fish?", img:null, options:["Skin","Gills","Lungs","Trachea"], answer:1 },
-
-  { id:"b14", text:"What is the function of red blood cells?", img:null, options:["Defense","Blood clotting","Transport of oxygen","Digestion"], answer:2 },
-
-  { id:"b15", text:"Which vitamin is produced in the skin by sunlight?", img:null, options:["Vitamin A","Vitamin B","Vitamin C","Vitamin D"], answer:3 },
-
-  { id:"b16", text:"Which of the following is an example of a herbivore?", img:null, options:["Lion","Goat","Man","Dog"], answer:1 },
-
-  { id:"b17", text:"What is the function of the xylem tissue?", img:null, options:["Transport of food","Transport of water","Support","Photosynthesis"], answer:1 },
-
-  { id:"b18", text:"Which part of the human eye controls the amount of light entering?", img:null, options:["Lens","Retina","Pupil","Cornea"], answer:2 },
-
-  { id:"b19", text:"What process removes metabolic wastes from the body?", img:null, options:["Respiration","Excretion","Nutrition","Circulation"], answer:1 },
-
-  { id:"b20", text:"Which organ removes urea from the blood?", img:null, options:["Liver","Heart","Kidney","Lungs"], answer:2 },
-
-  { id:"b21", text:"Which of the following diseases is caused by a virus?", img:null, options:["Tuberculosis","Malaria","Measles","Cholera"], answer:2 },
-
-  { id:"b22", text:"What is the causative organism of malaria?", img:null, options:["Bacteria","Virus","Fungus","Protozoa"], answer:3 },
-
-  { id:"b23", text:"Which insect is the vector of malaria?", img:null, options:["Housefly","Cockroach","Female Anopheles mosquito","Tsetse fly"], answer:2 },
-
-  { id:"b24", text:"Which method of reproduction involves only one parent?", img:null, options:["Sexual","Asexual","Cross-fertilization","Pollination"], answer:1 },
-
-  { id:"b25", text:"Binary fission is a mode of reproduction in?", img:null, options:["Hydra","Amoeba","Fern","Man"], answer:1 },
-
-  { id:"b26", text:"Which of the following is a sexually transmitted disease?", img:null, options:["Typhoid","Gonorrhea","Malaria","Tuberculosis"], answer:1 },
-
-  { id:"b27", text:"What structure in flowering plants develops into a fruit?", img:null, options:["Ovule","Ovary","Anther","Style"], answer:1 },
-
-  { id:"b28", text:"Which process leads to an increase in population?", img:null, options:["Death","Migration","Reproduction","Competition"], answer:2 },
-
-  { id:"b29", text:"Which kingdom do mushrooms belong to?", img:null, options:["Plantae","Animalia","Fungi","Protista"], answer:2 },
-
-  { id:"b30", text:"Which of the following is NOT a characteristic of mammals?", img:null, options:["Hair","Mammary glands","Cold-blooded","Live birth"], answer:2 },
-
-  { id:"b31", text:"What type of joint is found at the knee?", img:null, options:["Ball and socket","Hinge","Pivot","Gliding"], answer:1 },
-
-  { id:"b32", text:"Which mineral salt is required for blood clotting?", img:null, options:["Iron","Calcium","Iodine","Potassium"], answer:1 },
-
-  { id:"b33", text:"Which food class is the main source of energy?", img:null, options:["Protein","Vitamin","Carbohydrate","Mineral salt"], answer:2 },
-
-  { id:"b34", text:"What is the end product of photosynthesis?", img:null, options:["Protein","Starch","Glucose","Carbon dioxide"], answer:2 },
-
-  { id:"b35", text:"Which of the following is a decomposer?", img:null, options:["Grass","Goat","Bacteria","Snake"], answer:2 },
-
-  { id:"b36", text:"Which process releases energy from food?", img:null, options:["Photosynthesis","Respiration","Transpiration","Excretion"], answer:1 },
-
-  { id:"b37", text:"What is the average normal body temperature of humans?", img:null, options:["35°C","36°C","37°C","38°C"], answer:2 },
-
-  { id:"b38", text:"Which blood group is known as the universal donor?", img:null, options:["A","B","AB","O"], answer:3 },
-
-  { id:"b39", text:"Which structure prevents food from entering the trachea?", img:null, options:["Larynx","Epiglottis","Pharynx","Oesophagus"], answer:1 },
-
-  { id:"b40", text:"Which part of the plant is mainly responsible for transpiration?", img:null, options:["Stem","Root","Leaves","Flower"], answer:2 },
-
-  { id:"b41", text:"What type of teeth are used for cutting food?", img:null, options:["Canines","Premolars","Molars","Incisors"], answer:3 },
-
-  { id:"b42", text:"Which organ stores bile?", img:null, options:["Liver","Gall bladder","Pancreas","Stomach"], answer:1 },
-
-  { id:"b43", text:"Which of the following is an abiotic factor?", img:null, options:["Grass","Bacteria","Sunlight","Goat"], answer:2 },
-
-  { id:"b44", text:"Which process involves the loss of water vapour from plant leaves?", img:null, options:["Respiration","Transpiration","Guttation","Diffusion"], answer:1 },
-
-  { id:"b45", text:"Which blood vessel carries blood away from the heart?", img:null, options:["Vein","Capillary","Artery","Venule"], answer:2 },
-
-  { id:"b46", text:"What is the function of the placenta?", img:null, options:["Digestion","Respiration","Exchange of materials","Excretion"], answer:2 },
-
-  { id:"b47", text:"Which of the following is an example of inherited variation?", img:null, options:["Body weight","Scars","Skin colour","Language"], answer:2 },
-
-  { id:"b48", text:"Which nutrient is needed for growth and repair of tissues?", img:null, options:["Carbohydrate","Fat","Protein","Vitamin"], answer:2 },
-
-  { id:"b49", text:"Which level of ecological organization includes organisms of the same species?", img:null, options:["Community","Ecosystem","Population","Habitat"], answer:2 },
-
-  { id:"b50", text:"Which of the following practices helps in disease prevention?", img:null, options:["Poor hygiene","Vaccination","Malnutrition","Overcrowding"], answer:1 }
+//Civic Education
+"Civic Education": [
+  { id:"c1", text:"What is the meaning of 'citizenship'?", img:null, options:["Being a member of a country","Owning property","Traveling abroad","Having money"], answer:0 },
+  { id:"c2", text:"Which of the following is a right of a citizen?", img:null, options:["Voting","Stealing","Littering","Cheating"], answer:0 },
+  { id:"c3", text:"Who is the head of a local government?", img:null, options:["Governor","Chairman","President","Senator"], answer:1 },
+  { id:"c4", text:"What does the National Anthem symbolize?", img:null, options:["Unity and patriotism","A song for fun","School event","Holiday"], answer:0 },
+  { id:"c5", text:"Which of these is a civic responsibility?", img:null, options:["Obeying laws","Breaking laws","Stealing","Fighting"], answer:0 },
+  { id:"c6", text:"What is democracy?", img:null, options:["Rule by the people","Rule by one person","No rules","Anarchy"], answer:0 },
+  { id:"c7", text:"Who makes laws in Nigeria?", img:null, options:["The President","The National Assembly","The Courts","The Police"], answer:1 },
+  { id:"c8", text:"Which of these is a national symbol?", img:null, options:["Eagle","Lion","Palm tree","Cow"], answer:0 },
+  { id:"c9", text:"What is the colour of Nigeria’s flag?", img:null, options:["Green and white","Red and white","Blue and yellow","Black and white"], answer:0 },
+  { id:"c10", text:"Who is the Commander-in-Chief of the Armed Forces in Nigeria?", img:null, options:["President","Governor","Mayor","Minister"], answer:0 },
+  { id:"c11", text:"Which of these is a way to protect the environment?", img:null, options:["Planting trees","Cutting trees recklessly","Throwing waste in rivers","Burning plastics"], answer:0 },
+  { id:"c12", text:"What is the main purpose of laws?", img:null, options:["To maintain order","To punish only","To make money","To create confusion"], answer:0 },
+  { id:"c13", text:"Which of these is a democratic right?", img:null, options:["Freedom of speech","Stealing","Cheating","Fighting"], answer:0 },
+  { id:"c14", text:"What is a community?", img:null, options:["A group of people living together","A school","A shop","A book"], answer:0 },
+  { id:"c15", text:"Which of the following is a civic duty?", img:null, options:["Paying taxes","Lying","Stealing","Fighting"], answer:0 },
+  { id:"c16", text:"Who is responsible for enforcing the law?", img:null, options:["Police","Teachers","Students","Farmers"], answer:0 },
+  { id:"c17", text:"What does the Nigerian coat of arms represent?", img:null, options:["Unity and national pride","Fun and games","Sports","Music"], answer:0 },
+  { id:"c18", text:"Which of the following is a peaceful way to resolve conflict?", img:null, options:["Dialogue","Fighting","Stealing","Yelling"], answer:0 },
+  { id:"c19", text:"What is patriotism?", img:null, options:["Love for one’s country","Hating one’s country","Traveling abroad","Being rich"], answer:0 },
+  { id:"c20", text:"Who elects the President in Nigeria?", img:null, options:["Eligible citizens","Only soldiers","Only teachers","Only governors"], answer:0 },
+  { id:"c21", text:"Which is a civic virtue?", img:null, options:["Honesty","Corruption","Laziness","Cheating"], answer:0 },
+  { id:"c22", text:"What should you do with rubbish?", img:null, options:["Dispose properly","Throw anywhere","Burn everything","Hide it"], answer:0 },
+  { id:"c23", text:"Which of the following is a symbol of justice?", img:null, options:["Scales","Book","Tree","House"], answer:0 },
+  { id:"c24", text:"What is a rule?", img:null, options:["A guide for behaviour","A toy","A holiday","A game"], answer:0 },
+  { id:"c25", text:"Who represents the people in the National Assembly?", img:null, options:["Senators and Representatives","Teachers","Doctors","Students"], answer:0 },
+  { id:"c26", text:"Which of the following promotes unity?", img:null, options:["Cooperation","Fighting","Arguing","Stealing"], answer:0 },
+  { id:"c27", text:"What is the meaning of 'responsibility'?", img:null, options:["Being accountable for your actions","Doing nothing","Breaking rules","Ignoring others"], answer:0 },
+  { id:"c28", text:"Which of these is a way to help the community?", img:null, options:["Cleaning streets","Littering","Fighting","Stealing"], answer:0 },
+  { id:"c29", text:"Who signs bills into law in Nigeria?", img:null, options:["President","Governor","Judge","Teacher"], answer:0 },
+  { id:"c30", text:"Which of these shows respect for elders?", img:null, options:["Listening to them","Ignoring them","Shouting at them","Running away"], answer:0 }
 ],
+
+
+
+
+
+//Basic Science
+"Basic Science": [
+  { id:"s1", text:"Which of these is a source of light?", img:null, options:["Sun","Moon","Water","Stone"], answer:0 },
+  { id:"s2", text:"Which part of the plant makes food?", img:null, options:["Leaf","Root","Stem","Flower"], answer:0 },
+  { id:"s3", text:"Water boils at what temperature (°C)?", img:null, options:["100","90","80","120"], answer:0 },
+  { id:"s4", text:"Which of these is a mammal?", img:null, options:["Dog","Frog","Eagle","Crocodile"], answer:0 },
+  { id:"s5", text:"Which organ pumps blood around the body?", img:null, options:["Heart","Lungs","Liver","Stomach"], answer:0 },
+  { id:"s6", text:"Which gas do humans breathe in to survive?", img:null, options:["Oxygen","Carbon dioxide","Nitrogen","Hydrogen"], answer:0 },
+  { id:"s7", text:"Which part of the body helps us to see?", img:null, options:["Eye","Ear","Nose","Mouth"], answer:0 },
+  { id:"s8", text:"What is the boiling point of water in Fahrenheit?", img:null, options:["212°F","100°F","32°F","180°F"], answer:0 },
+  { id:"s9", text:"Which of these is a solid?", img:null, options:["Ice","Water","Steam","Milk"], answer:0 },
+  { id:"s10", text:"Which planet is called the Red Planet?", img:null, options:["Mars","Earth","Venus","Jupiter"], answer:0 },
+  { id:"s11", text:"Which of these animals lays eggs?", img:null, options:["Chicken","Dog","Cat","Cow"], answer:0 },
+  { id:"s12", text:"Which of the following is NOT a state of matter?", img:null, options:["Light","Solid","Liquid","Gas"], answer:0 },
+  { id:"s13", text:"The process by which plants lose water through leaves is called?", img:null, options:["Transpiration","Photosynthesis","Respiration","Evaporation"], answer:0 },
+  { id:"s14", text:"Which of these is a source of heat?", img:null, options:["Sun","Tree","Stone","Water"], answer:0 },
+  { id:"s15", text:"What do bees produce?", img:null, options:["Honey","Milk","Wax","Oil"], answer:0 },
+  { id:"s16", text:"Which part of the plant absorbs water?", img:null, options:["Root","Stem","Leaf","Flower"], answer:0 },
+  { id:"s17", text:"Which of these is a renewable source of energy?", img:null, options:["Solar energy","Petrol","Coal","Kerosene"], answer:0 },
+  { id:"s18", text:"Which organ is used for hearing?", img:null, options:["Ear","Eye","Nose","Tongue"], answer:0 },
+  { id:"s19", text:"Which part of the body digests food?", img:null, options:["Stomach","Heart","Lungs","Brain"], answer:0 },
+  { id:"s20", text:"Which of the following animals is an amphibian?", img:null, options:["Frog","Dog","Cat","Cow"], answer:0 },
+  { id:"s21", text:"What is the main gas in the air we breathe out?", img:null, options:["Carbon dioxide","Oxygen","Hydrogen","Nitrogen"], answer:0 },
+  { id:"s22", text:"Which of these is used to measure temperature?", img:null, options:["Thermometer","Ruler","Balance","Clock"], answer:0 },
+  { id:"s23", text:"Which planet is closest to the Sun?", img:null, options:["Mercury","Venus","Earth","Mars"], answer:0 },
+  { id:"s24", text:"Which of these is a non-living thing?", img:null, options:["Rock","Dog","Plant","Bird"], answer:0 },
+  { id:"s25", text:"What is the main function of the skeleton?", img:null, options:["Support and protection","Breathing","Digesting food","Seeing"], answer:0 },
+  { id:"s26", text:"Which of these insects can fly?", img:null, options:["Butterfly","Ant","Termite","Earthworm"], answer:0 },
+  { id:"s27", text:"Which of these is a source of water?", img:null, options:["River","Sun","Wind","Soil"], answer:0 },
+  { id:"s28", text:"The process by which plants make their food is called?", img:null, options:["Photosynthesis","Transpiration","Respiration","Digestion"], answer:0 },
+  { id:"s29", text:"Which of these is a conductor of electricity?", img:null, options:["Copper","Plastic","Rubber","Wood"], answer:0 },
+  { id:"s30", text:"Which organ controls the body?", img:null, options:["Brain","Heart","Stomach","Lungs"], answer:0 }
+],
+
+
+
+
+//Computer Studies
+"Computer Studies": [
+  { id:"cs1", text:"What does CPU stand for?", img:null, options:["Central Processing Unit","Computer Personal Unit","Central Peripheral Unit","Control Processing Unit"], answer:0 },
+  { id:"cs2", text:"Which of these is an input device?", img:null, options:["Keyboard","Monitor","Printer","Speaker"], answer:0 },
+  { id:"cs3", text:"Which of these is an output device?", img:null, options:["Monitor","Mouse","Keyboard","Scanner"], answer:0 },
+  { id:"cs4", text:"Which of these is a storage device?", img:null, options:["Hard Disk","Keyboard","Monitor","Mouse"], answer:0 },
+  { id:"cs5", text:"What is the main function of RAM?", img:null, options:["Store data temporarily","Store data permanently","Display images","Print documents"], answer:0 },
+  { id:"cs6", text:"Which of these is a software?", img:null, options:["Microsoft Word","Keyboard","Printer","Monitor"], answer:0 },
+  { id:"cs7", text:"Which of these is an example of an operating system?", img:null, options:["Windows","Microsoft Word","Paint","Excel"], answer:0 },
+  { id:"cs8", text:"Which device is used to point and click?", img:null, options:["Mouse","Keyboard","Monitor","Printer"], answer:0 },
+  { id:"cs9", text:"What does 'WWW' stand for?", img:null, options:["World Wide Web","World Wide Window","Web World Wide","Wide Web World"], answer:0 },
+  { id:"cs10", text:"Which of these is used to browse the internet?", img:null, options:["Browser","Keyboard","Printer","Scanner"], answer:0 },
+  { id:"cs11", text:"Which of these is a type of software?", img:null, options:["Application software","Monitor","CPU","Keyboard"], answer:0 },
+  { id:"cs12", text:"Which of these is a programming language?", img:null, options:["Python","Keyboard","Printer","Mouse"], answer:0 },
+  { id:"cs13", text:"Which of these is used to store files permanently?", img:null, options:["Hard disk","RAM","CPU","Monitor"], answer:0 },
+  { id:"cs14", text:"Which of these is a network of computers?", img:null, options:["Internet","Keyboard","Printer","Monitor"], answer:0 },
+  { id:"cs15", text:"Which of these can be used to send emails?", img:null, options:["Email client","Mouse","Keyboard","Printer"], answer:0 },
+  { id:"cs16", text:"Which of these is NOT an input device?", img:null, options:["Monitor","Keyboard","Mouse","Scanner"], answer:0 },
+  { id:"cs17", text:"Which of these is used to type documents?", img:null, options:["Keyboard","Mouse","Monitor","Printer"], answer:0 },
+  { id:"cs18", text:"Which device displays the computer output?", img:null, options:["Monitor","Keyboard","Mouse","Scanner"], answer:0 },
+  { id:"cs19", text:"What is the brain of the computer?", img:null, options:["CPU","Monitor","Keyboard","Printer"], answer:0 },
+  { id:"cs20", text:"Which of these is used to draw pictures on a computer?", img:null, options:["Paint software","Word processor","Browser","Printer"], answer:0 },
+  { id:"cs21", text:"Which of these stores data temporarily?", img:null, options:["RAM","Hard disk","Printer","Monitor"], answer:0 },
+  { id:"cs22", text:"Which of these is used to scan documents?", img:null, options:["Scanner","Keyboard","Mouse","Monitor"], answer:0 },
+  { id:"cs23", text:"Which of these is a type of computer network?", img:null, options:["LAN","Keyboard","Mouse","Printer"], answer:0 },
+  { id:"cs24", text:"Which of these is an example of an output device?", img:null, options:["Printer","Keyboard","Mouse","Scanner"], answer:0 },
+  { id:"cs25", text:"Which of these stores data permanently?", img:null, options:["Hard disk","RAM","CPU","Monitor"], answer:0 },
+  { id:"cs26", text:"Which of these is used to access the internet?", img:null, options:["Browser","CPU","RAM","Monitor"], answer:0 },
+  { id:"cs27", text:"Which software is used to create documents?", img:null, options:["Word processor","Paint","Browser","Spreadsheet"], answer:0 },
+  { id:"cs28", text:"Which of these is a computer output?", img:null, options:["Printed document","Typed document","Scanned image","Mouse click"], answer:0 },
+  { id:"cs29", text:"Which of these is used to click and select?", img:null, options:["Mouse","Keyboard","Printer","Monitor"], answer:0 },
+  { id:"cs30", text:"Which of these is used to protect a computer from viruses?", img:null, options:["Antivirus software","Keyboard","Monitor","Printer"], answer:0 }
+],
+
+
+
+
+//CRS
+CRS: [
+  { id:"crs1", text:"Who created the world according to the Bible?", img:null, options:["God","Moses","Noah","Abraham"], answer:0 },
+  { id:"crs2", text:"Who was swallowed by a big fish?", img:null, options:["Jonah","David","Elijah","Peter"], answer:0 },
+  { id:"crs3", text:"Which city did God destroy because of wickedness?", img:null, options:["Sodom","Jerusalem","Nazareth","Bethlehem"], answer:0 },
+  { id:"crs4", text:"Who led the Israelites out of Egypt?", img:null, options:["Moses","Abraham","Jacob","David"], answer:0 },
+  { id:"crs5", text:"Who built the ark?", img:null, options:["Noah","Abraham","Moses","Solomon"], answer:0 },
+  { id:"crs6", text:"How many days and nights did it rain during the flood?", img:null, options:["40","30","50","20"], answer:0 },
+  { id:"crs7", text:"Who was the first man created by God?", img:null, options:["Adam","Noah","Moses","Abel"], answer:0 },
+  { id:"crs8", text:"Who was the first woman created by God?", img:null, options:["Eve","Mary","Sarah","Rebecca"], answer:0 },
+  { id:"crs9", text:"What did God place in the Garden of Eden to test Adam and Eve?", img:null, options:["Tree of Knowledge","River","Mountain","Temple"], answer:0 },
+  { id:"crs10", text:"Who was thrown into the lions’ den?", img:null, options:["Daniel","Joseph","David","Elijah"], answer:0 },
+  { id:"crs11", text:"Who interpreted Pharaoh’s dream?", img:null, options:["Joseph","Moses","Daniel","David"], answer:0 },
+  { id:"crs12", text:"What is the first book of the Bible?", img:null, options:["Genesis","Exodus","Leviticus","Numbers"], answer:0 },
+  { id:"crs13", text:"Who was the mother of Jesus?", img:null, options:["Mary","Elizabeth","Martha","Rebecca"], answer:0 },
+  { id:"crs14", text:"Which disciple betrayed Jesus?", img:null, options:["Judas Iscariot","Peter","John","James"], answer:0 },
+  { id:"crs15", text:"Where was Jesus born?", img:null, options:["Bethlehem","Nazareth","Jerusalem","Capernaum"], answer:0 },
+  { id:"crs16", text:"What did Jesus turn water into at the wedding?", img:null, options:["Wine","Bread","Fish","Oil"], answer:0 },
+  { id:"crs17", text:"How many apostles did Jesus have?", img:null, options:["12","10","11","13"], answer:0 },
+  { id:"crs18", text:"Which mountain did Moses receive the Ten Commandments?", img:null, options:["Mount Sinai","Mount Zion","Mount Ararat","Mount Carmel"], answer:0 },
+  { id:"crs19", text:"Who was the strong man in the Bible who lost his strength?", img:null, options:["Samson","David","Goliath","Saul"], answer:0 },
+  { id:"crs20", text:"Who was thrown into the pit by his brothers?", img:null, options:["Joseph","Jacob","Esau","Isaac"], answer:0 },
+  { id:"crs21", text:"Who was the first king of Israel?", img:null, options:["Saul","David","Solomon","Samuel"], answer:0 },
+  { id:"crs22", text:"What is the shortest verse in the Bible?", img:null, options:["Jesus wept","God is love","Pray always","Rejoice"], answer:0 },
+  { id:"crs23", text:"Which river did John baptize people in?", img:null, options:["Jordan","Nile","Tigris","Euphrates"], answer:0 },
+  { id:"crs24", text:"Who was thrown into prison but later freed because of a prayer?", img:null, options:["Peter","Paul","John","Stephen"], answer:0 },
+  { id:"crs25", text:"What is the Golden Rule Jesus taught?", img:null, options:["Do unto others as you would have them do unto you","Love only your friends","Pray silently","Keep secrets"], answer:0 }
+],
+
+
+
+
+//PHE
+PHE: [
+  { id:"phe1", text:"Which of these is a warm-up exercise?", img:null, options:["Stretching","Sleeping","Eating","Watching TV"], answer:0 },
+  { id:"phe2", text:"Which of these is a team game?", img:null, options:["Football","Running","Skipping","Jumping"], answer:0 },
+  { id:"phe3", text:"What is the main benefit of regular exercise?", img:null, options:["Keeps the body healthy","Gains weight","Makes you sleepy","Causes illness"], answer:0 },
+  { id:"phe4", text:"Which of these is a track event?", img:null, options:["100 meters race","High jump","Long jump","Shot put"], answer:0 },
+  { id:"phe5", text:"Which of these is a field event?", img:null, options:["Long jump","100 meters race","200 meters race","Relay race"], answer:0 },
+  { id:"phe6", text:"Which nutrient helps in building muscles?", img:null, options:["Protein","Carbohydrate","Fat","Sugar"], answer:0 },
+  { id:"phe7", text:"Which of these is a hygiene practice?", img:null, options:["Washing hands","Playing","Running","Jumping"], answer:0 },
+  { id:"phe8", text:"Which of these helps prevent diseases?", img:null, options:["Vaccination","Sleeping too much","Skipping meals","Overeating"], answer:0 },
+  { id:"phe9", text:"Which of these is a water sport?", img:null, options:["Swimming","Football","Basketball","Cycling"], answer:0 },
+  { id:"phe10", text:"Which of these is a safety rule in PHE?", img:null, options:["Warming up before exercise","Skipping meals","Running without shoes","Playing carelessly"], answer:0 },
+  { id:"phe11", text:"Which of these is a benefit of good posture?", img:null, options:["Prevents back pain","Causes fatigue","Hurts muscles","Reduces energy"], answer:0 },
+  { id:"phe12", text:"Which of these is an aerobic exercise?", img:null, options:["Running","Weight lifting","Yoga","Push-ups"], answer:0 },
+  { id:"phe13", text:"Which of these is a source of energy?", img:null, options:["Carbohydrate","Water","Vitamins","Minerals"], answer:0 },
+  { id:"phe14", text:"Which of these prevents injury during exercise?", img:null, options:["Warm-up and stretching","Skipping breakfast","Sleeping","Eating fast food"], answer:0 },
+  { id:"phe15", text:"Which of these is a team sport played with a bat and ball?", img:null, options:["Cricket","Running","Skipping","High jump"], answer:0 },
+  { id:"phe16", text:"Which of these is a personal hygiene habit?", img:null, options:["Brushing teeth","Playing football","Watching TV","Skipping meals"], answer:0 },
+  { id:"phe17", text:"Which of these exercises helps in improving flexibility?", img:null, options:["Stretching","Running","Jumping","Sitting"], answer:0 },
+  { id:"phe18", text:"Which of these is a proper way to lift heavy objects?", img:null, options:["Bend knees, keep back straight","Bend back only","Lift quickly","Twist body"], answer:0 },
+  { id:"phe19", text:"Which of these is an indoor game?", img:null, options:["Table tennis","Football","Athletics","Hockey"], answer:0 },
+  { id:"phe20", text:"Which of these is a harmful habit to health?", img:null, options:["Smoking","Running","Eating fruits","Sleeping well"], answer:0 },
+  { id:"phe21", text:"Which of these is a warm-down activity?", img:null, options:["Stretching after exercise","Running fast","Skipping","Jumping"], answer:0 },
+  { id:"phe22", text:"Which of these is important for a healthy body?", img:null, options:["Balanced diet","Skipping meals","Eating junk food","Watching TV"], answer:0 },
+  { id:"phe23", text:"Which of these is a ball game played with the hands?", img:null, options:["Volleyball","Football","Hockey","Cycling"], answer:0 },
+  { id:"phe24", text:"Which of these helps in maintaining healthy bones?", img:null, options:["Calcium","Sugar","Fat","Salt"], answer:0 },
+  { id:"phe25", text:"Which of these is a rule to follow during exercise?", img:null, options:["Drink enough water","Avoid drinking water","Eat fast food","Sit idle"], answer:0 }
+],
+
+
+
+//CCA
+"Cultural & Creative Arts": [
+  { id:"cca1", text:"Which of these is a primary color?", img:null, options:["Red","Green","Purple","Brown"], answer:0 },
+  { id:"cca2", text:"Which instrument is a percussion instrument?", img:null, options:["Drum","Flute","Violin","Guitar"], answer:0 },
+  { id:"cca3", text:"Which of these is a traditional dance?", img:null, options:["Atilogwu","Basketball","Football","Cycling"], answer:0 },
+  { id:"cca4", text:"Which of these is used for painting?", img:null, options:["Brush","Ruler","Scissors","Pencil"], answer:0 },
+  { id:"cca5", text:"Which material is used in sculpting?", img:null, options:["Clay","Paper","Fabric","Ink"], answer:0 },
+  { id:"cca6", text:"Which of these is a form of visual art?", img:null, options:["Painting","Singing","Dancing","Reciting"], answer:0 },
+  { id:"cca7", text:"Which of these is a musical instrument?", img:null, options:["Piano","Pen","Paper","Book"], answer:0 },
+  { id:"cca8", text:"Which of these is a folk art?", img:null, options:["Mask making","Typing","Drawing letters","Reading"], answer:0 },
+  { id:"cca9", text:"Which of these colors is a secondary color?", img:null, options:["Green","Red","Blue","Yellow"], answer:0 },
+  { id:"cca10", text:"Which of these is used for drawing?", img:null, options:["Pencil","Knife","Plate","Glass"], answer:0 },
+  { id:"cca11", text:"Which of these is an element of art?", img:null, options:["Line","Chair","Table","Book"], answer:0 },
+  { id:"cca12", text:"Which of these is a type of painting?", img:null, options:["Watercolor","Football","Running","Cycling"], answer:0 },
+  { id:"cca13", text:"Which instrument has keys?", img:null, options:["Piano","Drum","Guitar","Violin"], answer:0 },
+  { id:"cca14", text:"Which of these is used in bead making?", img:null, options:["Beads","Paint","Clay","Pencil"], answer:0 },
+  { id:"cca15", text:"Which of these is a traditional musical instrument?", img:null, options:["Talking drum","Keyboard","Radio","Printer"], answer:0 },
+  { id:"cca16", text:"Which of these is used for printing art?", img:null, options:["Ink","Water","Sand","Clay"], answer:0 },
+  { id:"cca17", text:"Which of these is a type of dance costume?", img:null, options:["Wrapper","Chair","Table","Book"], answer:0 },
+  { id:"cca18", text:"Which of these is a medium of sculpture?", img:null, options:["Wood","Paper","Ink","Plastic"], answer:0 },
+  { id:"cca19", text:"Which of these is a craft activity?", img:null, options:["Weaving","Running","Jumping","Cycling"], answer:0 },
+  { id:"cca20", text:"Which of these is a form of performing art?", img:null, options:["Dance","Painting","Drawing","Sculpture"], answer:0 },
+  { id:"cca21", text:"Which of these is a natural color?", img:null, options:["Brown","Purple","Pink","Magenta"], answer:0 },
+  { id:"cca22", text:"Which of these is used to make patterns on cloth?", img:null, options:["Stencil","Knife","Pen","Ruler"], answer:0 },
+  { id:"cca23", text:"Which of these is a type of mask art?", img:null, options:["Cultural mask","Football mask","Helmet","Hat"], answer:0 },
+  { id:"cca24", text:"Which of these is a famous traditional Nigerian dance?", img:null, options:["Egungun","Basketball","Football","Cycling"], answer:0 },
+  { id:"cca25", text:"Which of these is used to mix paint colors?", img:null, options:["Palette","Brush","Paper","Pencil"], answer:0 }
+],
+
+
+
+
+//Home Economics
+"Home Economics": [
+  { id:"he1", text:"Which of these is a kitchen utensil?", img:null, options:["Spoon","Chair","Book","Pen"], answer:0 },
+  { id:"he2", text:"Which food is rich in protein?", img:null, options:["Egg","Rice","Yam","Sugar"], answer:0 },
+  { id:"he3", text:"Which of these is a method of cooking?", img:null, options:["Boiling","Sewing","Weaving","Reading"], answer:0 },
+  { id:"he4", text:"Which of these is a staple food in Nigeria?", img:null, options:["Rice","Chocolate","Candy","Cake"], answer:0 },
+  { id:"he5", text:"Which of these is used for cutting in the kitchen?", img:null, options:["Knife","Spoon","Plate","Pot"], answer:0 },
+  { id:"he6", text:"Which of these is a type of fabric?", img:null, options:["Cotton","Sugar","Salt","Oil"], answer:0 },
+  { id:"he7", text:"Which of these is a household cleaning agent?", img:null, options:["Soap","Sugar","Flour","Rice"], answer:0 },
+  { id:"he8", text:"Which of these is used to measure ingredients?", img:null, options:["Measuring cup","Knife","Plate","Spoon"], answer:0 },
+  { id:"he9", text:"Which of these is important for personal hygiene?", img:null, options:["Bathing","Sleeping","Eating","Running"], answer:0 },
+  { id:"he10", text:"Which of these is a healthy drink?", img:null, options:["Water","Soda","Candy drink","Alcohol"], answer:0 },
+  { id:"he11", text:"Which of these is used to stir food while cooking?", img:null, options:["Spoon","Knife","Fork","Plate"], answer:0 },
+  { id:"he12", text:"Which of these is a source of vitamins?", img:null, options:["Vegetables","Sugar","Salt","Oil"], answer:0 },
+  { id:"he13", text:"Which of these is used for baking?", img:null, options:["Oven","Pot","Spoon","Knife"], answer:0 },
+  { id:"he14", text:"Which of these is a sewing tool?", img:null, options:["Needle","Fork","Spoon","Plate"], answer:0 },
+  { id:"he15", text:"Which of these helps in maintaining a clean kitchen?", img:null, options:["Washing dishes","Leaving waste","Breaking utensils","Spilling water"], answer:0 },
+  { id:"he16", text:"Which of these is used to mix ingredients?", img:null, options:["Bowl","Chair","Book","Pen"], answer:0 },
+  { id:"he17", text:"Which of these is a source of energy?", img:null, options:["Carbohydrate","Soap","Water","Spoon"], answer:0 },
+  { id:"he18", text:"Which of these is used for ironing clothes?", img:null, options:["Iron","Knife","Spoon","Plate"], answer:0 },
+  { id:"he19", text:"Which of these is a method of preserving food?", img:null, options:["Freezing","Breaking","Washing","Sitting"], answer:0 },
+  { id:"he20", text:"Which of these is important for personal grooming?", img:null, options:["Brushing teeth","Running","Skipping","Jumping"], answer:0 },
+  { id:"he21", text:"Which of these is used to serve food?", img:null, options:["Plate","Knife","Spoon","Cupboard"], answer:0 },
+  { id:"he22", text:"Which of these is a type of oil used in cooking?", img:null, options:["Vegetable oil","Motor oil","Engine oil","Coconut oil for fuel"], answer:0 },
+  { id:"he23", text:"Which of these is important for a balanced diet?", img:null, options:["Eating variety of foods","Eating only one type","Skipping meals","Overeating"], answer:0 },
+  { id:"he24", text:"Which of these is used to grind food?", img:null, options:["Mortar and pestle","Spoon","Knife","Plate"], answer:0 },
+  { id:"he25", text:"Which of these is a method of cooking food without oil?", img:null, options:["Boiling","Frying","Roasting","Grilling"], answer:0 }
+],
+
+
+
+//Social Studies
+"Social Studies": [
+  { id:"ss1", text:"What is the capital city of Nigeria?", img:null, options:["Abuja","Lagos","Kano","Port Harcourt"], answer:0 },
+  { id:"ss2", text:"Which of these is a natural resource?", img:null, options:["Coal","Car","House","Computer"], answer:0 },
+  { id:"ss3", text:"Which of these is a human-made feature?", img:null, options:["Bridge","River","Mountain","Forest"], answer:0 },
+  { id:"ss4", text:"Which of these is a type of soil?", img:null, options:["Clay","Water","Rock","Sand"], answer:0 },
+  { id:"ss5", text:"Which of these is a primary occupation?", img:null, options:["Farming","Teaching","Banking","Trading"], answer:0 },
+  { id:"ss6", text:"Which of these is a secondary occupation?", img:null, options:["Baking","Farming","Fishing","Hunting"], answer:0 },
+  { id:"ss7", text:"Which continent is Nigeria located in?", img:null, options:["Africa","Asia","Europe","America"], answer:0 },
+  { id:"ss8", text:"Which of these is a river in Nigeria?", img:null, options:["Niger","Thames","Amazon","Yangtze"], answer:0 },
+  { id:"ss9", text:"Which of these is a traditional festival?", img:null, options:["Eyo festival","Independence day","Christmas","Easter"], answer:0 },
+  { id:"ss10", text:"Which of these is a form of transport?", img:null, options:["Car","Tree","House","River"], answer:0 },
+  { id:"ss11", text:"Who is the President of Nigeria?", img:null, options:["President","Governor","Mayor","Chief"], answer:0 },
+  { id:"ss12", text:"Which of these is a type of map?", img:null, options:["Political map","Chair","Book","Pencil"], answer:0 },
+  { id:"ss13", text:"Which of these is a civic responsibility?", img:null, options:["Voting","Stealing","Littering","Fighting"], answer:0 },
+  { id:"ss14", text:"Which of these is an occupation in the tertiary sector?", img:null, options:["Teaching","Farming","Fishing","Mining"], answer:0 },
+  { id:"ss15", text:"Which of these is a capital of a Nigerian state?", img:null, options:["Ibadan","Abuja","Lagos","Kano"], answer:0 },
+  { id:"ss16", text:"Which of these is a natural disaster?", img:null, options:["Flood","War","Fight","Theft"], answer:0 },
+  { id:"ss17", text:"Which of these is a feature of the environment?", img:null, options:["River","House","Car","Chair"], answer:0 },
+  { id:"ss18", text:"Which of these helps in soil conservation?", img:null, options:["Planting trees","Cutting trees","Mining","Overgrazing"], answer:0 },
+  { id:"ss19", text:"Which of these is a method of preserving food?", img:null, options:["Smoking","Eating immediately","Throwing away","Spoiling"], answer:0 },
+  { id:"ss20", text:"Which of these is a type of settlement?", img:null, options:["Urban","Lion","River","Mountain"], answer:0 },
+  { id:"ss21", text:"Which of these is an example of a community service?", img:null, options:["Cleaning the streets","Stealing","Fighting","Breaking rules"], answer:0 },
+  { id:"ss22", text:"Which of these is a source of water?", img:null, options:["River","Chair","Table","House"], answer:0 },
+  { id:"ss23", text:"Which of these is an economic activity?", img:null, options:["Trading","Sleeping","Watching TV","Playing"], answer:0 },
+  { id:"ss24", text:"Which of these is a natural vegetation?", img:null, options:["Rainforest","Table","Chair","Road"], answer:0 },
+  { id:"ss25", text:"Which of these is a human right?", img:null, options:["Right to education","Stealing","Fighting","Littering"], answer:0 },
+  { id:"ss26", text:"Which of these is a mode of communication?", img:null, options:["Radio","Chair","Table","Knife"], answer:0 },
+  { id:"ss27", text:"Which of these is a traditional occupation?", img:null, options:["Farming","Banking","Teaching","Doctor"], answer:0 },
+  { id:"ss28", text:"Which of these is a renewable resource?", img:null, options:["Sunlight","Coal","Petrol","Natural gas"], answer:0 },
+  { id:"ss29", text:"Which of these is a form of local government?", img:null, options:["Council","President","Minister","Governor"], answer:0 },
+  { id:"ss30", text:"Which of these is a festival celebrated in Nigeria?", img:null, options:["Durbar","Christmas","Easter","Independence day"], answer:0 }
+],
+
+
+
+//Agric Science
+"Agric Science": [
+  { id:"ag1", text:"Which of these is a type of crop?", img:null, options:["Maize","Cow","Chicken","Goat"], answer:0 },
+  { id:"ag2", text:"Which of these is a farm animal?", img:null, options:["Cow","Car","Chair","Pen"], answer:0 },
+  { id:"ag3", text:"Which of these is used to plant seeds?", img:null, options:["Hoe","Knife","Spoon","Plate"], answer:0 },
+  { id:"ag4", text:"Which of these is a type of soil suitable for farming?", img:null, options:["Loamy","Rock","Sandstone","Concrete"], answer:0 },
+  { id:"ag5", text:"Which of these is a method of watering crops?", img:null, options:["Irrigation","Sleeping","Running","Jumping"], answer:0 },
+  { id:"ag6", text:"Which of these is used to protect crops from pests?", img:null, options:["Pesticide","Soap","Water","Salt"], answer:0 },
+  { id:"ag7", text:"Which of these is a vegetable crop?", img:null, options:["Tomato","Maize","Yam","Cassava"], answer:0 },
+  { id:"ag8", text:"Which of these is a fruit crop?", img:null, options:["Orange","Maize","Cassava","Yam"], answer:0 },
+  { id:"ag9", text:"Which of these is a cereal crop?", img:null, options:["Rice","Tomato","Orange","Cabbage"], answer:0 },
+  { id:"ag10", text:"Which of these is a legume?", img:null, options:["Beans","Maize","Yam","Cassava"], answer:0 },
+  { id:"ag11", text:"Which of these is used to plough the land?", img:null, options:["Plough","Spoon","Knife","Plate"], answer:0 },
+  { id:"ag12", text:"Which of these is important for soil fertility?", img:null, options:["Manure","Sand","Water","Stone"], answer:0 },
+  { id:"ag13", text:"Which of these is a method of planting?", img:null, options:["Broadcasting","Typing","Reading","Sleeping"], answer:0 },
+  { id:"ag14", text:"Which of these is a farm implements?", img:null, options:["Hoe","Chair","Book","Pen"], answer:0 },
+  { id:"ag15", text:"Which of these animals is kept for meat?", img:null, options:["Goat","Cat","Dog","Horse"], answer:0 },
+  { id:"ag16", text:"Which of these animals is kept for milk?", img:null, options:["Cow","Goat","Dog","Chicken"], answer:0 },
+  { id:"ag17", text:"Which of these is a method of harvesting?", img:null, options:["Cutting","Reading","Writing","Sleeping"], answer:0 },
+  { id:"ag18", text:"Which of these is used to store farm produce?", img:null, options:["Silo","Table","Chair","Pen"], answer:0 },
+  { id:"ag19", text:"Which of these is a factor affecting crop growth?", img:null, options:["Sunlight","Chair","Book","Pen"], answer:0 },
+  { id:"ag20", text:"Which of these is a root crop?", img:null, options:["Yam","Maize","Tomato","Orange"], answer:0 },
+  { id:"ag21", text:"Which of these is a type of farm?", img:null, options:["Crop farm","House","School","Market"], answer:0 },
+  { id:"ag22", text:"Which of these is important for poultry farming?", img:null, options:["Chicken","Car","Table","Chair"], answer:0 },
+  { id:"ag23", text:"Which of these is used for weeding?", img:null, options:["Hoe","Knife","Plate","Spoon"], answer:0 },
+  { id:"ag24", text:"Which of these is a method of preserving farm produce?", img:null, options:["Drying","Sleeping","Reading","Writing"], answer:0 },
+  { id:"ag25", text:"Which of these is a climatic factor affecting farming?", img:null, options:["Rainfall","Chair","Table","Book"], answer:0 }
+],
+
+
+
+
+//Vocational Studies
+"Vocational Studies": [
+  { id:"vs1", text:"Which of these is used in tailoring?", img:null, options:["Needle","Hammer","Spoon","Ruler"], answer:0 },
+  { id:"vs2", text:"Which of these is a woodworking tool?", img:null, options:["Saw","Needle","Spoon","Brush"], answer:0 },
+  { id:"vs3", text:"Which of these is used for knitting?", img:null, options:["Needles","Hammer","Chisel","Ruler"], answer:0 },
+  { id:"vs4", text:"Which of these is used for metal work?", img:null, options:["Hammer","Needle","Brush","Knife"], answer:0 },
+  { id:"vs5", text:"Which of these is a type of vocational skill?", img:null, options:["Tailoring","Reading","Writing","Singing"], answer:0 },
+  { id:"vs6", text:"Which of these is used in carpentry?", img:null, options:["Saw","Brush","Needle","Scissors"], answer:0 },
+  { id:"vs7", text:"Which of these is used in cooking vocational skill?", img:null, options:["Spoon","Hammer","Chisel","Ruler"], answer:0 },
+  { id:"vs8", text:"Which of these is used in bead making?", img:null, options:["Beads","Hammer","Spoon","Brush"], answer:0 },
+  { id:"vs9", text:"Which of these is used in welding?", img:null, options:["Welding machine","Needle","Spoon","Brush"], answer:0 },
+  { id:"vs10", text:"Which of these is used for pottery?", img:null, options:["Clay","Spoon","Knife","Brush"], answer:0 },
+  { id:"vs11", text:"Which of these is a vocational subject?", img:null, options:["Vocational Studies","Mathematics","English","CRS"], answer:0 },
+  { id:"vs12", text:"Which of these is used in leatherwork?", img:null, options:["Awl","Spoon","Brush","Knife"], answer:0 },
+  { id:"vs13", text:"Which of these is used in painting vocational skill?", img:null, options:["Brush","Hammer","Chisel","Knife"], answer:0 },
+  { id:"vs14", text:"Which of these is a tool for measuring?", img:null, options:["Ruler","Spoon","Hammer","Brush"], answer:0 },
+  { id:"vs15", text:"Which of these is a type of vocational work in agriculture?", img:null, options:["Crop farming","Mathematics","English","CRS"], answer:0 },
+  { id:"vs16", text:"Which of these is used in candle making?", img:null, options:["Wax","Hammer","Spoon","Brush"], answer:0 },
+  { id:"vs17", text:"Which of these is used in soap making?", img:null, options:["Soap base","Brush","Knife","Spoon"], answer:0 },
+  { id:"vs18", text:"Which of these is used in basket weaving?", img:null, options:["Straw","Hammer","Brush","Spoon"], answer:0 },
+  { id:"vs19", text:"Which of these is used in computer vocational skill?", img:null, options:["Keyboard","Needle","Spoon","Hammer"], answer:0 },
+  { id:"vs20", text:"Which of these is used in shoe making?", img:null, options:["Leather","Clay","Wood","Paper"], answer:0 },
+  { id:"vs21", text:"Which of these is used in embroidery?", img:null, options:["Needle","Hammer","Chisel","Brush"], answer:0 },
+  { id:"vs22", text:"Which of these is a skill in vocational studies?", img:null, options:["Carpentry","Singing","Dancing","Running"], answer:0 },
+  { id:"vs23", text:"Which of these is used in plumbing?", img:null, options:["Pipe wrench","Brush","Needle","Knife"], answer:0 },
+  { id:"vs24", text:"Which of these is used in hairdressing?", img:null, options:["Comb","Hammer","Brush","Knife"], answer:0 },
+  { id:"vs25", text:"Which of these is used in photography vocational skill?", img:null, options:["Camera","Brush","Spoon","Knife"], answer:0 }
+],
+
 
 };
