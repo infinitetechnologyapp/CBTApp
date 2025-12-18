@@ -27,7 +27,7 @@ window.studentsSS3 = [
   { examNum: "SS3B116", name: "John Peter", class: "SS", gender: "Male" },
   { examNum: "SS3B117", name: "Grace Samuel", class: "SS", gender: "Female" },
   { examNum: "SS3B118", name: "Aisha Bello", class: "SS", gender: "Female" },
-  { examNum: "SS3B119", name: "David Okoro", class: "SS", gender: "Male" },
+  { examNum: "sxy9g5", name: "Sir Sunday Baridole", class: "SS", gender: "Male" },
   { examNum: "Admin22", name: "**Result Checker**", class: "SS", gender: "Male" }
   
   
