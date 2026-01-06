@@ -1,5 +1,5 @@
 window.studentsSS3 = [
-  { examNum: "SS3091", name: "Edanuko Sarima Ununuma", class: "BASIC", gender: "Female" },
+  { examNum: "mx53k2", name: "Mirabel Stephen", class: "BASIC", gender: "Female" },
   { examNum: "SS3092", name: "Siaka Prisca Jaka", class: "BASIC", gender: "Female" },
   { examNum: "SS3093", name: "Nwele Divine Favour", class: "BASIC", gender: "Female" },
   { examNum: "SS3094", name: "Imokhai Anne", class: "BASIC", gender: "Female" },
