@@ -26,9 +26,9 @@ window.studentsSS3 = [
   { examNum: "SS3B115", name: "Favour Ude", class: "BASIC", gender: "Female" },
   { examNum: "SS3B116", name: "John Peter", class: "BASIC", gender: "Male" },
   { examNum: "SS3B117", name: "Grace Samuel", class: "BASIC", gender: "Female" },
-  { examNum: "SS3B118", name: "Aisha Bello", class: "BASIC", gender: "Female" },
+  { examNum: "h5ght1", name: "Sir Patrick Ncha", class: "BASIC", gender: "Female" },
   { examNum: "sxy9g5", name: "Sir Sunday Baridole", class: "BASIC", gender: "Male" },
-  { examNum: "Admin22", name: "**Result Checker**", class: "BASIC", gender: "Male" }
+  { examNum: "Admin22", name: "Sir Bright", class: "BASIC", gender: "Male" }
   
   
   

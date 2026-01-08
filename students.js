@@ -26,9 +26,9 @@ window.studentsSS3 = [
   { examNum: "SS3B115", name: "Favour Ude", class: "CBT", gender: "Female" },
   { examNum: "SS3B116", name: "John Peter", class: "CBT", gender: "Male" },
   { examNum: "SS3B117", name: "Grace Samuel", class: "CBT", gender: "Female" },
-  { examNum: "SS3B118", name: "Aisha Bello", class: "CBT", gender: "Female" },
+  { examNum: "h5ght1", name: "Sir Patrick Ncha", class: "CBT", gender: "Female" },
   { examNum: "sxy9g5", name: "Sir Sunday Baridole", class: "CBT", gender: "Male" },
-  { examNum: "Admin22", name: "**Result Checker**", class: "CBT", gender: "Male" }
+  { examNum: "Admin22", name: "Sir Bright", class: "CBT", gender: "Male" }
   
   
   
