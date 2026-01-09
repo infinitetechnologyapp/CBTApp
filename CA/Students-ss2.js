@@ -37,8 +37,8 @@ window.studentsSS2 = [
   { examNum: "SS2B086", name: "John Peter", class: "SS2", gender: "Male" },
   { examNum: "SS2B087", name: "Grace Samuel", class: "SS2", gender: "Female" },
   { examNum: "SS2B088", name: "Aisha Bello", class: "SS2", gender: "Female" },
-  { examNum: "SS2B089", name: "David Okoro", class: "SS2", gender: "Male" },
-  { examNum: "Admin2", name: "**Result Checker**", class: "SS2", gender: "Male" }
+  { examNum: "Admin", name: "Sir Bright", class: "SS2", gender: "Male" },
+  { examNum: "Admin2", name: "Sir Sunday", class: "SS2", gender: "Male" }
   
   
 
