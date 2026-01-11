@@ -1,319 +1,260 @@
-/* Questions-ss1.js
-   Each subject is a property with an array of question objects.
-   Question object format:
-   {
-     id: "q1",
-     text: "Question text",
-     img: null or "https://...",   // optional image (some are included)
-     options: ["A","B","C","D"],
-     answer: 1    // index of correct option (0-based)
-   }
-*/
 window.questionsSS1 = {
     //Mathematics
-  Mathematics: [
-    { id: "m1", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m2", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m3", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m4", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m5", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m6", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m7", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m8", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m9", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m10", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m11", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m12", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m13", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m14", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m15", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m16", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m17", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m18", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m19", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m20", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m21", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m22", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m23", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m24", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-  { id: "m25", text: "What is 8 + 7?", img: null, options: ["12","14","15","16"], answer: 2 },
-    { id: "m26", text: "Find the value of x: 2x + 3 = 11", img: null, options: ["3","4","5","6"], answer: 1 },
-    { id: "m27", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m28", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 },
-    { id: "m29", text: "What is the perimeter of a rectangle with sides 3 and 5?", img: null, options: ["8","16","15","10"], answer: 1 },
-    // sample with image (math diagram)
-    { id: "m30", text: "Identify the angle marked 'x' in the figure.", img: "images/recomella.png", options: ["30°","45°","60°","90°"], answer: 2 }
-  ],
-
-
-  //English Language
-  "English Language": [
-    { id: "e1", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e2", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e3", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e4", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e5", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e6", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-{ id: "e7", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e8", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e9", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e10", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e11", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e12", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-{ id: "e13", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e14", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e15", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e16", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e17", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e18", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-{ id: "e19", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e20", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e21", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e22", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e23", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e24", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-{ id: "e25", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e26", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e27", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e28", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 },
-    { id: "e29", text: "Choose the correct plural of 'child'.", img: null, options: ["childs","childes","children","child"], answer: 2 },
-    { id: "e30", text: "Pick the correct verb: 'She ___ to school daily.'", img: null, options: ["go","goes","gone","going"], answer: 1 }
-  ],
-
-
-  //Chemistry
-  Chemistry: [
-    { id: "c1", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c2", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c3", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c4", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c5", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c6", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c7", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c8", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c9", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c10", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c11", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c12", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c13", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c14", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c15", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c16", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c17", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c18", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c19", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c20", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c21", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c22", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c23", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c24", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c25", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c26", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c27", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c28", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 },
-{ id: "c29", text: "Water is a compound of?", img: null, options: ["Hydrogen and Oxygen", "Carbon & Oxygen", "Nitrogen & Hydrogen", "Helium & Neon"], answer: 0 },
-    { id: "c30", text: "Which is a symbol for Oxygen?", img: null, options: ["O","Ox","Og","On"], answer: 0 }
-  ],
-
-
-  //Biology
-  Biology: [
-    { id: "b1", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b2", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b3", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b4", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b5", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b6", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b7", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b8", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b9", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b10", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b11", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b12", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b13", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b14", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b15", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b16", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b17", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b18", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b19", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b20", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b21", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b22", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b23", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b24", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b25", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b26", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b27", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b28", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b29", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 },
-{ id: "b30", text: "Which organ pumps blood?", img: null, options: ["Lung","Kidney","Heart","Liver"], answer: 2 }
-  ],
-
-
-  //Physics
-  Physics: [
-    { id: "p1", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p2", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p3", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p4", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p5", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p6", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
-{ id: "p7", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p8", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p9", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p10", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p11", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p12", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
-{ id: "p13", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p14", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p15", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p16", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p17", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p18", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
-{ id: "p19", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p20", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p21", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p22", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p23", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p24", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
-{ id: "p25", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p26", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p27", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p28", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p29", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 },
- { id: "p30", text: "Which is the SI unit of force?", img: null, options: ["Joule","Newton","Watt","Pascal"], answer: 1 }
-  ],
-
-
-  //Geography
-  Geography: [
-    { id: "g1", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g2", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g3", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g4", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g5", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
- { id: "g6", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g7", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g8", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g9", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g10", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
- { id: "g11", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g12", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g13", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g14", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g15", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
- { id: "g16", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g17", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g18", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g19", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 },
-{ id: "g20", text: "The largest ocean is?", img: null, options: ["Atlantic","Indian","Arctic","Pacific"], answer: 3 }
-  ],
-
-
-  //Computer Science
-  "Computer Science": [
-     { id: "co1", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co2", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co3", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co4", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co5", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co6", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co7", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co8", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co9", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co10", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co11", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co12", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co13", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co14", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co15", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co16", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co17", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co18", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co19", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 },
-{ id: "co20", text: "Which of this is an input device", img: null, options: ["Monitor","Printer","Mouse","Speaker"], answer: 2 }
-  ],
-
-
-  //Data Processing
-  "Data Processing": [
-{ id: "dp1", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp2", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp3", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp4", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp5", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp6", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp7", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp8", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp9", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp10", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp11", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp12", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp13", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp14", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp15", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp16", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp17", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp18", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp19", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 },
-{ id: "dp20", text: "Which of this is not a computing device", img: null, options: ["Fridge","Palmtop","Laptop","Desktop"], answer: 0 }
-  ],
-
-
-//Economics
-  Economics: [
-    { id: "ec1", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec2", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec3", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec4", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec5", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
-    { id: "ec6", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec7", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec8", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec9", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec10", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
-    { id: "ec11", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec12", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec13", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec14", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec15", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
-    { id: "ec16", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec17", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec18", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec19", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 },
- { id: "ec20", text: "Demand increases when price", img: null, options: ["Increases","Falls","Stays same","None"], answer: 1 }
-  ],
-
-
-  //Civic Education
-  "Civic Education": [
-    { id: "cv1", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv2", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv3", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv4", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv5", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
- { id: "cv6", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv7", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv8", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv9", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv10", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
- { id: "cv11", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv12", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv13", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv14", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv15", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
- { id: "cv16", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv17", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv18", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv19", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 },
-{ id: "cv20", text: "A democratic government is chosen by?", img: null, options: ["Monarch","Elections","Force","Lottery"], answer: 1 }
-  ]
+    Mathematics: [
+        
+    ],
+    
+    
+    //English Language
+    "English Language": [
+        
+    ],
+    
+    
+    //Chemistry
+    Chemistry: [
+        
+    ],
+    
+    
+    //Biology
+    Biology: [
+        
+    ],
+    
+    
+    //Physics
+    Physics: [
+        
+    ],
+    
+    
+    //Geography
+    Geography: [
+        
+    ],
+    
+    
+    //Computer Science
+    "Computer Science": [
+        { id: "cs1", text: "Which of the following is an input device?", img: null, options: ["Keyboard", "Monitor", "Printer", "Speaker"], answer: 0 },
+        
+        { id: "cs2", text: "Which of the following is an output device?", img: null, options: ["Mouse", "Monitor", "Keyboard", "Scanner"], answer: 1 },
+        
+        { id: "cs3", text: "Which of these is a storage device?", img: null, options: ["RAM", "Hard disk", "Keyboard", "Monitor"], answer: 1 },
+        
+        { id: "cs4", text: "Which of the following is a programming language?", img: null, options: ["Python", "Windows", "Microsoft", "Chrome"], answer: 0 },
+        
+        { id: "cs5", text: "The brain of the computer is:", img: null, options: ["RAM", "CPU", "Hard disk", "Monitor"], answer: 1 },
+        
+        { id: "cs6", text: "Which of the following is a primary storage?", img: null, options: ["Hard disk", "RAM", "CD", "DVD"], answer: 1 },
+        
+        { id: "cs7", text: "Which of the following is a secondary storage?", img: null, options: ["RAM", "ROM", "Hard disk", "Cache"], answer: 2 },
+        
+        { id: "cs8", text: "Which of the following is an operating system?", img: null, options: ["Windows", "HTML", "Python", "Java"], answer: 0 },
+        
+        { id: "cs9", text: "Which of these is a type of software?", img: null, options: ["Hardware", "Application", "Mouse", "Keyboard"], answer: 1 },
+        
+        { id: "cs10", text: "Which of the following is a network device?", img: null, options: ["Router", "Printer", "Keyboard", "Monitor"], answer: 0 },
+        
+        { id: "cs11", text: "Which of these is a type of computer?", img: null, options: ["Laptop", "Chair", "Table", "Pen"], answer: 0 },
+        
+        { id: "cs12", text: "The shortcut key to copy is:", img: null, options: ["Ctrl + C", "Ctrl + V", "Ctrl + X", "Ctrl + Z"], answer: 0 },
+        
+        { id: "cs13", text: "Which of the following is a cloud storage service?", img: null, options: ["Google Drive", "Word", "Excel", "PowerPoint"], answer: 0 },
+        
+        { id: "cs14", text: "Which part of the computer stores data permanently?", img: null, options: ["RAM", "ROM", "Cache", "Registers"], answer: 1 },
+        
+        { id: "cs15", text: "Which of the following is a website address protocol?", img: null, options: ["http", "C++", "Python", "Windows"], answer: 0 },
+        
+        { id: "cs16", text: "Which of these is used to browse the internet?", img: null, options: ["Browser", "Compiler", "IDE", "Router"], answer: 0 },
+        
+        { id: "cs17", text: "Which of the following is NOT an input device?", img: null, options: ["Scanner", "Monitor", "Keyboard", "Mouse"], answer: 1 },
+        
+        { id: "cs18", text: "Which of these is a type of computer memory?", img: null, options: ["RAM", "Table", "Pen", "Chair"], answer: 0 },
+        
+        { id: "cs19", text: "Which of the following is an example of application software?", img: null, options: ["Microsoft Word", "Windows", "CPU", "RAM"], answer: 0 },
+        
+        { id: "cs20", text: "Which of these is a binary digit?", img: null, options: ["0", "1", "2", "Both 0 and 1"], answer: 3 },
+        
+        { id: "cs21", text: "Which of the following is a type of network?", img: null, options: ["LAN", "CPU", "RAM", "ROM"], answer: 0 },
+        
+        { id: "cs22", text: "Which of these is used to print documents?", img: null, options: ["Printer", "Monitor", "Keyboard", "Mouse"], answer: 0 },
+        
+        { id: "cs23", text: "Which of the following is a type of computer program?", img: null, options: ["Software", "Hardware", "Monitor", "Mouse"], answer: 0 },
+        
+        { id: "cs24", text: "Which of these stores data temporarily?", img: null, options: ["RAM", "Hard disk", "ROM", "Printer"], answer: 0 },
+        
+        { id: "cs25", text: "Which of these is used to input images into the computer?", img: null, options: ["Scanner", "Keyboard", "Monitor", "Mouse"], answer: 0 },
+        
+        { id: "cs26", text: "Which of the following is a web browser?", img: null, options: ["Chrome", "Python", "Java", "Windows"], answer: 0 },
+        
+        { id: "cs27", text: "Which of the following is NOT a type of computer?", img: null, options: ["Laptop", "Tablet", "Chair", "Desktop"], answer: 2 },
+        
+        { id: "cs28", text: "Which of these is a device used to output sound?", img: null, options: ["Speaker", "Monitor", "Keyboard", "Mouse"], answer: 0 },
+        
+        { id: "cs29", text: "Which of the following is an example of system software?", img: null, options: ["Windows", "MS Word", "Google Chrome", "Python"], answer: 0 },
+        
+        { id: "cs30", text: "Which of these is used to save documents?", img: null, options: ["Hard disk", "Keyboard", "Monitor", "Mouse"], answer: 0 },
+        
+        { id: "cs31", text: "Which of the following represents a bit?", img: null, options: ["0", "1", "Both 0 and 1", "2"], answer: 2 },
+        
+        { id: "cs32", text: "Which of these is a type of database?", img: null, options: ["Relational", "CPU", "RAM", "ROM"], answer: 0 },
+        
+        { id: "cs33", text: "Which of the following is used for typing documents?", img: null, options: ["Keyboard", "Mouse", "Monitor", "Printer"], answer: 0 },
+        
+        { id: "cs34", text: "Which of the following is used to connect computers in a network?", img: null, options: ["Router", "CPU", "Monitor", "Printer"], answer: 0 },
+        
+        { id: "cs35", text: "Which of these is an example of an output device?", img: null, options: ["Monitor", "Keyboard", "Mouse", "Scanner"], answer: 0 },
+        
+        { id: "cs36", text: "Which of the following is used to run computer programs?", img: null, options: ["CPU", "RAM", "Monitor", "Printer"], answer: 0 },
+        
+        { id: "cs37", text: "Which of these is a primary input device?", img: null, options: ["Keyboard", "Printer", "Monitor", "Speaker"], answer: 0 },
+        
+        { id: "cs38", text: "Which of these is a secondary storage device?", img: null, options: ["Hard disk", "RAM", "CPU", "Motherboard"], answer: 0 },
+        
+        { id: "cs39", text: "Which of the following is used to view web pages?", img: null, options: ["Browser", "Compiler", "IDE", "Router"], answer: 0 },
+        
+        { id: "cs40", text: "Which of these is used to store programs while the computer is running?", img: null, options: ["RAM", "ROM", "Hard disk", "CD"], answer: 0 }
+    ],
+    
+    
+    
+    //Data Processing
+    "Data Processing": [
+        { id: "dp1", text: "Which of the following is an example of data?", img: null, options: ["Temperature readings", "Computer", "Keyboard", "Monitor"], answer: 0 },
+        
+        { id: "dp2", text: "Information is data that has been:", img: null, options: ["Stored", "Processed", "Ignored", "Deleted"], answer: 1 },
+        
+        { id: "dp3", text: "Which of these is a method of data collection?", img: null, options: ["Survey", "Programming", "Typing", "Printing"], answer: 0 },
+        
+        { id: "dp4", text: "Which device is used to input data into a computer?", img: null, options: ["Keyboard", "Monitor", "Printer", "Speaker"], answer: 0 },
+        
+        { id: "dp5", text: "Which device is used to output processed data?", img: null, options: ["Printer", "Keyboard", "Mouse", "Scanner"], answer: 0 },
+        
+        { id: "dp6", text: "Which of the following is a type of data?", img: null, options: ["Text", "Number", "Image", "All of the above"], answer: 3 },
+        
+        { id: "dp7", text: "What is the first step in data processing?", img: null, options: ["Processing", "Storage", "Collection", "Output"], answer: 2 },
+        
+        { id: "dp8", text: "The process of checking and correcting errors in data is called:", img: null, options: ["Validation", "Editing", "Processing", "Storing"], answer: 1 },
+        
+        { id: "dp9", text: "Which of these is NOT a stage of data processing?", img: null, options: ["Input", "Processing", "Output", "Recycling"], answer: 3 },
+        
+        { id: "dp10", text: "Which type of data is used to represent yes/no answers?", img: null, options: ["Numeric", "Alphanumeric", "Binary", "Decimal"], answer: 2 },
+        
+        { id: "dp11", text: "Which of the following is a method of storing data?", img: null, options: ["RAM", "Hard disk", "Keyboard", "Mouse"], answer: 1 },
+        
+        { id: "dp12", text: "Which of the following is an example of manual data processing?", img: null, options: ["Using a calculator", "Using a computer", "Using software", "Using a database"], answer: 0 },
+        
+        { id: "dp13", text: "Which of these is a form of electronic data processing?", img: null, options: ["Using a computer", "Using pen and paper", "Using abacus", "Using ledger"], answer: 0 },
+        
+        { id: "dp14", text: "Which of the following is the purpose of data processing?", img: null, options: ["To convert data into information", "To delete data", "To store data only", "To ignore data"], answer: 0 },
+        
+        { id: "dp15", text: "Which of the following best defines a database?", img: null, options: ["Collection of data", "Computer program", "Input device", "Output device"], answer: 0 },
+        
+        { id: "dp16", text: "Which of the following is used to manage databases?", img: null, options: ["DBMS", "CPU", "RAM", "Printer"], answer: 0 },
+        
+        { id: "dp17", text: "Which of these is an example of data output?", img: null, options: ["Report", "Keyboard", "Mouse", "Scanner"], answer: 0 },
+        
+        { id: "dp18", text: "Which of the following represents raw facts?", img: null, options: ["Data", "Information", "Report", "Knowledge"], answer: 0 },
+        
+        { id: "dp19", text: "Which type of data processing involves both human and computer?", img: null, options: ["Manual", "Electronic", "Semi-automatic", "None"], answer: 2 },
+        
+        { id: "dp20", text: "Which of the following is an example of information?", img: null, options: ["Annual sales report", "List of numbers", "Keyboard keys", "CPU speed"], answer: 0 },
+        
+        { id: "dp21", text: "The main purpose of data validation is to:", img: null, options: ["Check for errors", "Store data", "Output data", "Delete data"], answer: 0 },
+        
+        { id: "dp22", text: "Which of these is NOT an input device for data processing?", img: null, options: ["Scanner", "Keyboard", "Printer", "Mouse"], answer: 2 },
+        
+        { id: "dp23", text: "Which of these is an output device for data processing?", img: null, options: ["Printer", "Keyboard", "Mouse", "Scanner"], answer: 0 },
+        
+        { id: "dp24", text: "Which of the following is NOT part of the data processing cycle?", img: null, options: ["Input", "Processing", "Output", "Recycling"], answer: 3 },
+        
+        { id: "dp25", text: "Which type of data is represented by letters and numbers?", img: null, options: ["Numeric", "Alphanumeric", "Binary", "Decimal"], answer: 1 },
+        
+        { id: "dp26", text: "Which of the following is a step in electronic data processing?", img: null, options: ["Data entry", "Data processing", "Data output", "All of the above"], answer: 3 },
+        
+        { id: "dp27", text: "Which of these is used to store data permanently?", img: null, options: ["RAM", "Hard disk", "Keyboard", "Mouse"], answer: 1 },
+        
+        { id: "dp28", text: "Which of the following is an example of processed data?", img: null, options: ["Report", "Raw numbers", "Images", "Keyboard input"], answer: 0 },
+        
+        { id: "dp29", text: "Which of these is NOT a function of data processing?", img: null, options: ["Collect data", "Process data", "Destroy data", "Output data"], answer: 2 },
+        
+        { id: "dp30", text: "Which of the following data types is suitable for storing decimal numbers?", img: null, options: ["Integer", "Float", "String", "Boolean"], answer: 1 },
+        
+        { id: "dp31", text: "Which of the following best describes batch processing?", img: null, options: ["Processing data in groups", "Processing data one by one", "Processing manually", "Processing with errors"], answer: 0 },
+        
+        { id: "dp32", text: "Which of the following is a characteristic of good information?", img: null, options: ["Accuracy", "Timeliness", "Relevance", "All of the above"], answer: 3 },
+        
+        { id: "dp33", text: "Which of these is a method of collecting data in schools?", img: null, options: ["Survey", "Printing", "Programming", "Browsing"], answer: 0 },
+        
+        { id: "dp34", text: "Which of the following is used to display processed data on screen?", img: null, options: ["Monitor", "Keyboard", "Printer", "Scanner"], answer: 0 },
+        
+        { id: "dp35", text: "Which of these represents a simple form of data processing?", img: null, options: ["Calculating total marks", "Creating software", "Printing reports", "Storing files"], answer: 0 },
+        
+        { id: "dp36", text: "Which of the following is used to ensure data accuracy?", img: null, options: ["Validation", "Printing", "Typing", "Deletion"], answer: 0 },
+        
+        { id: "dp37", text: "Which type of data processing involves handling data as it comes?", img: null, options: ["Real-time processing", "Batch processing", "Manual processing", "Semi-automatic"], answer: 0 },
+        
+        { id: "dp38", text: "Which of the following is a source of data for processing?", img: null, options: ["Surveys", "Sensors", "Questionnaires", "All of the above"], answer: 3 },
+        
+        { id: "dp39", text: "Which of the following best describes semi-automatic data processing?", img: null, options: ["Combination of human and machine processing", "Fully manual", "Fully electronic", "None"], answer: 0 },
+        
+        { id: "dp40", text: "Which of the following is an example of numerical data?", img: null, options: ["Height in cm", "Name of student", "City of residence", "Gender"], answer: 0 }
+    ],
+    
+    
+    //Economics
+    Economics: [
+        
+    ],
+    
+    
+    //Civic Education
+    "Civic Education": [
+        
+    ],
+    
+    
+    //Marketing
+    Marketing: [
+        
+    ],
+    
+    
+    //Commerce
+    Commerce: [
+        
+    ],
+    
+    
+    //CRS
+    CRS: [
+        
+    ],
+    
+    
+    //Financial Accounting
+    "Financial Accounting": [
+        
+    ],
+    
+    
+    //Agric Science
+    "Agric Science": [
+        
+    ],
+    
+    
+    //Government
+    Government: [
+        
+    ],
+    
+    
+    //Literature
+    "Literature in English": [
+        
+    ]
+    
 };

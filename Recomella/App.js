@@ -89,7 +89,7 @@ populateSubjects();
 /* Start exam flow */
 let state = {
   student: null,
-  classKey: "ss1",
+  classKey: "key",
   subject: null,
   questions: [],
   answers: {},
@@ -113,7 +113,8 @@ function displayStudentDetails(student){
   S.studentDetails.innerHTML = `
     <strong>${student.name}</strong> <span class="muted">(${student.class})</span><br/>
     Exam No: ${student.examNum} <br/>
-    Gender: ${student.gender}
+    Gender: ${student.gender} <br/>
+    Subject Offered: ${student.subject}
   `;
 }
 
@@ -320,53 +321,63 @@ S.anotherBtn.addEventListener("click", ()=>{
 });*/
 
 /* Start button logic */
-S.startBtn.addEventListener("click", ()=>{
+S.startBtn.addEventListener("click", () => {
   const examNum = S.examNum.value.trim();
   const classKey = S.classSelect.value;
   const subject = S.subjectSelect.value;
-  if(!examNum){
-    showMessage("Please enter examination number.", true);
+  
+  if (!examNum) {
+    showMessage("Please enter your User ID.", true);
     return;
   }
-  if(!subject){
+  if (!subject) {
     showMessage("Please select a subject.", true);
     return;
   }
+  
   // find student
   const student = findStudent(classKey, examNum);
-  if(!student){
-    showMessage("Student not found. Check exam number and class.", true);
+  if (!student) {
+    showMessage("Student not found. Check User ID and class.", true);
     displayStudentDetails(null);
     return;
   }
+  
+  // NEW: check if student is offering this subject
+  if (!isStudentOfferingSubject(student, subject)) {
+    showMessage(`❌ You did not register for ${subject}.`, true);
+    displayStudentDetails(student);
+    return;
+  }
+  
   showMessage("");
   displayStudentDetails(student);
-
+  
   // prepare questions
   const pool = getQuestionsFor(classKey, subject);
-  if(!pool || pool.length===0){
+  if (!pool || pool.length === 0) {
     showMessage("No questions in the database for this subject.", true);
     return;
   }
-
+  
   state.student = student;
   state.classKey = classKey;
   state.subject = subject;
   state.questions = prepareQuestions(classKey, subject);
   state.answers = {};
   state.currentIndex = 0;
-
+  
   // show exam screen
   S.startScreen.classList.add("hidden");
   S.resultScreen.classList.add("hidden");
   S.examScreen.classList.remove("hidden");
-
+  
   S.examSubject.textContent = subject;
   S.examStudent.innerHTML = `${student.name} — ${student.examNum} (${student.class})`;
-
+  
   renderQuestion(0);
   updateProgress();
-
+  
   // timer selection
   const seconds = SUBJECT_TIMERS[subject] || DEFAULT_TIMEMIN;
   startTimer(seconds);
