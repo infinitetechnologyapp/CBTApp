@@ -30,6 +30,7 @@
       ranking: document.getElementById("ranking"),
       downloadBtn: document.getElementById("download-btn"),
       anotherBtn: document.getElementById("another-btn"),
+      studentsdataBtn: document.getElementById("check-data"),
      
     }
   };

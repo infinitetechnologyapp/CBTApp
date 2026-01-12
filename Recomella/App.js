@@ -327,7 +327,7 @@ S.startBtn.addEventListener("click", () => {
   const subject = S.subjectSelect.value;
   
   if (!examNum) {
-    showMessage("Please enter your User ID.", true);
+    showMessage("Please enter your Examination Number", true);
     return;
   }
   if (!subject) {
@@ -338,7 +338,7 @@ S.startBtn.addEventListener("click", () => {
   // find student
   const student = findStudent(classKey, examNum);
   if (!student) {
-    showMessage("Student not found. Check User ID and class.", true);
+    showMessage("Student not found. Check Examination Number and class.", true);
     displayStudentDetails(null);
     return;
   }
@@ -382,6 +382,36 @@ S.startBtn.addEventListener("click", () => {
   const seconds = SUBJECT_TIMERS[subject] || DEFAULT_TIMEMIN;
   startTimer(seconds);
 });
+
+
+/* check students data*/
+  S.studentsdataBtn.addEventListener("click", () => {
+  const examNum = S.examNum.value.trim();
+  const classKey = S.classSelect.value;
+  
+  if (!examNum) {
+    showMessage("Please enter your User ID.", true);
+    return;
+  }
+  
+  const student = findStudent(classKey, examNum);
+  if (!student) {
+    showMessage("Student not found. Check User ID and class.", true);
+    displayStudentDetails(null);
+    return;
+  }
+  
+  showMessage("✔ Student found. See your details below.");
+  displayStudentDetails(student);
+  
+  // Show subjects too
+  const subjects = getStudentSubjects(student).join(", ");
+  
+  S.studentDetails.innerHTML += `
+    <br><strong>Subjects:</strong> ${subjects}
+  `;
+});
+
 
 /* initial UI state */
 S.startScreen.classList.remove("hidden");
