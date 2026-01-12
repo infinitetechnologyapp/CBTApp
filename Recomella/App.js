@@ -12,15 +12,16 @@
 
 /* CONFIG */
 const SUBJECT_TIMERS = {
-  Mathematics: 15 * 60,
-  Chemistry: 12 * 60,
+  Mathematics: 25 * 60,
+  Chemistry: 15 * 60,
   Biology: 10 * 60,
-  Physics: 12 * 60,
-  "English": 10 * 60,
+  Physics: 15 * 60,
+  "Data Processing": 10 * 60,
+  "Computer Science": 10 * 60,
   "English Language": 10 * 60 // support alternative label
 };
-const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","English","English Language"];
-const DEFAULT_TIMEMIN = 7 * 60;
+const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","English Language","Data Processing","Computer Science"];
+const DEFAULT_TIMEMIN = 5 * 60;
 const SUBJECT_DISPLAY_COUNT = (subject) => {
   if (MAIN_SUBJECT_NAMES.includes(subject)) return 30;
   return 20;
