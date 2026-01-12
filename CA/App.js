@@ -340,7 +340,7 @@ S.startBtn.addEventListener("click", () => {
   // find student
   const student = findStudent(classKey, examNum);
   if (!student) {
-    showMessage("Student not found. Check User ID and class.", true);
+    showMessage("Student not found. Please Check User ID and class.", true);
     displayStudentDetails(null);
     return;
   }
@@ -397,7 +397,7 @@ S.startBtn.addEventListener("click", () => {
   
   const student = findStudent(classKey, examNum);
   if (!student) {
-    showMessage("Student not found. Check User ID and class.", true);
+    showMessage("Student not found. Please Check User ID and class.", true);
     displayStudentDetails(null);
     return;
   }
