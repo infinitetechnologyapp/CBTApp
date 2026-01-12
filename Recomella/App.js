@@ -401,7 +401,7 @@ S.startBtn.addEventListener("click", () => {
     return;
   }
   
-  showMessage("✔ Student found. See your details below.");
+  showMessage("✅ Student found. See your details below.");
   displayStudentDetails(student);
   
   // Show subjects too
