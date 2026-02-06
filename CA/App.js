@@ -330,7 +330,7 @@ S.startBtn.addEventListener("click", () => {
   const subject = S.subjectSelect.value;
   
   if (!examNum) {
-    showMessage("Please enter your User ID.", true);
+    showMessage("Please enter your Student ID.", true);
     return;
   }
   if (!subject) {
@@ -341,7 +341,7 @@ S.startBtn.addEventListener("click", () => {
   // find student
   const student = findStudent(classKey, examNum);
   if (!student) {
-    showMessage("Student not found. Please Check User ID and class.", true);
+    showMessage("Student not found. Please Check Student ID and class.", true);
     displayStudentDetails(null);
     return;
   }
@@ -392,13 +392,13 @@ S.startBtn.addEventListener("click", () => {
   const classKey = S.classSelect.value;
   
   if (!examNum) {
-    showMessage("Please enter your User ID.", true);
+    showMessage("Please enter your Student ID.", true);
     return;
   }
   
   const student = findStudent(classKey, examNum);
   if (!student) {
-    showMessage("Student not found. Please Check User ID and class.", true);
+    showMessage("Student not found. Please Check Student ID and class.", true);
     displayStudentDetails(null);
     return;
   }
