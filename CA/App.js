@@ -16,8 +16,8 @@ const SUBJECT_TIMERS = {
   Chemistry: 15 * 60,
   Biology: 10 * 60,
   Physics: 15 * 60,
-  "Data Processing": 10 * 60,
-  "Computer Science": 10 * 60,
+  "Data Processing": 7 * 60,
+  "Computer Science": 7 * 60,
   "English Language": 10 * 60 // support alternative label
 };
 const MAIN_SUBJECT_NAMES = ["Mathematics","Chemistry","Biology","Physics","Data Processing","Computer Science","English Language"];
@@ -315,11 +315,11 @@ S.anotherBtn.addEventListener("click", ()=>{
 });
 
 /* clear all scores button */
-/*S.clearScoresBtn.addEventListener("click", ()=>{
+S.clearScoresBtn.addEventListener("click", ()=>{
   if(!confirm("Clear all saved scores from localStorage? This cannot be undone.")) return;
   localStorage.removeItem(STORAGE_KEY);
   showMessage("All scores cleared.", false);
-});*/
+});
 
 
 
