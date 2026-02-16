@@ -10,7 +10,7 @@ window.studentsSS2 = [
   
  { examNum: "2055", name: "Marcus George", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
- { examNum: "SS2056", name: "Peace Isaac Sunday", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2056", name: "Peace Isaac Sunday", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Economics", "Geography", "Data Processing"] },
   
  { examNum: "2057", name: "Raphael Emmanuel", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
@@ -26,25 +26,25 @@ window.studentsSS2 = [
   
  { examNum: "SS2063", name: "Favour God's power", class: "SS2", gender: "Female", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Commerce"] },
   
- { examNum: "SS2064", name: "Samuel Johnson", class: "SS2", gender: "Male", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Commerce"] },
+ { examNum: "2064", name: "Samuel Johnson", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Economics", "Data Processing", "Geography"] },
   
- { examNum: "SS2065", name: "Pat Elias Sharon", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2065", name: "Pat Elias Sharon", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Agric Science", "Geography", "Data Processing"] },
   
  { examNum: "2066", name: "Innocent Goodluck", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
  { examNum: "2067", name: "Oken Miracle", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
- { examNum: "SS2068", name: "Kosisochukwu Nora", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2068", name: "Kosisochukwu Nora", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Economics", "Geography", "Data Processing"] },
   
- { examNum: "SS2069", name: "Promise Eze", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2069", name: "Promise Eze", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Economics", "Geography", "Data Processing"] },
   
- { examNum: "SS2070", name: "Favour Odeomena", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2070", name: "Favour Odeomena", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Agric Science", "Geography", "Data Processing"] },
   
- { examNum: "SS2071", name: "David Igwe", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2071", name: "David Igwe", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Agric Science", "Geography", "Data Processing"] },
 
- { examNum: "SS2072", name: "Golden Korne", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2072", name: "Golden Korne", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
- { examNum: "SS2073", name: "Nwiko Dominion", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2073", name: "Nwiko Dominion", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
  { examNum: "2074", name: "Emmanuella Olaka", class: "SS2", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
@@ -54,7 +54,7 @@ window.studentsSS2 = [
    
  { examNum: "SS2077", name: "Favour Nwafor", class: "SS2", gender: "Female" },
   
- { examNum: "SS2078", name: "Adolphus Ngalaka", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
+ { examNum: "2078", name: "Adolphus Ngalaka", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"] },
   
  { examNum: "SS2079", name: "Sinaza Faith", class: "SS2", gender: "Female", subject: ["Financial Accounting", "Marketing", "Biology", "Economics", "CRS", "Commerce"] },
   
