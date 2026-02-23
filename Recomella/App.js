@@ -105,17 +105,30 @@ function showMessage(msg, isError=false){
 }
 
 /* display student details */
-function displayStudentDetails(student){
-  if(!student) {
+function displayStudentDetails(student) {
+  if (!student) {
     S.studentDetails.classList.add("hidden");
     return;
   }
+  
   S.studentDetails.classList.remove("hidden");
+  
+  const subjects = typeof getStudentSubjects === "function" ?
+    getStudentSubjects(student).join(", ") :
+    "";
+  
   S.studentDetails.innerHTML = `
-    <strong>${student.name}</strong> <span class="muted">(${student.class})</span><br/>
-    Exam No: ${student.examNum} <br/>
-    Gender: ${student.gender} <br/>
-    Subject Offered: ${student.subject}
+    <div style="display:flex; gap:15px; align-items:center;">
+      <img src="${student.image || 'images/default.png'}"
+           alt="Student Photo"
+           style="width:90px;height:90px;object-fit:cover;border-radius:8px;border:2px solid #ddd;">
+      <div>
+        <strong>${student.name}</strong> 
+        <span class="muted">(${student.class})</span><br/>
+        Exam No: ${student.examNum}<br/>
+        Gender: ${student.gender}
+      </div>
+    </div>
   `;
 }
 
@@ -374,7 +387,18 @@ S.startBtn.addEventListener("click", () => {
   S.examScreen.classList.remove("hidden");
   
   S.examSubject.textContent = subject;
-  S.examStudent.innerHTML = `${student.name} — ${student.examNum} (${student.class})`;
+ // S.examStudent.innerHTML = `${student.name} — ${student.examNum} (${student.class})`;//
+  
+  S.examStudent.innerHTML = `
+  <div style="display:flex; align-items:center; gap:12px;">
+    <img src="${student.image || 'images/default.png'}"
+         style="width:70px;height:70px;object-fit:cover;border-radius:6px;border:2px solid #ccc;">
+    <div>
+      <strong>${student.name}</strong><br>
+      ${student.examNum} (${student.class})
+    </div>
+  </div>
+`;
   
   renderQuestion(0);
   updateProgress();
