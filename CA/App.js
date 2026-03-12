@@ -13,7 +13,7 @@
 /* CONFIG */
 const SUBJECT_TIMERS = {
   Mathematics: 25 * 60,
-  Chemistry: 15 * 60,
+  Chemistry: 10 * 60,
   Biology: 10 * 60,
   Physics: 15 * 60,
   "Data Processing": 7 * 60,
