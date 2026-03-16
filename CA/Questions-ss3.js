@@ -384,12 +384,6 @@ window.questionsSS3 = {
     //Government
     Government: [
         
-    ],
-    
-    
-    //Literature
-    "Literature in English": [
-        
     ]
     
 };
