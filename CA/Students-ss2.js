@@ -1,4 +1,3 @@
-
 window.studentsSS2 = [
  { examNum: "2051", name: "Oluchi Chuks Omi", class: "SS2", gender: "Female", subject: ["CRS", "Literature in English", "Biology", "Economics", "Government", "Data Processing"], image: "images/"  },
 

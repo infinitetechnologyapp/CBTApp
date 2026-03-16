@@ -29,7 +29,7 @@ window.studentsSS3 = [
   
   { examNum: "SS3092", name: "Siaka Prisca Jaka", class: "SS3", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
   
-  { examNum: "SS3093", name: "Nwele Divine Favour", class: "SS3", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
+  { examNum: "3093", name: "Nwele Divine Favour", class: "SS3", gender: "Female", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
   
   { examNum: "SS3094", name: "Imokhai Anne", class: "SS3", gender: "Female", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Literature in English"], image: "images/"  },
   
@@ -43,9 +43,9 @@ window.studentsSS3 = [
   
   { examNum: "SS3099", name: "Onwachukwe Chiamaka", class: "SS3", gender: "Female", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Literature in English"], image: "images/"  },
   
-  { examNum: "SS3100", name: "Yusuf Eliphaz", class: "SS3", gender: "Male", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Literature in English"], image: "images/"  },
+  { examNum: "3100", name: "Yusuf Eliphaz", class: "SS3", gender: "Male", subject: ["CRS", "Marketing", "Biology", "Economics", "Data Processing", "Literature in English"], image: "images/"  },
   
-  { examNum: "SS3101", name: "Emmanuel Vincent", class: "SS3", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
+  { examNum: "3101", name: "Emmanuel Vincent", class: "SS3", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
   
   { examNum: "SS3102", name: "Favour Igwe", class: "SS3", gender: "Female", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Literature in English"], image: "images/"  },
   
@@ -67,11 +67,11 @@ window.studentsSS3 = [
   
   { examNum: "SS3111", name: "Emmanuel Simon", class: "SS3", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
   
-  { examNum: "SS3112", name: "Marvelous Perculia", class: "SS3", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
+  { examNum: "3112", name: "Marvelous Perculia", class: "SS3", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Agric Science", "Geography", "Data Processing"], image: "images/"  },
   
   { examNum: "SS3113", name: "Nsikak God's gift", class: "SS3", gender: "Male", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Commerce"], image: "images/"  },
   
-  { examNum: "SS3114", name: "Edward Makuochukwu", class: "SS3", gender:"Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },  
+  { examNum: "3114", name: "Edward Makuochukwu", class: "SS3", gender:"Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },  
   
   { examNum: "SS3Admin", name: "Sir Patrick Ncha", class: "SS3", gender: "Male", subject:"all", image: "images/"  }
   
