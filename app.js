@@ -14,7 +14,7 @@
 const SUBJECT_TIMERS = {
   Mathematics: 30 * 60,
   Physics: 20 * 60,
-  Chemistry: 15 * 60,
+  Chemistry: 20 * 60,
   Biology: 15 * 60,
   "Computer Science": 15 * 60,
   "Data Processing": 15 * 60,
