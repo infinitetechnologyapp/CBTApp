@@ -21,7 +21,7 @@ window.studentsSS2 = [
   
  { examNum: "2061", name: "Wisdom Akpan Dennis", class: "SS2", gender: "Male", subject: ["Chemistry", "Physics", "Biology", "Computer Science", "Geography", "Data Processing"], image: "images/"  },
   
- { examNum: "2062", name: "Asuquo Charity", class: "SS2", gender: "Female", subject: ["CRS", "Data Processing", "Biology", "Economics", "Government", "Commerce"], image: "images/"  },
+ { examNum: "2062", name: "Asuquo Charity", class: "SS2", gender: "Female", subject: ["CRS", "Data Processing", "Biology", "Economics", "Government", "Chemistry"], image: "images/"  },
   
  { examNum: "SS2063", name: "Favour God's power", class: "SS2", gender: "Female", subject: ["CRS", "Marketing", "Biology", "Economics", "Government", "Commerce"], image: "images/"  },
   
