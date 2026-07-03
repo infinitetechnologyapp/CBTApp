@@ -13,341 +13,56 @@ window.questionsSS2 = {
     
     //Chemistry
     Chemistry: [
-  {
-    id: "ch1",
-    text: "Nitrogen combines directly with metals ___.",
-    img: null,
-    options: ["Cu", "Mg", "Au", "Ag"],
-    answer: 1
-  },
-  {
-    id: "ch2",
-    text: "Hydrides of Nitrogen which is capable of turning red litmus blue makes nitrogen to have an oxidation state of ___.",
-    img: null,
-    options: ["+2", "-2", "+3", "-3"],
-    answer: 1
-  },
-  {
-    id: "ch3",
-    text: "The process in which nitrogen circulates and recycled is called ___.",
-    img: null,
-    options: ["the nitrogen cycle", "nitrogen fixation", "water cycle", "carbon cycle"],
-    answer: 0
-  },
-  {
-    id: "ch4",
-    text: "What is the correct order of water cycle?",
-    img: null,
-    options: [
-      "Cloud, water vapour, rain",
-      "Water vapour, cloud, rain",
-      "Rain, cloud, water vapour",
-      "Water vapour, rain, cloud"
-    ],
-    answer: 1
-  },
-  {
-    id: "ch5",
-    text: "The following are uses of ammonia EXCEPT ___.",
-    img: null,
-    options: [
-      "laundry",
-      "make nitrogenous fertilizer",
-      "manufacturing of washing soda",
-      "it is not use as cleansing agents"
-    ],
-    answer: 3
-  },
-  {
-    id: "ch6",
-    text: "The most abundant element on earth is ___.",
-    img: null,
-    options: ["nitrogen", "helium", "silicon", "oxygen"],
-    answer: 3
-  },
-  {
-    id: "ch7",
-    text: "The following are physical properties of chlorine EXCEPT ___.",
-    img: null,
-    options: [
-      "it cannot be liquefied",
-      "it is denser than air",
-      "it is sparingly soluble in water",
-      "it is poisonous"
-    ],
-    answer: 0
-  },
-  {
-    id: "ch8",
-    text: "The bleaching action of chlorine in water is because ___.",
-    img: null,
-    options: [
-      "of its reducing property",
-      "of its oxidizing power",
-      "it is a strong acid",
-      "it is a weak acid"
-    ],
-    answer: 1
-  },
-  {
-    id: "ch9",
-    text: "What is the process of combining nitrogen gas with other elements to make nitrogen into usable compounds?",
-    img: null,
-    options: ["Nitrogen fixation", "Nitrogen composition", "Dentrification", "Ammonia"],
-    answer: 0
-  },
-  {
-    id: "ch10",
-    text: "What is the percentage of oxygen in air?",
-    img: null,
-    options: ["21%", "78%", "1%", "0.03%"],
-    answer: 0
-  },
-  {
-    id: "ch11",
-    text: "Which of the 'Halogens' is found in liquid state at room temperature?",
-    img: null,
-    options: ["Flourine", "Astatine", "Iodine", "Bromine"],
-    answer: 3
-  },
-  {
-    id: "ch12",
-    text: "The following are members of the halogen family EXCEPT ___.",
-    img: null,
-    options: ["barium", "fluorine", "chlorine", "astatine"],
-    answer: 0
-  },
-  {
-    id: "ch13",
-    text: "Which of the following isotope of hydrogen is called heavy water?",
-    img: null,
-    options: ["¹H", "²H", "³H", "⁴H"],
-    answer: 1
-  },
-  {
-    id: "ch14",
-    text: "What is the chemical equation when nitrogen monoxide is released into the air?",
-    img: null,
-    options: [
-      "2NO(g) + O₂(g) → 2NO₂(g)",
-      "2NO(g) + O₃(g) → 2NO₃(g)",
-      "NO₂(g) + O₂(g) → 2NO(g)",
-      "3N(g) + 3O₂(g) → 3NO₂(g)"
-    ],
-    answer: 0
-  },
-  {
-    id: "ch15",
-    text: "The oxidation state of hydrogen in hydride is ___.",
-    img: null,
-    options: ["+4", "-1", "-2", "+2"],
-    answer: 1
-  },
-  {
-    id: "ch16",
-    text: "Ammonium is prepared by one of the following processes called ___.",
-    img: null,
-    options: ["solvay process", "contact process", "Frasch process", "Haber process"],
-    answer: 3
-  },
-  {
-    id: "ch17",
-    text: "Which of the allotropes of sulphur has amber colour with needle shapes?",
-    img: null,
-    options: ["Rhombic sulphur", "Plastic sulphur", "Monoclinic sulphur", "Flower of sulphur"],
-    answer: 2
-  },
-  {
-    id: "ch18",
-    text: "Nitrogen combines directly with the following metals EXCEPT ___.",
-    img: null,
-    options: ["Cu", "Mg", "G", "Al"],
-    answer: 0
-  },
-  {
-    id: "ch19",
-    text: "Hydrides of Nitrogen which is capable of turning red litmus blue makes nitrogen to have an oxidation state of ___.",
-    img: null,
-    options: ["+2", "-2", "+3", "-3"],
-    answer: 1
-  },
-  {
-    id: "ch20",
-    text: "Oxygen in air can be absorbed by passing it through ___.",
-    img: null,
-    options: ["caustic soda", "fused calcium chloride", "alkaline pyrogallol", "washing soda"],
-    answer: 2
-  },
-  {
-    id: "ch21",
-    text: "Hydrogen is manufactured industrially by ___.",
-    img: null,
-    options: [
-      "the bosch process",
-      "action of steam on red-hot coke",
-      "action of steam on iron",
-      "electrolytic method"
-    ],
-    answer: 0
-  },
-  {
-    id: "ch22",
-    text: "Carbon IV oxide in air can be absorbed by passing it through ___.",
-    img: null,
-    options: ["caustic soda", "fused calcium chloride", "alkaline pyrogallol", "washing soda"],
-    answer: 0
-  },
-  {
-    id: "ch23",
-    text: "The least abundant element on earth is ___.",
-    img: null,
-    options: ["nitrogen", "aluminium", "hydrogen", "oxygen"],
-    answer: 2
-  },
-  {
-    id: "ch24",
-    text: "The following gases are soluble in water EXCEPT ___.",
-    img: null,
-    options: ["HCl", "SO₂", "O₂", "H₂"],
-    answer: 2
-  },
-  {
-    id: "ch25",
-    text: "The oxidizing properties of chlorine is because ___.",
-    img: null,
-    options: [
-      "of its readiness to gain electrons",
-      "of its oxidizing power",
-      "it is a strong acid",
-      "it is a weak acid"
-    ],
-    answer: 0
-  },
-  {
-    id: "ch26",
-    text: "What is the percentage of noble gas in air?",
-    img: null,
-    options: ["21%", "78%", "1%", "0.03%"],
-    answer: 2
-  },
-  {
-    id: "ch27",
-    text: "Which of the 'Halogens' has yellowish green colour?",
-    img: null,
-    options: ["Bromine", "Chlorine", "Iodine", "Flourine"],
-    answer: 1
-  },
-  {
-    id: "ch28",
-    text: "When supply of air is limited there is incomplete combustion of the following EXCEPT ___.",
-    img: null,
-    options: [
-      "black particles of carbon",
-      "black particles of soot",
-      "carbon II oxide",
-      "carbon IV oxide"
-    ],
-    answer: 3
-  },
-  {
-    id: "ch29",
-    text: "Hydrogen is manufactured through the following method EXCEPT ___.",
-    img: null,
-    options: [
-      "action of steam on iron",
-      "action of steam on red-hot coke",
-      "action of steam on methane under mekel catalyst",
-      "electrolytic method"
-    ],
-    answer: 2
-  },
-  {
-    id: "ch30",
-    text: "Oxidation of nitrogen in Mg₃N₂ is ___.",
-    img: null,
-    options: ["-3", "+3", "-2", "+2"],
-    answer: 1
-  },
-  {
-    id: "ch31",
-    text: "The following are physical property of Nitrogen IV oxide EXCEPT ___.",
-    img: null,
-    options: [
-      "reddish brown gas",
-      "it has a pungent smell",
-      "it is not a poisonous gas",
-      "much heavier than air"
-    ],
-    answer: 2
-  },
-  {
-    id: "ch32",
-    text: "All, except one metal, can displace hydrogen from water or acids.",
-    img: null,
-    options: ["zinc", "silver", "potassium", "magnesium"],
-    answer: 1
-  },
-  {
-    id: "ch33",
-    text: "Which of the following reaction with oxygen is slowest?",
-    img: null,
-    options: ["Oxidation", "Rusting", "Petrol + oxygen", "Coal + oxygen"],
-    answer: 1
-  },
-  {
-    id: "ch34",
-    text: "Which of the following halogen is most power oxidizing agent?",
-    img: null,
-    options: ["Iodine", "Fluorine", "Chlorine", "Astatine"],
-    answer: 1
-  },
-  {
-    id: "ch35",
-    text: "Combustion is a chemical reaction which is always accompanied by ___.",
-    img: null,
-    options: ["heat", "heat and light", "heat and energy", "heat and power"],
-    answer: 1
-  },
-  {
-    id: "ch36",
-    text: "Which of the allotropes of sulphur has amber colour with needle shapes?",
-    img: null,
-    options: ["Rhombic sulphur", "Plastic sulphur", "Monoclinic sulphur", "Flower of sulphur"],
-    answer: 2
-  },
-  {
-    id: "ch37",
-    text: "Which of the following is an amphoteric oxide?",
-    img: null,
-    options: ["SO₂", "CO₂", "ZnO", "NO"],
-    answer: 2
-  },
-  {
-    id: "ch38",
-    text: "Which of the following gases is neutral to litmus paper?",
-    img: null,
-    options: ["H₂", "Cl₂", "CO₂", "NH₃"],
-    answer: 0
-  },
-  {
-    id: "ch39",
-    text: "When supply of air is limited there is incomplete combustion of the following EXCEPT ___.",
-    img: null,
-    options: [
-      "black particles of carbon",
-      "black particles of soot",
-      "carbon II oxide",
-      "carbon IV oxide"
-    ],
-    answer: 3
-  },
-  {
-    id: "ch40",
-    text: "Which of the following isotope of hydrogen is radioactive?",
-    img: null,
-    options: ["Protium", "Dihydrogen", "Tritium", "Basic water"],
-    answer: 2
-  }
+  { "id": "chem1", "text": "The stable allotrope of sulphur at room temperature is ____.", "img": null, "options": ["Rhombic", "Monoclinic", "Plastic", "Amorphous"], "answer": 0 },
+  { "id": "chem2", "text": "The molecular formula of sulphur under normal conditions is ____.", "img": null, "options": ["S₂", "S₄", "S₆", "S₈"], "answer": 3 },
+  { "id": "chem3", "text": "The process used for the extraction of sulphur from underground deposits is the ____.", "img": null, "options": ["Frasch process", "Contact process", "Haber process", "Bessemer process"], "answer": 0 },
+  { "id": "chem4", "text": "Sulphur burns in oxygen to form ____.", "img": null, "options": ["SO₂", "SO₃", "H₂S", "H₂SO₄"], "answer": 0 },
+  { "id": "chem5", "text": "What is the colour of elemental sulphur?", "img": null, "options": ["Yellow", "White", "Red", "Black"], "answer": 0 },
+  { "id": "chem6", "text": "Sulphur is readily soluble in which of the following solvents?", "img": null, "options": ["Water", "Carbon disulphide (CS₂)", "Alcohol", "Ether"], "answer": 1 },
+  { "id": "chem7", "text": "The gas with a characteristic rotten-egg smell is ____.", "img": null, "options": ["SO₂", "H₂S", "Cl₂", "NH₃"], "answer": 1 },
+  { "id": "chem8", "text": "Calculate the molar mass of H₂SO₄. (H=1, S=32, O=16)", "img": null, "options": ["98 g/mol", "88 g/mol", "108 g/mol", "78 g/mol"], "answer": 0 },
+  { "id": "chem9", "text": "Acid rain is primarily caused by the presence of ____ in the atmosphere.", "img": null, "options": ["CO₂", "SO₂", "CH₄", "O₃"], "answer": 1 },
+  { "id": "chem10", "text": "Oleum is chemically known as ____.", "img": null, "options": ["H₂SO₄", "H₂S₂O₇", "H₂SO₃", "SO₃"], "answer": 1 },
+  { "id": "chem11", "text": "Epsom salt is the hydrated form of ____.", "img": null, "options": ["MgSO₄", "CuSO₄", "CaSO₄", "FeSO₄"], "answer": 0 },
+  { "id": "chem12", "text": "Concentrated H₂SO₄ acts as a dehydrating agent. Which demonstration best shows this property?", "img": null, "options": ["Drying gases", "Charring sugar", "Neutralizing bases", "Dissolving metals"], "answer": 1 },
+  { "id": "chem13", "text": "The chemical formula of the sulphite ion is ____.", "img": null, "options": ["SO₄²⁻", "SO₃²⁻", "S₂O₃²⁻", "SO₂"], "answer": 1 },
+  { "id": "chem14", "text": "Hydrogen sulphide in aqueous solution is a ____.", "img": null, "options": ["Strong acid", "Weak acid", "Strong base", "Weak base"], "answer": 1 },
+  { "id": "chem15", "text": "Which compound is used as the electrolyte in a lead-acid battery?", "img": null, "options": ["HCl", "HNO₃", "H₂SO₄", "CH₃COOH"], "answer": 2 },
+  { "id": "chem16", "text": "Sulphur dioxide is a ____ oxide.", "img": null, "options": ["Acidic", "Basic", "Amphoteric", "Neutral"], "answer": 0 },
+  { "id": "chem17", "text": "Substances that conduct electricity in aqueous solution are called ____.", "img": null, "options": ["Electrolytes", "Non-electrolytes", "Insulators", "Conductors"], "answer": 0 },
+  { "id": "chem18", "text": "Which of the following is a non-electrolyte?", "img": null, "options": ["NaCl", "HCl", "Glucose", "NaOH"], "answer": 2 },
+  { "id": "chem19", "text": "The process of formation of ions from neutral molecules is called ____.", "img": null, "options": ["Ionization", "Hydration", "Neutralization", "Sublimation"], "answer": 0 },
+  { "id": "chem20", "text": "The addition of CH₃COONa to CH₃COOH solution suppresses the ionization of acetic acid. This is known as the ____.", "img": null, "options": ["Common ion effect", "Buffer action", "Salt hydrolysis", "Solubility product"], "answer": 0 },
+  { "id": "chem21", "text": "Which of the following is a strong electrolyte?", "img": null, "options": ["CH₃COOH", "NH₄OH", "NaCl", "H₂O"], "answer": 2 },
+  { "id": "chem22", "text": "The ionic product of water (K_w) at 25°C is ____.", "img": null, "options": ["1 × 10⁻⁷", "1 × 10⁻¹⁴", "1 × 10⁻¹⁰", "1 × 10⁻⁵"], "answer": 1 },
+  { "id": "chem23", "text": "The pH of a neutral solution at 25°C is ____.", "img": null, "options": ["0", "7", "14", "1"], "answer": 1 },
+  { "id": "chem24", "text": "The equilibrium constant for the dissolution of a sparingly soluble salt is called ____.", "img": null, "options": ["Kₐ", "K_b", "K_sp", "K_w"], "answer": 2 },
+  { "id": "chem25", "text": "According to Arrhenius theory, an acid is a substance that produces ____ ions in water.", "img": null, "options": ["H⁺", "OH⁻", "Na⁺", "Cl⁻"], "answer": 0 },
+  { "id": "chem26", "text": "According to Arrhenius theory, a base produces ____ ions in water.", "img": null, "options": ["H⁺", "OH⁻", "Na⁺", "Cl⁻"], "answer": 1 },
+  { "id": "chem27", "text": "Electrolysis is the decomposition of a compound by passing ____.", "img": null, "options": ["Electricity", "Heat", "Light", "Pressure"], "answer": 0 },
+  { "id": "chem28", "text": "In electrolysis, the electrode connected to the negative terminal of the battery is called the ____.", "img": null, "options": ["Anode", "Cathode", "Electrolyte", "Salt bridge"], "answer": 1 },
+  { "id": "chem29", "text": "Which ions move towards the cathode during electrolysis?", "img": null, "options": ["Anions", "Cations", "Both", "Neither"], "answer": 1 },
+  { "id": "chem30", "text": "How many grams of copper (Eq. wt. = 31.75) are deposited by 2 faradays of electricity?", "img": null, "options": ["31.75 g", "63.50 g", "127.00 g", "15.88 g"], "answer": 1 },
+  { "id": "chem31", "text": "Calculate the moles of electrons passed when a current of 5 A flows for 1930 seconds. (1 F = 96500 C)", "img": null, "options": ["0.01 mol", "0.10 mol", "1.00 mol", "10.00 mol"], "answer": 1 },
+  { "id": "chem32", "text": "During electrolysis of molten NaCl, the product at the cathode is ____.", "img": null, "options": ["Chlorine gas", "Sodium metal", "Hydrogen gas", "Oxygen gas"], "answer": 1 },
+  { "id": "chem33", "text": "Electrolysis of water produces hydrogen at the cathode and ____ at the anode.", "img": null, "options": ["Oxygen", "Hydrogen", "Chlorine", "Ozone"], "answer": 0 },
+  { "id": "chem34", "text": "In electroplating, the object to be plated is made the ____.", "img": null, "options": ["Anode", "Cathode", "Electrolyte", "Terminal"], "answer": 1 },
+  { "id": "chem35", "text": "Which electrolyte is commonly used in the electrolytic refining of copper?", "img": null, "options": ["CuSO₄", "CuCl₂", "Cu(NO₃)₂", "H₂SO₄"], "answer": 0 },
+  { "id": "chem36", "text": "A current of 2 A is passed through CuSO₄ solution for 30 minutes. What mass of Cu is deposited? (Eq. wt. Cu = 31.75)", "img": null, "options": ["1.18 g", "2.36 g", "0.59 g", "4.72 g"], "answer": 0 },
+  { "id": "chem37", "text": "Loss of electrons is called ____.", "img": null, "options": ["Oxidation", "Reduction", "Displacement", "Neutralization"], "answer": 0 },
+  { "id": "chem38", "text": "Gain of electrons is called ____.", "img": null, "options": ["Oxidation", "Reduction", "Displacement", "Neutralization"], "answer": 1 },
+  { "id": "chem39", "text": "In a redox reaction, the substance that gets reduced is called the ____.", "img": null, "options": ["Reducing agent", "Oxidizing agent", "Catalyst", "Inhibitor"], "answer": 1 },
+  { "id": "chem40", "text": "The oxidation number of oxygen in hydrogen peroxide (H₂O₂) is ____.", "img": null, "options": ["-1", "-2", "+1", "0"], "answer": 0 },
+  { "id": "chem41", "text": "The oxidation number of hydrogen in metal hydrides (e.g., NaH) is ____.", "img": null, "options": ["+1", "-1", "0", "+2"], "answer": 1 },
+  { "id": "chem42", "text": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, which substance is oxidized?", "img": null, "options": ["Zn", "Cu", "S", "O"], "answer": 0 },
+  { "id": "chem43", "text": "The oxidation number of sulphur in H₂S is ____.", "img": null, "options": ["+2", "-2", "+4", "+6"], "answer": 1 },
+  { "id": "chem44", "text": "The oxidation number of sulphur in SO₂ is ____.", "img": null, "options": ["+2", "-2", "+4", "+6"], "answer": 2 },
+  { "id": "chem45", "text": "What is the oxidation number of sulphur in H₂SO₄?", "img": null, "options": ["+4", "+6", "-2", "+2"], "answer": 1 },
+  { "id": "chem46", "text": "Calculate the percentage of sulphur in H₂SO₄. (H=1, S=32, O=16)", "img": null, "options": ["32.65%", "65.31%", "16.33%", "98.00%"], "answer": 0 },
+  { "id": "chem47", "text": "The confirmatory test for chloride ions involves adding AgNO₃ to give a ____ precipitate.", "img": null, "options": ["White", "Yellow", "Brown", "Blue"], "answer": 0 },
+  { "id": "chem48", "text": "The confirmatory test for sulphate ions involves adding BaCl₂ to give a ____ precipitate insoluble in dilute HCl.", "img": null, "options": ["White", "Yellow", "Brown", "Blue"], "answer": 0 },
+  { "id": "chem49", "text": "If 0.01 mol of Fe²⁺ reacts with KMnO₄ (MnO₄⁻ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺), how many moles of MnO₄⁻ are required?", "img": null, "options": ["0.002 mol", "0.010 mol", "0.050 mol", "0.001 mol"], "answer": 0 },
+  { "id": "chem50", "text": "20 mL of 0.1 M NaOH exactly neutralizes 20 mL of H₂SO₄. What is the molarity of H₂SO₄? (2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O)", "img": null, "options": ["0.01 M", "0.02 M", "0.05 M", "0.10 M"], "answer": 2 }
 ],
 
     
@@ -359,7 +74,56 @@ window.questionsSS2 = {
     
     //Physics
     Physics: [
-        
+  { id: "phy1", text: "The ability of a capacitor to store charge per unit voltage is called ____.", img: null, options: ["Capacitance", "Resistance", "Inductance", "Conductance"], answer: 0 },
+  { id: "phy2", text: "The SI unit of capacitance is the ____.", img: null, options: ["Ohm", "Henry", "Farad", "Tesla"], answer: 2 },
+  { id: "phy3", text: "A capacitor stores energy in a/an ____.", img: null, options: ["Magnetic field", "Electric field", "Gravitational field", "Nuclear field"], answer: 1 },
+  { id: "phy4", text: "A magnetic field is a region where ____.", img: null, options: ["Electric charges are stored", "Magnetic force is experienced", "Light is reflected", "Sound is produced"], answer: 1 },
+  { id: "phy5", text: "Magnetic field lines emerge from the ____ pole.", img: null, options: ["South", "North", "East", "West"], answer: 1 },
+  { id: "phy6", text: "Like magnetic poles ____ each other.", img: null, options: ["Attract", "Repel", "Neutralize", "Destroy"], answer: 1 },
+  { id: "phy7", text: "The SI unit of magnetic flux density is the ____.", img: null, options: ["Weber", "Tesla", "Henry", "Volt"], answer: 1 },
+  { id: "phy8", text: "Which material is best for making a permanent magnet?", img: null, options: ["Soft iron", "Steel", "Copper", "Aluminum"], answer: 1 },
+  { id: "phy9", text: "Which material is best for making an electromagnet?", img: null, options: ["Steel", "Soft iron", "Brass", "Copper"], answer: 1 },
+  { id: "phy10", text: "Soft iron has ____ retentivity.", img: null, options: ["High", "Low", "Zero", "Infinite"], answer: 1 },
+  { id: "phy11", text: "Magnetic screening (shielding) is done using ____.", img: null, options: ["Copper", "Soft iron", "Aluminum", "Glass"], answer: 1 },
+  { id: "phy12", text: "An electromagnet consists of a solenoid with a ____ core.", img: null, options: ["Soft iron", "Steel", "Copper", "Air"], answer: 0 },
+  { id: "phy13", text: "The angle between true north and magnetic north is called ____.", img: null, options: ["Angle of dip", "Angle of declination", "Angle of elevation", "Angle of refraction"], answer: 1 },
+  { id: "phy14", text: "The angle between the Earth's total magnetic field and the horizontal plane is called ____.", img: null, options: ["Angle of declination", "Angle of dip", "Angle of rotation", "Angle of deflection"], answer: 1 },
+  { id: "phy15", text: "At the magnetic equator, the angle of dip is ____.", img: null, options: ["0°", "45°", "90°", "180°"], answer: 0 },
+  { id: "phy16", text: "At the magnetic poles, the angle of dip is ____.", img: null, options: ["0°", "45°", "90°", "180°"], answer: 2 },
+  { id: "phy17", text: "A mariner's compass uses a ____ needle to show direction.", img: null, options: ["Copper", "Magnetized", "Plastic", "Glass"], answer: 1 },
+  { id: "phy18", text: "A charge moving parallel to a magnetic field experiences ____ force.", img: null, options: ["Maximum", "Minimum", "Zero", "Infinite"], answer: 2 },
+  { id: "phy19", text: "A charge moving perpendicular to a magnetic field experiences ____ force.", img: null, options: ["Zero", "Maximum", "Minimum", "No"], answer: 1 },
+  { id: "phy20", text: "The path of a charged particle moving perpendicular to a uniform magnetic field is ____.", img: null, options: ["Straight line", "Circular", "Helical", "Parabolic"], answer: 1 },
+  { id: "phy21", text: "Fleming's Left-Hand Rule is used to find the direction of ____.", img: null, options: ["Induced current", "Magnetic force on a current-carrying conductor", "Magnetic field", "Electric field"], answer: 1 },
+  { id: "phy22", text: "An electric motor converts ____.", img: null, options: ["Mechanical energy to electrical energy", "Electrical energy to mechanical energy", "Heat to electrical energy", "Light to electrical energy"], answer: 1 },
+  { id: "phy23", text: "A moving coil galvanometer is used to ____.", img: null, options: ["Measure large currents", "Detect and measure small currents", "Measure resistance", "Measure voltage"], answer: 1 },
+  { id: "phy24", text: "Electromagnetic induction is the production of ____ in a conductor when it is exposed to a changing magnetic field.", img: null, options: ["Resistance", "Current", "EMF", "Capacitance"], answer: 2 },
+  { id: "phy25", text: "Faraday's Law states that induced EMF is proportional to the ____.", img: null, options: ["Rate of change of current", "Rate of change of flux", "Rate of change of voltage", "Rate of change of resistance"], answer: 1 },
+  { id: "phy26", text: "Lenz's Law states that the direction of induced current ____ the change that produced it.", img: null, options: ["Aids", "Opposes", "Amplifies", "Cancels"], answer: 1 },
+  { id: "phy27", text: "The negative sign in Faraday's Law represents ____.", img: null, options: ["Lenz's Law", "Ohm's Law", "Kirchhoff's Law", "Gauss's Law"], answer: 0 },
+  { id: "phy28", text: "Fleming's Right-Hand Rule is used to find the direction of ____.", img: null, options: ["Induced current", "Force on a conductor", "Magnetic field", "Electric field"], answer: 0 },
+  { id: "phy29", text: "Eddy currents are induced in ____.", img: null, options: ["Thin wires", "Solid bulk conductors", "Insulators", "Empty space"], answer: 1 },
+  { id: "phy30", text: "Eddy current loss in transformer cores is reduced by using a ____.", img: null, options: ["Solid iron core", "Laminated core", "Copper core", "Plastic core"], answer: 1 },
+  { id: "phy31", text: "A transformer works on the principle of ____.", img: null, options: ["Mutual induction", "Self induction", "Capacitance", "Resistance"], answer: 0 },
+  { id: "phy32", text: "The voltage ratio in a transformer is equal to the ____.", img: null, options: ["Current ratio", "Turns ratio", "Resistance ratio", "Power ratio"], answer: 1 },
+  { id: "phy33", text: "A step-up transformer has ____ secondary turns compared to primary.", img: null, options: ["Fewer", "More", "Equal", "Zero"], answer: 1 },
+  { id: "phy34", text: "A step-down transformer has ____ secondary voltage compared to primary.", img: null, options: ["Higher", "Lower", "Equal", "Zero"], answer: 1 },
+  { id: "phy35", text: "Transformers only work with ____ current.", img: null, options: ["Direct", "Alternating", "Static", "Both A and B"], answer: 1 },
+  { id: "phy36", text: "A capacitor stores 0.2 C of charge when connected to a 50 V supply. Calculate its capacitance.", img: null, options: ["0.004 F", "0.04 F", "0.4 F", "4 F"], answer: 0 },
+  { id: "phy37", text: "Calculate the energy stored in a 200 μF capacitor charged to 100 V.", img: null, options: ["0.5 J", "1.0 J", "2.0 J", "10 J"], answer: 1 },
+  { id: "phy38", text: "Two capacitors of 3 μF and 6 μF are connected in series. Calculate the total capacitance.", img: null, options: ["1 μF", "1.5 μF", "2 μF", "9 μF"], answer: 2 },
+  { id: "phy39", text: "A straight wire carries a current of 8 A. Calculate the magnetic flux density at a distance of 0.04 m from the wire. (μ₀ = 4π × 10⁻⁷ H/m)", img: null, options: ["2 × 10⁻⁵ T", "4 × 10⁻⁵ T", "8 × 10⁻⁵ T", "1.6 × 10⁻⁴ T"], answer: 1 },
+  { id: "phy40", text: "A solenoid of length 0.5 m has 1000 turns and carries a current of 2 A. Calculate the magnetic flux density inside. (μ₀ = 4π × 10⁻⁷ H/m)", img: null, options: ["1.26 × 10⁻³ T", "2.51 × 10⁻³ T", "5.03 × 10⁻³ T", "1.26 × 10⁻² T"], answer: 1 },
+  { id: "phy41", text: "An electron (q = 1.6 × 10⁻¹⁹ C) moves at 2 × 10⁶ m/s perpendicular to a magnetic field of 0.3 T. Calculate the magnetic force.", img: null, options: ["9.6 × 10⁻¹⁴ N", "4.8 × 10⁻¹³ N", "9.6 × 10⁻¹³ N", "4.8 × 10⁻¹⁴ N"], answer: 0 },
+  { id: "phy42", text: "A DC motor coil has 80 turns, area 0.01 m², and carries 2.5 A in a field of 0.3 T. Calculate the maximum torque.", img: null, options: ["0.06 Nm", "0.12 Nm", "0.24 Nm", "0.48 Nm"], answer: 0 },
+  { id: "phy43", text: "A coil of 400 turns experiences a change in flux from 0.03 Wb to 0.07 Wb in 0.02 seconds. Calculate the induced EMF.", img: null, options: ["400 V", "600 V", "800 V", "1200 V"], answer: 2 },
+  { id: "phy44", text: "A transformer has 800 primary turns and 200 secondary turns. If the primary voltage is 240 V, calculate the secondary voltage.", img: null, options: ["30 V", "40 V", "60 V", "80 V"], answer: 2 },
+  { id: "phy45", text: "Using the transformer above, if primary current is 1.5 A, calculate the secondary current (assuming ideal).", img: null, options: ["3 A", "4 A", "5 A", "6 A"], answer: 3 },
+  { id: "phy46", text: "A power station generates 100 MW at 25 kV. The transmission line resistance is 12 Ω. Calculate the current at the generator.", img: null, options: ["2000 A", "3000 A", "4000 A", "5000 A"], answer: 2 },
+  { id: "phy47", text: "If the voltage is stepped up to 500 kV, calculate the new current.", img: null, options: ["100 A", "150 A", "200 A", "250 A"], answer: 2 },
+  { id: "phy48", text: "At a location, the angle of dip is 30° and the total field is 6 × 10⁻⁵ T. Calculate the horizontal component.", img: null, options: ["3.46 × 10⁻⁵ T", "4.24 × 10⁻⁵ T", "5.20 × 10⁻⁵ T", "6.00 × 10⁻⁵ T"], answer: 2 },
+  { id: "phy49", text: "An induction coil has a primary of 300 turns and a secondary of 30,000 turns. If the primary voltage is 12 V, calculate the theoretical secondary voltage.", img: null, options: ["600 V", "900 V", "1200 V", "1500 V"], answer: 2 },
+  { id: "phy50", text: "Calculate the efficiency of a transformer with input power 800 W and output power 760 W.", img: null, options: ["85%", "90%", "95%", "98%"], answer: 2 }
     ],
     
     
